@@ -1,0 +1,29 @@
+{
+     "_comment":"The concept 'Learning Method' contains information about the learning type wich is used by the algorithm. This concept and its subclasses are derived from MEX-ALGO ontology.",
+    "result": {
+        "uri": "http://planqk/OntoQC#OntoQC_N00261",
+        "label": "Learning Method",
+        "children:": [
+            {
+                "uri": "http://planqk/OntoQC#OntoQC_N03261",
+                "label": "Supervised Learning",
+                "children": []
+            },
+            {
+                "uri": "http://planqk/OntoQC#OntoQC_N01261",
+                "label": "Reinforcement Learning",
+                "children": []
+            },
+            {
+                "uri": "http://planqk/OntoQC#OntoQC_N04261",
+                "label": "Unsupervised Learning",
+                "children": []
+            },
+            {
+                "uri": "http://planqk/OntoQC#OntoQC_N02261",
+                "label": "Semi-Supervised Learning",
+                "children": []
+            }
+        ]
+    }
+}

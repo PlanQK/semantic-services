@@ -1,0 +1,4304 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://planqk/OntoQC#"
+     xml:base="http://planqk/OntoQC"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:XML="http://www.w3.org/XML/1998/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:OntoQC="http://planqk/OntoQC#">
+    <owl:Ontology rdf:about="http://planqk/OntoQC">
+        <owl:versionIRI rdf:resource="http://planqk/OntoQC/1.0.0"/>
+        <owl:imports rdf:resource="http://www.fairsharing.org/ontology/subject/SRAO_Edited.owl/0.2.2"/>
+        <terms:contributor xml:lang="en">University of Stuttgart, Institute of Architecture of Application Systems (IAAS);
+Stoneone AG</terms:contributor>
+        <terms:contributor xml:lang="de">Universität Stuttgart, Institut für Architektur von Anwendungssystemen (IAAS);
+Stoneone AG</terms:contributor>
+        <terms:created xml:lang="en">12-03-2020</terms:created>
+        <terms:creator xml:lang="en">Fraunhofer Institute for Open Communication Systems FOKUS</terms:creator>
+        <terms:creator xml:lang="de">Fraunhofer-Institut für Offene Kommunikationssysteme FOKUS</terms:creator>
+        <terms:license xml:lang="en">-</terms:license>
+        <terms:title>PlanQK-Ontology</terms:title>
+        <vann:preferredNamespacePrefix>OntoQC</vann:preferredNamespacePrefix>
+        <owl:priorVersion>None</owl:priorVersion>
+        <owl:versionInfo xml:lang="en">1.0.0</owl:versionInfo>
+        <ns:status xml:lang="en">Development</ns:status>
+        <ns:status xml:lang="de">Entwicklung</ns:status>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_an00000 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://planqk/OntoQC#OntoQC_an00000">
+        <rdfs:comment xml:lang="en">id from a relational database</rdfs:comment>
+        <skos:prefLabel>db_id</skos:prefLabel>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_an00004 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://planqk/OntoQC#OntoQC_an00004">
+        <skos:prefLabel xml:lang="en">unit of measurement</skos:prefLabel>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:domain rdf:resource="http://planqk/OntoQC#OntoQC_N00041"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
+        <obo:IAO_0000412>imported from</obo:IAO_0000412>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/source -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/source"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#about -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#about"/>
+    
+
+
+    <!-- http://www.w3.org/2003/06/sw-vocab-status/ns#status -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#status"/>
+    
+
+
+    <!-- http://www.w3.org/2003/06/sw-vocab-status/ns#term_status -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#altLabel -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#altLabel"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#editorialNote -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#editorialNote"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#example -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#example"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#note -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#note"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    
+
+
+    <!-- http://www.w3.org/XML/1998/namespacelang -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/XML/1998/namespacelang"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasDerivedFrom -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#wasDerivedFrom">
+        <rdfs:comment>A derivation is a transformation of an entity into another, an update of an entity resulting in a new one, or the construction of a new entity based on a pre-existing entity.</rdfs:comment>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#langString -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_op00001 -->
+
+
+    <owl:ObjectProperty rdf:about="http://planqk/OntoQC#OntoQC_op00001">
+        <owl:inverseOf rdf:resource="http://planqk/OntoQC#OntoQC_op0000X"/>
+        <rdfs:domain rdf:resource="http://planqk/OntoQC#OntoQC_A00001"/>
+        <rdfs:range rdf:resource="http://planqk/OntoQC#OntoQC_A00001"/>
+        <rdfs:comment xml:lang="en">The &apos;based on&apos; property relates an Algorithm to some other 
+Algorithm that provides a basic technique  for the first Algorithm.
+This relation can help to derive the relevant pubications/ blog posts to the other algorithms that needed to understand this algorithm.</rdfs:comment>
+        <rdfs:label xml:lang="en">based on</rdfs:label>
+        <skos:altLabel xml:lang="en">inspired by</skos:altLabel>
+        <skos:prefLabel xml:lang="en">based on</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">basiert auf</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_op00002 -->
+
+
+    <owl:ObjectProperty rdf:about="http://planqk/OntoQC#OntoQC_op00002">
+        <rdfs:domain rdf:resource="http://planqk/OntoQC#OntoQC_N00021"/>
+        <rdfs:range rdf:resource="http://planqk/OntoQC#OntoQC_N01461"/>
+        <rdfs:comment xml:lang="en">The &apos;belongs to&apos; property relates an &apos;Problem&apos; to a &apos;Complexity Class&apos;. 
+This relation can be helpful for researchers to explore the possibilities of quantum computing.</rdfs:comment>
+        <rdfs:label xml:lang="en">belongs to</rdfs:label>
+        <skos:prefLabel xml:lang="en">belongs to</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">gehört zur</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_op00003 -->
+
+
+    <owl:ObjectProperty rdf:about="http://planqk/OntoQC#OntoQC_op00003">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://planqk/OntoQC#OntoQC_A00211"/>
+                    <rdf:Description rdf:about="http://planqk/OntoQC#OntoQC_A00311"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:comment xml:lang="en">The &apos;over&apos; property depicts over which &apos;Classical Algorithm&apos; a &apos;Quantum Algorithm&apos; or &apos;Hybrid Quantum-Classical Algorithm&apos; achieves indicated expected speedup.</rdfs:comment>
+        <rdfs:label xml:lang="en">over</rdfs:label>
+        <skos:altLabel xml:lang="en">in comparison to</skos:altLabel>
+        <skos:prefLabel xml:lang="en">over</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">über</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_op00004 -->
+
+
+    <owl:ObjectProperty rdf:about="http://planqk/OntoQC#OntoQC_op00004">
+        <rdfs:domain rdf:resource="http://planqk/OntoQC#OntoQC_A00001"/>
+        <rdfs:range rdf:resource="http://planqk/OntoQC#OntoQC_N00081"/>
+        <rdfs:label xml:lang="en">has steps</rdfs:label>
+        <skos:altLabel xml:lang="en">has instructions</skos:altLabel>
+        <skos:note xml:lang="en">previously labeled as &quot;provide&quot;</skos:note>
+        <skos:prefLabel xml:lang="en">has steps</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">hat verarbeitungsschritte</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_op00005 -->
+
+
+    <owl:ObjectProperty rdf:about="http://planqk/OntoQC#OntoQC_op00005">
+        <rdfs:domain rdf:resource="http://planqk/OntoQC#OntoQC_G01111"/>
+        <rdfs:range rdf:resource="http://planqk/OntoQC#OntoQC_G02111"/>
+        <rdfs:label xml:lang="en">embedded in</rdfs:label>
+        <skos:prefLabel xml:lang="de">eingebettet in</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">embedded in</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_op00006 -->
+
+
+    <owl:ObjectProperty rdf:about="http://planqk/OntoQC#OntoQC_op00006">
+        <rdfs:domain rdf:resource="http://planqk/OntoQC#OntoQC_B00001"/>
+        <rdfs:range rdf:resource="http://planqk/OntoQC#OntoQC_J00001"/>
+        <rdfs:label xml:lang="en">runs on</rdfs:label>
+        <skos:prefLabel xml:lang="de">ausgeführt auf</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">runs on</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_op00007 -->
+
+
+    <owl:ObjectProperty rdf:about="http://planqk/OntoQC#OntoQC_op00007">
+        <rdfs:domain rdf:resource="http://planqk/OntoQC#OntoQC_A00001"/>
+        <rdfs:range rdf:resource="http://planqk/OntoQC#OntoQC_N01463"/>
+        <rdfs:label xml:lang="en">has input</rdfs:label>
+        <skos:prefLabel xml:lang="en">has input</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">hat eingabe</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_op00008 -->
+
+
+    <owl:ObjectProperty rdf:about="http://planqk/OntoQC#OntoQC_op00008">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://planqk/OntoQC#OntoQC_C00001"/>
+                    <rdf:Description rdf:about="http://planqk/OntoQC#OntoQC_D00001"/>
+                    <rdf:Description rdf:about="http://planqk/OntoQC#OntoQC_H00001"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://planqk/OntoQC#OntoQC_N00062"/>
+        <rdfs:label xml:lang="en">has branche</rdfs:label>
+        <skos:prefLabel xml:lang="en">has branche</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">hat branche</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_op00009 -->
+
+
+    <owl:ObjectProperty rdf:about="http://planqk/OntoQC#OntoQC_op00009">
+        <rdfs:domain rdf:resource="http://planqk/OntoQC#OntoQC_A00001"/>
+        <rdfs:range rdf:resource="http://planqk/OntoQC#OntoQC_N01462"/>
+        <rdfs:label xml:lang="en">has output</rdfs:label>
+        <skos:prefLabel xml:lang="en">has output</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">hat ausgabe</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_op0000B -->
+
+
+    <owl:ObjectProperty rdf:about="http://planqk/OntoQC#OntoQC_op0000B">
+        <rdfs:domain rdf:resource="http://planqk/OntoQC#OntoQC_A00001"/>
+        <rdfs:range rdf:resource="http://planqk/OntoQC#OntoQC_E00001"/>
+        <rdfs:label xml:lang="en">has evaluation</rdfs:label>
+        <skos:prefLabel xml:lang="en">has evaluation</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">hat evaluation</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_op0000D -->
+
+
+    <owl:ObjectProperty rdf:about="http://planqk/OntoQC#OntoQC_op0000D">
+        <owl:inverseOf rdf:resource="http://planqk/OntoQC#OntoQC_op0000S"/>
+        <rdfs:domain rdf:resource="http://planqk/OntoQC#OntoQC_A00001"/>
+        <rdfs:range rdf:resource="http://planqk/OntoQC#OntoQC_H00001"/>
+        <rdfs:comment xml:lang="en">Answers the question:What is the implementation of this algorithm?</rdfs:comment>
+        <rdfs:label xml:lang="en">has implementation</rdfs:label>
+        <skos:prefLabel xml:lang="en">has implementation</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">hat implementierung</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_op0000E -->
+
+
+    <owl:ObjectProperty rdf:about="http://planqk/OntoQC#OntoQC_op0000E">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://planqk/OntoQC#OntoQC_A00221"/>
+        <rdfs:range rdf:resource="http://planqk/OntoQC#OntoQC_N00261"/>
+        <obo:IAO_0000412>http://mex.aksw.org/mex-algo#</obo:IAO_0000412>
+        <rdfs:label xml:lang="en">has learning type</rdfs:label>
+        <skos:altLabel>has learning method</skos:altLabel>
+        <skos:prefLabel xml:lang="en">has learning type</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">hat lerntyp</skos:prefLabel>
+        <prov:wasDerivedFrom>http://mex.aksw.org/mex-algo#hasLearningMethod</prov:wasDerivedFrom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_op0000F -->
+
+
+    <owl:ObjectProperty rdf:about="http://planqk/OntoQC#OntoQC_op0000F">
+        <rdfs:domain rdf:resource="http://planqk/OntoQC#OntoQC_A00221"/>
+        <rdfs:range rdf:resource="http://planqk/OntoQC#OntoQC_N01464"/>
+        <rdfs:comment xml:lang="en">A relation between an machine learning algogorithm and description of its hyperparameter in a textual form.</rdfs:comment>
+        <rdfs:label xml:lang="en">has hyperparameter</rdfs:label>
+        <skos:prefLabel xml:lang="en">has hyperparameter</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">hat hyperparameter</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_op0000M -->
+
+
+    <owl:ObjectProperty rdf:about="http://planqk/OntoQC#OntoQC_op0000M">
+        <owl:inverseOf rdf:resource="http://planqk/OntoQC#OntoQC_op00910"/>
+        <rdfs:domain rdf:resource="http://planqk/OntoQC#OntoQC_I00231"/>
+        <rdfs:range rdf:resource="http://planqk/OntoQC#OntoQC_F00001"/>
+        <rdfs:label xml:lang="en">provided by</rdfs:label>
+        <skos:prefLabel xml:lang="de">bereitgestellt von</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">provided by</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_op0000N -->
+
+
+    <owl:ObjectProperty rdf:about="http://planqk/OntoQC#OntoQC_op0000N">
+        <owl:inverseOf rdf:resource="http://planqk/OntoQC#OntoQC_op0000V"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://planqk/OntoQC#OntoQC_A00001"/>
+                    <rdf:Description rdf:about="http://planqk/OntoQC#OntoQC_E00001"/>
+                    <rdf:Description rdf:about="http://planqk/OntoQC#OntoQC_H00001"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://planqk/OntoQC#OntoQC_L00001"/>
+        <rdfs:label xml:lang="en">referenced by</rdfs:label>
+        <skos:prefLabel xml:lang="en">referenced by</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">referenziert durch</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_op0000O -->
+
+
+    <owl:ObjectProperty rdf:about="http://planqk/OntoQC#OntoQC_op0000O">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://planqk/OntoQC#OntoQC_L00001"/>
+        <rdfs:range rdf:resource="http://planqk/OntoQC#OntoQC_N00111"/>
+        <rdfs:label xml:lang="en">has author</rdfs:label>
+        <skos:prefLabel xml:lang="en">has author</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">hat autor</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_op0000S -->
+
+
+    <owl:ObjectProperty rdf:about="http://planqk/OntoQC#OntoQC_op0000S">
+        <rdfs:domain rdf:resource="http://planqk/OntoQC#OntoQC_H00001"/>
+        <rdfs:range rdf:resource="http://planqk/OntoQC#OntoQC_A00001"/>
+        <rdfs:comment xml:lang="en">Ansers the following question: Which algorithm is implemented by the particular implementation?</rdfs:comment>
+        <rdfs:label xml:lang="en">implements</rdfs:label>
+        <skos:prefLabel xml:lang="de">implementiert</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">implements</skos:prefLabel>
+        <prov:wasDerivedFrom xml:lang="en">http://www.w3.org/ns/mls#implements</prov:wasDerivedFrom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_op0000V -->
+
+
+    <owl:ObjectProperty rdf:about="http://planqk/OntoQC#OntoQC_op0000V">
+        <rdfs:domain rdf:resource="http://planqk/OntoQC#OntoQC_L00001"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://planqk/OntoQC#OntoQC_A00001"/>
+                    <rdf:Description rdf:about="http://planqk/OntoQC#OntoQC_E00001"/>
+                    <rdf:Description rdf:about="http://planqk/OntoQC#OntoQC_H00001"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label xml:lang="en">references</rdfs:label>
+        <skos:prefLabel xml:lang="en">references</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">referenziert</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_op0000X -->
+
+
+    <owl:ObjectProperty rdf:about="http://planqk/OntoQC#OntoQC_op0000X">
+        <rdfs:domain rdf:resource="http://planqk/OntoQC#OntoQC_A00001"/>
+        <rdfs:range rdf:resource="http://planqk/OntoQC#OntoQC_A00001"/>
+        <rdfs:label xml:lang="en">provides basis for</rdfs:label>
+        <skos:prefLabel xml:lang="de">bietet grundlage für</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">provides basis for</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_op0000Y -->
+
+
+    <owl:ObjectProperty rdf:about="http://planqk/OntoQC#OntoQC_op0000Y">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://planqk/OntoQC#OntoQC_A00001"/>
+                    <rdf:Description rdf:about="http://planqk/OntoQC#OntoQC_H00001"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://planqk/OntoQC#OntoQC_N00021"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://planqk/OntoQC#OntoQC_op0000S"/>
+            <rdf:Description rdf:about="http://planqk/OntoQC#OntoQC_op0000Y"/>
+        </owl:propertyChainAxiom>
+        <rdfs:label xml:lang="en">solves</rdfs:label>
+        <skos:prefLabel xml:lang="de">löst</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">solves</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_op00021 -->
+
+
+    <owl:ObjectProperty rdf:about="http://planqk/OntoQC#OntoQC_op00021">
+        <owl:inverseOf rdf:resource="http://planqk/OntoQC#OntoQC_op00121"/>
+        <rdfs:domain rdf:resource="http://planqk/OntoQC#OntoQC_N01441"/>
+        <rdfs:range rdf:resource="http://planqk/OntoQC#OntoQC_N00441"/>
+        <rdfs:label xml:lang="en">has element</rdfs:label>
+        <skos:prefLabel xml:lang="en">has element</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">hat element</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_op00022 -->
+
+
+    <owl:ObjectProperty rdf:about="http://planqk/OntoQC#OntoQC_op00022">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://planqk/OntoQC#OntoQC_A00001"/>
+                    <rdf:Description rdf:about="http://planqk/OntoQC#OntoQC_H00001"/>
+                    <rdf:Description rdf:about="http://planqk/OntoQC#OntoQC_N00081"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://planqk/OntoQC#OntoQC_K00001"/>
+                    <rdf:Description rdf:about="http://planqk/OntoQC#OntoQC_N00091"/>
+                    <rdf:Description rdf:about="http://planqk/OntoQC#OntoQC_P00001"/>
+                    <rdf:Description rdf:about="http://planqk/OntoQC#OntoQC_T00001"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://planqk/OntoQC#OntoQC_op00004"/>
+            <rdf:Description rdf:about="http://planqk/OntoQC#OntoQC_op00022"/>
+        </owl:propertyChainAxiom>
+        <rdfs:label xml:lang="en">has part</rdfs:label>
+        <skos:prefLabel xml:lang="en">has part</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">hat teil</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_op00030 -->
+
+
+    <owl:ObjectProperty rdf:about="http://planqk/OntoQC#OntoQC_op00030">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://planqk/OntoQC#OntoQC_E00001"/>
+                    <rdf:Description rdf:about="http://planqk/OntoQC#OntoQC_H00001"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://planqk/OntoQC#OntoQC_D00011"/>
+        <rdfs:label xml:lang="en">uses dataset</rdfs:label>
+        <skos:prefLabel xml:lang="de">benutzt daten</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">uses dataset</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_op00032 -->
+
+
+    <owl:ObjectProperty rdf:about="http://planqk/OntoQC#OntoQC_op00032">
+        <rdfs:domain rdf:resource="http://planqk/OntoQC#OntoQC_N00021"/>
+        <rdfs:range rdf:resource="http://planqk/OntoQC#OntoQC_N00021"/>
+        <rdfs:label xml:lang="en">formalized as</rdfs:label>
+        <skos:prefLabel xml:lang="de">formalisiert als</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">formalized as</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_op00042 -->
+
+
+    <owl:ObjectProperty rdf:about="http://planqk/OntoQC#OntoQC_op00042">
+        <owl:inverseOf rdf:resource="http://planqk/OntoQC#OntoQC_op00043"/>
+        <rdfs:domain rdf:resource="http://planqk/OntoQC#OntoQC_N00081"/>
+        <rdfs:range rdf:resource="http://planqk/OntoQC#OntoQC_W00001"/>
+        <rdfs:label xml:lang="en">uses</rdfs:label>
+        <skos:prefLabel xml:lang="de">benutzt</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">uses</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_op00043 -->
+
+
+    <owl:ObjectProperty rdf:about="http://planqk/OntoQC#OntoQC_op00043">
+        <rdfs:domain rdf:resource="http://planqk/OntoQC#OntoQC_W00001"/>
+        <rdfs:range rdf:resource="http://planqk/OntoQC#OntoQC_N00081"/>
+        <rdfs:label xml:lang="en">is used by</rdfs:label>
+        <skos:prefLabel xml:lang="en">is used by</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">wird verwendet in</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_op00050 -->
+
+
+    <owl:ObjectProperty rdf:about="http://planqk/OntoQC#OntoQC_op00050">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://planqk/OntoQC#OntoQC_A00001"/>
+                    <rdf:Description rdf:about="http://planqk/OntoQC#OntoQC_H00001"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://planqk/OntoQC#OntoQC_N00341"/>
+        <rdfs:label xml:lang="en">designed for</rdfs:label>
+        <skos:prefLabel xml:lang="en">designed for</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">entworfen für</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_op00052 -->
+
+
+    <owl:ObjectProperty rdf:about="http://planqk/OntoQC#OntoQC_op00052">
+        <rdfs:subPropertyOf rdf:resource="http://planqk/OntoQC#OntoQC_op00053"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://planqk/OntoQC#OntoQC_A00211"/>
+                    <rdf:Description rdf:about="http://planqk/OntoQC#OntoQC_A00311"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://planqk/OntoQC#OntoQC_A00111"/>
+        <rdfs:comment xml:lang="en">This property depicts over which &apos;Classical Algorithm&apos; a &apos;Quantum Algorithm&apos; or a &apos;Hybrid Quantum-Classical Algorithm&apos; achieves indicated expected speedup.</rdfs:comment>
+        <rdfs:label xml:lang="en">achieves quantum speedup over</rdfs:label>
+        <skos:prefLabel xml:lang="en">achieves quantum speedup over</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">erreicht Quantenbeschleunigung gegenüber</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_op00053 -->
+
+
+    <owl:ObjectProperty rdf:about="http://planqk/OntoQC#OntoQC_op00053">
+        <rdfs:domain rdf:resource="http://planqk/OntoQC#OntoQC_A00001"/>
+        <rdfs:range rdf:resource="http://planqk/OntoQC#OntoQC_A00001"/>
+        <rdfs:comment xml:lang="en">This property relates two algorithms that solve the same problem, but the domain algorithm solves the problem more effitiently than the range algorithm.</rdfs:comment>
+        <rdfs:label xml:lang="en">achieves speedup over</rdfs:label>
+        <skos:prefLabel xml:lang="en">achieves speedup over</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">erzielt eine beschleunigung über</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_op00062 -->
+
+
+    <owl:ObjectProperty rdf:about="http://planqk/OntoQC#OntoQC_op00062">
+        <rdfs:domain rdf:resource="http://planqk/OntoQC#OntoQC_A00001"/>
+        <rdfs:range rdf:resource="http://planqk/OntoQC#OntoQC_A00001"/>
+        <rdfs:comment xml:lang="en">This relation between two algorithms exist when an algorithm add improvements to another existing algorithm.</rdfs:comment>
+        <rdfs:label xml:lang="en">improves</rdfs:label>
+        <skos:altLabel xml:lang="en">modifies</skos:altLabel>
+        <skos:altLabel xml:lang="de">modifiziert</skos:altLabel>
+        <skos:prefLabel xml:lang="en">improves</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">verbessert</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_op00110 -->
+
+
+    <owl:ObjectProperty rdf:about="http://planqk/OntoQC#OntoQC_op00110">
+        <rdfs:domain rdf:resource="http://planqk/OntoQC#OntoQC_B00001"/>
+        <rdfs:range rdf:resource="http://planqk/OntoQC#OntoQC_H00001"/>
+        <rdfs:label xml:lang="en">executes</rdfs:label>
+        <skos:prefLabel xml:lang="en">executes</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">führt  aus</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_op00121 -->
+
+
+    <owl:ObjectProperty rdf:about="http://planqk/OntoQC#OntoQC_op00121">
+        <rdfs:domain rdf:resource="http://planqk/OntoQC#OntoQC_N00441"/>
+        <rdfs:range rdf:resource="http://planqk/OntoQC#OntoQC_N01441"/>
+        <rdfs:label xml:lang="en">is element of</rdfs:label>
+        <skos:prefLabel xml:lang="en">is element of</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">ist element von</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_op00210 -->
+
+
+    <owl:ObjectProperty rdf:about="http://planqk/OntoQC#OntoQC_op00210">
+        <owl:inverseOf rdf:resource="http://planqk/OntoQC#OntoQC_op00220"/>
+        <rdfs:domain rdf:resource="http://planqk/OntoQC#OntoQC_J00001"/>
+        <rdfs:range rdf:resource="http://planqk/OntoQC#OntoQC_N00341"/>
+        <rdfs:comment xml:lang="en">The &apos;realizes&apos; property relates an &apos;Computational Resource&apos; to a &apos;Computational Model&apos;. This relation can be used in the future to derive devices, on which an Implementation is executable.</rdfs:comment>
+        <rdfs:label xml:lang="en">realizes</rdfs:label>
+        <skos:prefLabel xml:lang="de">realisiert</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">realizes</skos:prefLabel>
+        <prov:wasDerivedFrom xml:lang="en">http://www.w3.org/ns/mls#realizes</prov:wasDerivedFrom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_op00220 -->
+
+
+    <owl:ObjectProperty rdf:about="http://planqk/OntoQC#OntoQC_op00220">
+        <rdfs:comment xml:lang="en">The &apos;realized in&apos; property relates an &apos;Computational Model&apos; to a &apos;Computational Resource&apos;. This relation can be used in the future to derive devices, on which an Implementation is executable.</rdfs:comment>
+        <rdfs:label xml:lang="en">realized in</rdfs:label>
+        <skos:prefLabel xml:lang="en">realized in</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">realiziert in</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_op00310 -->
+
+
+    <owl:ObjectProperty rdf:about="http://planqk/OntoQC#OntoQC_op00310">
+        <rdfs:domain rdf:resource="http://planqk/OntoQC#OntoQC_I00231"/>
+        <rdfs:range rdf:resource="http://planqk/OntoQC#OntoQC_N00041"/>
+        <rdfs:label xml:lang="en">has characteristic</rdfs:label>
+        <skos:prefLabel xml:lang="en">has characteristic</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">hat eigenschaft</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_op00410 -->
+
+
+    <owl:ObjectProperty rdf:about="http://planqk/OntoQC#OntoQC_op00410">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://planqk/OntoQC#OntoQC_A00211"/>
+                    <rdf:Description rdf:about="http://planqk/OntoQC#OntoQC_A00311"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://planqk/OntoQC#OntoQC_N00041"/>
+        <rdfs:label xml:lang="en">requires</rdfs:label>
+        <skos:altLabel xml:lang="de">braucht</skos:altLabel>
+        <skos:prefLabel xml:lang="de">erfordert</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">requires</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_op00510 -->
+
+
+    <owl:ObjectProperty rdf:about="http://planqk/OntoQC#OntoQC_op00510">
+        <rdfs:domain rdf:resource="http://planqk/OntoQC#OntoQC_H00001"/>
+        <rdfs:range rdf:resource="http://planqk/OntoQC#OntoQC_G00011"/>
+        <rdfs:label xml:lang="en">written in</rdfs:label>
+        <skos:prefLabel xml:lang="de">geschrieben in</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">written in</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_op00610 -->
+
+
+    <owl:ObjectProperty rdf:about="http://planqk/OntoQC#OntoQC_op00610">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://planqk/OntoQC#OntoQC_G00001"/>
+                    <rdf:Description rdf:about="http://planqk/OntoQC#OntoQC_I02231"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://planqk/OntoQC#OntoQC_G00001"/>
+                    <rdf:Description rdf:about="http://planqk/OntoQC#OntoQC_J00001"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://planqk/OntoQC#OntoQC_op00810"/>
+            <rdf:Description rdf:about="http://planqk/OntoQC#OntoQC_op00910"/>
+        </owl:propertyChainAxiom>
+        <rdfs:label xml:lang="en">compatible with</rdfs:label>
+        <skos:prefLabel xml:lang="en">compatible with</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">kompatibel mit</skos:prefLabel>
+        <prov:wasDerivedFrom>http://mklab.iti.gr/pericles/ComputerSystem_ODP#isCompatibleWith</prov:wasDerivedFrom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_op00710 -->
+
+
+    <owl:ObjectProperty rdf:about="http://planqk/OntoQC#OntoQC_op00710">
+        <rdfs:domain rdf:resource="http://planqk/OntoQC#OntoQC_H00001"/>
+        <rdfs:range rdf:resource="http://planqk/OntoQC#OntoQC_G00031"/>
+        <rdfs:comment xml:lang="en">The &apos;depends on&apos; property relates an &apos;Implementation&apos; to a &apos;Software Tool&apos;. 
+This relation can be used to derive implementations that uses an specific framework, i. e. qiskit, TensorflowQuantum etc.</rdfs:comment>
+        <rdfs:label xml:lang="en">depends on</rdfs:label>
+        <skos:altLabel xml:lang="en">calls</skos:altLabel>
+        <skos:altLabel xml:lang="de">ruft auf</skos:altLabel>
+        <skos:prefLabel xml:lang="en">depends on</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">hängt ab von</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_op00810 -->
+
+
+    <owl:ObjectProperty rdf:about="http://planqk/OntoQC#OntoQC_op00810">
+        <rdfs:domain rdf:resource="http://planqk/OntoQC#OntoQC_G00031"/>
+        <rdfs:range rdf:resource="http://planqk/OntoQC#OntoQC_F00001"/>
+        <rdfs:label xml:lang="en">supports</rdfs:label>
+        <skos:prefLabel xml:lang="en">supports</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">unterstützt</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_op00910 -->
+
+
+    <owl:ObjectProperty rdf:about="http://planqk/OntoQC#OntoQC_op00910">
+        <rdfs:domain rdf:resource="http://planqk/OntoQC#OntoQC_F00001"/>
+        <rdfs:range rdf:resource="http://planqk/OntoQC#OntoQC_I00231"/>
+        <rdfs:label xml:lang="en">provides</rdfs:label>
+        <skos:prefLabel xml:lang="en">provides</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">slellt zur verfügung</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_op01310 -->
+
+
+    <owl:ObjectProperty rdf:about="http://planqk/OntoQC#OntoQC_op01310">
+        <rdfs:subPropertyOf rdf:resource="http://planqk/OntoQC#OntoQC_op00310"/>
+        <rdfs:domain rdf:resource="http://planqk/OntoQC#OntoQC_I00231"/>
+        <rdfs:range rdf:resource="http://planqk/OntoQC#OntoQC_N01441"/>
+        <rdfs:label xml:lang="en">has gate set</rdfs:label>
+        <skos:prefLabel xml:lang="en">has gate set</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">hat gate set</skos:prefLabel>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_dp00000 -->
+
+
+    <owl:DatatypeProperty rdf:about="http://planqk/OntoQC#OntoQC_dp00000">
+        <rdfs:domain rdf:resource="http://planqk/OntoQC#OntoQC_L00001"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">abstract</rdfs:label>
+        <skos:prefLabel xml:lang="en">abstract</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">abstrakt</skos:prefLabel>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_dp00001 -->
+
+
+    <owl:DatatypeProperty rdf:about="http://planqk/OntoQC#OntoQC_dp00001">
+        <rdfs:domain rdf:resource="http://planqk/OntoQC#OntoQC_I00231"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Quantum technologies used to create a quantum hardware.</rdfs:comment>
+        <rdfs:label>quantum technology</rdfs:label>
+        <skos:altLabel xml:lang="en">quantum technology</skos:altLabel>
+        <skos:altLabel xml:lang="de">technologie</skos:altLabel>
+        <skos:prefLabel xml:lang="en">quantum technology</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">quantumtechologie</skos:prefLabel>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_dp00002 -->
+
+
+    <owl:DatatypeProperty rdf:about="http://planqk/OntoQC#OntoQC_dp00002">
+        <rdfs:domain rdf:resource="http://planqk/OntoQC#OntoQC_N00041"/>
+        <rdfs:label xml:lang="en">value</rdfs:label>
+        <skos:prefLabel xml:lang="de">Wert</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">value</skos:prefLabel>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_dp00003 -->
+
+
+    <owl:DatatypeProperty rdf:about="http://planqk/OntoQC#OntoQC_dp00003">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://planqk/OntoQC#OntoQC_G00001"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Information about the software license</rdfs:comment>
+        <rdfs:label xml:lang="en">license</rdfs:label>
+        <skos:prefLabel xml:lang="en">license</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">lizenz</skos:prefLabel>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_dp00004 -->
+
+
+    <owl:DatatypeProperty rdf:about="http://planqk/OntoQC#OntoQC_dp00004">
+        <rdfs:domain rdf:resource="http://planqk/OntoQC#OntoQC_N00081"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Comes as String (in LatTex form or as simple textual description)</rdfs:comment>
+        <rdfs:label xml:lang="en">pseudocode</rdfs:label>
+        <skos:prefLabel xml:lang="de">pseudocode</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">pseudocode</skos:prefLabel>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_dp00005 -->
+
+
+    <owl:DatatypeProperty rdf:about="http://planqk/OntoQC#OntoQC_dp00005">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://planqk/OntoQC#OntoQC_A00001"/>
+                    <rdf:Description rdf:about="http://planqk/OntoQC#OntoQC_H00001"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">assumption</rdfs:label>
+        <skos:prefLabel xml:lang="de">annahme</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">assumption</skos:prefLabel>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_dp00006 -->
+
+
+    <owl:DatatypeProperty rdf:about="http://planqk/OntoQC#OntoQC_dp00006">
+        <rdfs:domain rdf:resource="http://planqk/OntoQC#OntoQC_N00081"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">circuit</rdfs:label>
+        <skos:altLabel xml:lang="de">quantenschaltung</skos:altLabel>
+        <skos:altLabel xml:lang="en">quantum circuit</skos:altLabel>
+        <skos:altLabel xml:lang="de">schaltkreis</skos:altLabel>
+        <skos:prefLabel xml:lang="en">circuit</skos:prefLabel>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_dp00007 -->
+
+
+    <owl:DatatypeProperty rdf:about="http://planqk/OntoQC#OntoQC_dp00007">
+        <rdfs:domain rdf:resource="http://planqk/OntoQC#OntoQC_A00001"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">limitation</rdfs:label>
+        <skos:prefLabel xml:lang="de">Limitation</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">limitation</skos:prefLabel>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_dp00008 -->
+
+
+    <owl:DatatypeProperty rdf:about="http://planqk/OntoQC#OntoQC_dp00008">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label xml:lang="en">description</rdfs:label>
+        <skos:prefLabel xml:lang="de">beschreibung</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">description</skos:prefLabel>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_dp00009 -->
+
+
+    <owl:DatatypeProperty rdf:about="http://planqk/OntoQC#OntoQC_dp00009">
+        <rdfs:domain rdf:resource="http://planqk/OntoQC#OntoQC_L00001"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">doi</rdfs:label>
+        <skos:altLabel xml:lang="de">Digital Object Identifier</skos:altLabel>
+        <skos:altLabel xml:lang="en">Digital Object Identifier</skos:altLabel>
+        <skos:prefLabel xml:lang="de">doi</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">doi</skos:prefLabel>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_dp0000A -->
+
+
+    <owl:DatatypeProperty rdf:about="http://planqk/OntoQC#OntoQC_dp0000A">
+        <rdfs:subPropertyOf rdf:resource="http://planqk/OntoQC#OntoQC_dp00010"/>
+        <rdfs:domain rdf:resource="http://planqk/OntoQC#OntoQC_L00001"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Link to the implementation/software/algorithm explanation that is not a publication, e. g. a blogpost.</rdfs:comment>
+        <rdfs:label xml:lang="en">article link</rdfs:label>
+        <skos:altLabel xml:lang="de">Link zur Publikation</skos:altLabel>
+        <skos:altLabel xml:lang="en">article url</skos:altLabel>
+        <skos:altLabel xml:lang="en">paper link</skos:altLabel>
+        <skos:prefLabel xml:lang="en">article link</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">link zum Artikel</skos:prefLabel>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_dp0000B -->
+
+
+    <owl:DatatypeProperty rdf:about="http://planqk/OntoQC#OntoQC_dp0000B">
+        <rdfs:subPropertyOf rdf:resource="http://planqk/OntoQC#OntoQC_dp00010"/>
+        <rdfs:domain rdf:resource="http://planqk/OntoQC#OntoQC_G00001"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Link to the source code.</rdfs:comment>
+        <rdfs:label xml:lang="en">source code link</rdfs:label>
+        <skos:altLabel xml:lang="en">source code url</skos:altLabel>
+        <skos:prefLabel xml:lang="de">link zum quellcode</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">source code link</skos:prefLabel>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_dp0000C -->
+
+
+    <owl:DatatypeProperty rdf:about="http://planqk/OntoQC#OntoQC_dp0000C">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://planqk/OntoQC#OntoQC_A00001"/>
+                    <rdf:Description rdf:about="http://planqk/OntoQC#OntoQC_H00001"/>
+                    <rdf:Description rdf:about="http://planqk/OntoQC#OntoQC_W00001"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">A short description of the algorithm (Purpose, Idea)</rdfs:comment>
+        <rdfs:comment xml:lang="en">As image and/or as text</rdfs:comment>
+        <rdfs:label xml:lang="en">intent</rdfs:label>
+        <skos:altLabel xml:lang="de">beschreibung</skos:altLabel>
+        <skos:altLabel xml:lang="en">description</skos:altLabel>
+        <skos:prefLabel xml:lang="en">intent</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">zweck</skos:prefLabel>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_dp0000D -->
+
+
+    <owl:DatatypeProperty rdf:about="http://planqk/OntoQC#OntoQC_dp0000D">
+        <rdfs:domain rdf:resource="http://planqk/OntoQC#OntoQC_G00001"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="en">is open source</rdfs:label>
+        <skos:prefLabel xml:lang="en">is open source</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">ist open-source</skos:prefLabel>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_dp0000E -->
+
+
+    <owl:DatatypeProperty rdf:about="http://planqk/OntoQC#OntoQC_dp0000E">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://planqk/OntoQC#OntoQC_A00211"/>
+                    <rdf:Description rdf:about="http://planqk/OntoQC#OntoQC_A00311"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The advantage in runtime obtained by a quantum algorithm
+over the classical methods for the same task.</rdfs:comment>
+        <rdfs:label xml:lang="en">expected quantum speedup</rdfs:label>
+        <skos:prefLabel xml:lang="de">erwartete Quantenbeschleunigung</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">expected quantum speedup</skos:prefLabel>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_dp0000F -->
+
+
+    <owl:DatatypeProperty rdf:about="http://planqk/OntoQC#OntoQC_dp0000F">
+        <rdfs:domain rdf:resource="http://planqk/OntoQC#OntoQC_N00091"/>
+        <rdfs:label xml:lang="en">mathematical formulation</rdfs:label>
+        <skos:prefLabel xml:lang="en">mathematical formulation</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">mathematische Formulierung</skos:prefLabel>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_dp0000G -->
+
+
+    <owl:DatatypeProperty rdf:about="http://planqk/OntoQC#OntoQC_dp0000G">
+        <rdfs:domain rdf:resource="http://planqk/OntoQC#OntoQC_I01231"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:label>last calibration update</rdfs:label>
+        <skos:prefLabel xml:lang="en">last calibration update</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">letzte Kalibrierung</skos:prefLabel>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_dp0000M -->
+
+
+    <owl:DatatypeProperty rdf:about="http://planqk/OntoQC#OntoQC_dp0000M">
+        <rdfs:domain rdf:resource="http://planqk/OntoQC#OntoQC_L00001"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment xml:lang="en">Specifies the date &quot;YYYY-MM-DD&quot; when the publication was printed.</rdfs:comment>
+        <rdfs:label xml:lang="en">date</rdfs:label>
+        <skos:prefLabel xml:lang="en">date</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">datum</skos:prefLabel>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_dp0000N -->
+
+
+    <owl:DatatypeProperty rdf:about="http://planqk/OntoQC#OntoQC_dp0000N">
+        <rdfs:domain rdf:resource="http://planqk/OntoQC#OntoQC_L00001"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">keywords</rdfs:label>
+        <skos:prefLabel xml:lang="en">keywords</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">schlüsselwörter</skos:prefLabel>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_dp0000O -->
+
+
+    <owl:DatatypeProperty rdf:about="http://planqk/OntoQC#OntoQC_dp0000O">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://planqk/OntoQC#OntoQC_L00001"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:comment xml:lang="en">Specifies the title of the publication.</rdfs:comment>
+        <rdfs:label xml:lang="en">title</rdfs:label>
+        <skos:prefLabel xml:lang="de">titel</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">title</skos:prefLabel>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_dp0000S -->
+
+
+    <owl:DatatypeProperty rdf:about="http://planqk/OntoQC#OntoQC_dp0000S">
+        <rdfs:domain rdf:resource="http://planqk/OntoQC#OntoQC_N00041"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">notation</rdfs:label>
+        <skos:prefLabel xml:lang="de">Notation</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">notation</skos:prefLabel>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_dp0000V -->
+
+
+    <owl:DatatypeProperty rdf:about="http://planqk/OntoQC#OntoQC_dp0000V">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://planqk/OntoQC#OntoQC_A00211"/>
+                    <rdf:Description rdf:about="http://planqk/OntoQC#OntoQC_A00311"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="en">NISQ-ready</rdfs:label>
+        <skos:prefLabel xml:lang="de">NISQ-geeignet</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">NISQ-ready</skos:prefLabel>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_dp0000Z -->
+
+
+    <owl:DatatypeProperty rdf:about="http://planqk/OntoQC#OntoQC_dp0000Z">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://planqk/OntoQC#OntoQC_G00001"/>
+                    <rdf:Description rdf:about="http://planqk/OntoQC#OntoQC_H00001"/>
+                    <rdf:Description rdf:about="http://planqk/OntoQC#OntoQC_J00001"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">version</rdfs:label>
+        <skos:prefLabel xml:lang="de">version</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">version</skos:prefLabel>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_dp00010 -->
+
+
+    <owl:DatatypeProperty rdf:about="http://planqk/OntoQC#OntoQC_dp00010">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://planqk/OntoQC#OntoQC_G00001"/>
+                    <rdf:Description rdf:about="http://planqk/OntoQC#OntoQC_I00231"/>
+                    <rdf:Description rdf:about="http://planqk/OntoQC#OntoQC_L00001"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">link</rdfs:label>
+        <skos:altLabel xml:lang="de">url</skos:altLabel>
+        <skos:altLabel xml:lang="en">url</skos:altLabel>
+        <skos:prefLabel xml:lang="de">link</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">link</skos:prefLabel>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_dp0001C -->
+
+
+    <owl:DatatypeProperty rdf:about="http://planqk/OntoQC#OntoQC_dp0001C">
+        <rdfs:subPropertyOf rdf:resource="http://planqk/OntoQC#OntoQC_dp00010"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://planqk/OntoQC#OntoQC_G00001"/>
+                    <rdf:Description rdf:about="http://planqk/OntoQC#OntoQC_I00231"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">documentation link</rdfs:label>
+        <skos:altLabel xml:lang="en">documentation url</skos:altLabel>
+        <skos:prefLabel xml:lang="en">documentation link</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">link zur dokumentation</skos:prefLabel>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_dp0001Z -->
+
+
+    <owl:DatatypeProperty rdf:about="http://planqk/OntoQC#OntoQC_dp0001Z">
+        <rdfs:subPropertyOf rdf:resource="http://planqk/OntoQC#OntoQC_dp0000Z"/>
+        <rdfs:domain rdf:resource="http://planqk/OntoQC#OntoQC_G00001"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">latest version</rdfs:label>
+        <skos:prefLabel xml:lang="en">latest version</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">letzte Version</skos:prefLabel>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_A00001 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_A00001">
+        <owl:disjointWith rdf:resource="http://planqk/OntoQC#OntoQC_H00001"/>
+        <owl:disjointWith rdf:resource="http://planqk/OntoQC#OntoQC_L00001"/>
+        <rdfs:label xml:lang="en">Algorithm</rdfs:label>
+        <skos:altLabel xml:lang="en">Method</skos:altLabel>
+        <skos:altLabel xml:lang="de">Verfahren</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Algorithm</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Algorithmus</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_A00111 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_A00111">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://planqk/OntoQC#OntoQC_A00001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://planqk/OntoQC#OntoQC_op00050"/>
+                        <owl:allValuesFrom rdf:resource="http://planqk/OntoQC#OntoQC_N01341"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment xml:lang="en">An Algorithm that is based only on the subclasses of the &apos;Classical Computational Model&apos;.</rdfs:comment>
+        <rdfs:label xml:lang="en">Classical Algorithm</rdfs:label>
+        <skos:prefLabel xml:lang="en">Classical Algorithm</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Klassischer Algorithmus</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_A00121 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_A00121">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://planqk/OntoQC#OntoQC_A00001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://planqk/OntoQC#OntoQC_op0000Y"/>
+                        <owl:someValuesFrom rdf:resource="http://planqk/OntoQC#OntoQC_N00121"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment xml:lang="en">An Algorithm that solves an AI problem.</rdfs:comment>
+        <rdfs:label xml:lang="en">Artifical Intelligence Algorithm</rdfs:label>
+        <skos:altLabel xml:lang="en">AI Algorithm</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Artifical Intelligence Algorithm</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">KI-Algorithmus</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_A00211 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_A00211">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://planqk/OntoQC#OntoQC_A00001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://planqk/OntoQC#OntoQC_op00050"/>
+                        <owl:someValuesFrom rdf:resource="http://planqk/OntoQC#OntoQC_N01341"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://planqk/OntoQC#OntoQC_op00050"/>
+                        <owl:someValuesFrom rdf:resource="http://planqk/OntoQC#OntoQC_N03341"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment xml:lang="en">An Algorithm that is based on some Subclass of the &apos;Quantum Computation Model&apos;  AND some subclass of the &apos;Classical Computational Model&apos;</rdfs:comment>
+        <rdfs:label xml:lang="en">Hybrid Quantum-Classical Algorithm</rdfs:label>
+        <skos:altLabel xml:lang="de">Quanten-klassischer Hybrid-Algorithmus</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Hybrid Quantum-Classical Algorithm</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Hybrider Quantenalgorithmus</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_A00221 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_A00221">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://planqk/OntoQC#OntoQC_A00001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://planqk/OntoQC#OntoQC_op0000Y"/>
+                        <owl:someValuesFrom rdf:resource="http://planqk/OntoQC#OntoQC_N00221"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment xml:lang="en">An Algorithm that solves a machine learning problem.</rdfs:comment>
+        <rdfs:label xml:lang="en">Machine Learning Algorithm</rdfs:label>
+        <skos:altLabel xml:lang="en">ML Algorirthm</skos:altLabel>
+        <skos:prefLabel xml:lang="de">ML-Algorithmus</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Machine Learning Algorithm</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_A00311 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_A00311">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://planqk/OntoQC#OntoQC_A00001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://planqk/OntoQC#OntoQC_op00050"/>
+                        <owl:allValuesFrom rdf:resource="http://planqk/OntoQC#OntoQC_N03341"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment xml:lang="en">An Algorithm that is based only on the subclasses of the &apos;Quantum Computation Model&apos; .</rdfs:comment>
+        <rdfs:label xml:lang="en">Quantum Algorithm</rdfs:label>
+        <skos:prefLabel xml:lang="de">Quantenalgorithmus</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Quantum Algorithm</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_A00321 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_A00321">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://planqk/OntoQC#OntoQC_A00001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://planqk/OntoQC#OntoQC_op0000Y"/>
+                        <owl:someValuesFrom rdf:resource="http://planqk/OntoQC#OntoQC_N00321"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment xml:lang="en">An Algorithm that solves a mathematical problem.</rdfs:comment>
+        <rdfs:label xml:lang="en">Mathematical Algorithm</rdfs:label>
+        <skos:prefLabel xml:lang="en">Mathematical Algorithm</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Mathematischer Algorithmus</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_A00421 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_A00421">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://planqk/OntoQC#OntoQC_A00001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://planqk/OntoQC#OntoQC_op0000Y"/>
+                        <owl:someValuesFrom rdf:resource="http://planqk/OntoQC#OntoQC_N00421"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment xml:lang="en">An Algorithm that solves a search problem.</rdfs:comment>
+        <rdfs:label xml:lang="en">Search Algorithm</rdfs:label>
+        <skos:altLabel xml:lang="de">Suchverfahren</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Search Algorithm</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Suchalgorithmus</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_A006521 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_A006521">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://planqk/OntoQC#OntoQC_A00001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://planqk/OntoQC#OntoQC_op0000Y"/>
+                        <owl:someValuesFrom rdf:resource="http://planqk/OntoQC#OntoQC_N00521"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment xml:lang="en">An Algorithm that solves a sorting problem.</rdfs:comment>
+        <rdfs:label xml:lang="en">Sorting Algorithm</rdfs:label>
+        <skos:altLabel xml:lang="de">Sortierverfahren</skos:altLabel>
+        <skos:prefLabel xml:lang="de">Sortieralgorithmus</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Sorting Algorithm</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_B00001 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_B00001">
+        <rdfs:comment xml:lang="en">Collects runs of a source code on a hardware with a specific algorithm configuration.</rdfs:comment>
+        <rdfs:label xml:lang="en">Execution</rdfs:label>
+        <skos:prefLabel xml:lang="de">Ausführung</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Execution</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_C00001 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_C00001">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_G00001"/>
+        <rdfs:comment xml:lang="en">A real industial use case/problem in its context including application data, implementation and a clearly defined goal.</rdfs:comment>
+        <rdfs:label xml:lang="en">Application</rdfs:label>
+        <skos:prefLabel xml:lang="en">Application</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Applikation</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_D00001 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_D00001">
+        <obo:IAO_0000412>http://www.w3.org/ns/mls#</obo:IAO_0000412>
+        <rdfs:comment xml:lang="en">Data is a data item composed of data examples and it may be of a various level of granularity and complexity. 
+With regard to granularity, it can be a whole dataset (for instance, one main table and possibly other tables), or only a single table, or only a feature (e.g., a column of a table), or only an instance (e.g., row of a table), or a single feature-value pair. 
+With regard to complexity, data examples are characterized by their datatype, which may be arbitrarily complex (e.g., instead of a table it can be an arbitrary graph).</rdfs:comment>
+        <rdfs:label xml:lang="en">Data</rdfs:label>
+        <skos:prefLabel xml:lang="en">Data</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Daten</skos:prefLabel>
+        <prov:wasDerivedFrom>http://www.w3.org/ns/mls#Data</prov:wasDerivedFrom>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_D00011 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_D00011">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_D00001"/>
+        <obo:IAO_0000412>http://www.w3.org/ns/mls#</obo:IAO_0000412>
+        <rdfs:comment xml:lang="en">Collects datasets that can be used for algorithms execution.
+Example of individuals of the datasets class can include: Iris dataset, FaceScrub dataset, IMDB-WIKI dataset, and others.</rdfs:comment>
+        <rdfs:label xml:lang="en">Dataset</rdfs:label>
+        <skos:editorialNote xml:lang="en">Examples in rdfs:comment are cited from the Paper &quot;ML-Schema: An interchangeable format for description of machine learning experiments&quot;.</skos:editorialNote>
+        <skos:prefLabel xml:lang="de">Dataset</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Dataset</skos:prefLabel>
+        <prov:wasDerivedFrom>http://www.w3.org/ns/mls#Dataset</prov:wasDerivedFrom>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_D00021 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_D00021">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_D00001"/>
+        <obo:IAO_0000412>http://www.w3.org/ns/mls#</obo:IAO_0000412>
+        <rdfs:comment xml:lang="en">This concept specifies a feauture contained in a dataset.
+Examples of individuals of features that appear in the Iris dataset are as follows: sepal length, sepal width, petal length, petal width, and class.</rdfs:comment>
+        <rdfs:label xml:lang="en">Feature</rdfs:label>
+        <skos:editorialNote xml:lang="en">Examples in rdfs:comment are cited from the Paper &quot;ML-Schema: An interchangeable format for description of machine learning experiments&quot;.</skos:editorialNote>
+        <skos:prefLabel xml:lang="de">Feature</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Feature</skos:prefLabel>
+        <prov:wasDerivedFrom>http://www.w3.org/ns/mls#Feature</prov:wasDerivedFrom>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_E00001 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_E00001">
+        <rdfs:comment xml:lang="en">Describes an evaluation of an algorithm using specific metrics.</rdfs:comment>
+        <rdfs:label xml:lang="en">Evaluation</rdfs:label>
+        <skos:altLabel xml:lang="en">Performance</skos:altLabel>
+        <skos:prefLabel xml:lang="de">Evaluation</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Evaluation</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_F00001 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_F00001">
+        <rdfs:comment xml:lang="en">Collects vendors that provide access to quantum computational resources.</rdfs:comment>
+        <rdfs:label xml:lang="en">Quantum Provider</rdfs:label>
+        <skos:altLabel xml:lang="en">Quantum Hardware Provider</skos:altLabel>
+        <skos:altLabel xml:lang="en">Vendor</skos:altLabel>
+        <skos:prefLabel xml:lang="de">QC-Hersteller</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Quantum Provider</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_G00001 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_G00001">
+        <rdfs:comment xml:lang="en">Collects different software resources.</rdfs:comment>
+        <rdfs:label xml:lang="en">Software</rdfs:label>
+        <skos:prefLabel xml:lang="de">Software</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Software</skos:prefLabel>
+        <prov:wasDerivedFrom>http://mklab.iti.gr/pericles/ComputerSystem_ODP#Software</prov:wasDerivedFrom>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_G00011 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_G00011">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_G00001"/>
+        <rdfs:label xml:lang="en">Computer Language</rdfs:label>
+        <skos:prefLabel xml:lang="en">Computer Language</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Computersprache</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_G00021 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_G00021">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_G00001"/>
+        <rdfs:label xml:lang="en">Operating System</rdfs:label>
+        <skos:prefLabel xml:lang="de">Betriebssystem</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Operating System</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_G00031 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_G00031">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_G00001"/>
+        <rdfs:comment xml:lang="en">Collects various frameworks, libraries, SDKs, or APIs that developers can use for implementing an algorithm.</rdfs:comment>
+        <rdfs:label xml:lang="en">Software Tool</rdfs:label>
+        <skos:prefLabel xml:lang="de">Software Tool</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Software Tool</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_G00111 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_G00111">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_G00011"/>
+        <rdfs:comment xml:lang="en">Contains languages that have a human readable syntax.</rdfs:comment>
+        <rdfs:label xml:lang="en">Programming Language</rdfs:label>
+        <skos:prefLabel xml:lang="de">Programmiersprache</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Programming Language</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_G00121 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_G00121">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N00241"/>
+        <rdfs:label xml:lang="en">1-Qubit Gate Fidelity</rdfs:label>
+        <skos:altLabel xml:lang="en">Single-qubit U2 error rate</skos:altLabel>
+        <skos:prefLabel xml:lang="de">1-Qubit Gate Fidelity</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">1-Qubit Gate Fidelity</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_G00131 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_G00131">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_G00031"/>
+        <rdfs:label xml:lang="en">API</rdfs:label>
+        <skos:altLabel xml:lang="en">Application Programming Interface</skos:altLabel>
+        <skos:prefLabel xml:lang="de">API</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">API</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_G00211 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_G00211">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_G00011"/>
+        <rdfs:comment xml:lang="en">Collects a low-level machine languages used to instruct the computer which physical operation to perform on which bit.</rdfs:comment>
+        <rdfs:label xml:lang="en">Instruction Language</rdfs:label>
+        <skos:altLabel xml:lang="en">Assembly Language</skos:altLabel>
+        <skos:altLabel xml:lang="en">QMI</skos:altLabel>
+        <skos:altLabel xml:lang="en">Quantum Machine Instruction</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Instruction Language</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Maschinensprache</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_G00221 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_G00221">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N00241"/>
+        <rdfs:label xml:lang="en">2-Qubit Gate Fidelity</rdfs:label>
+        <skos:altLabel xml:lang="en">CNOT error rate</skos:altLabel>
+        <skos:prefLabel xml:lang="de">2-Qubit Gate Fidelity</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">2-Qubit Gate Fidelity</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_G00231 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_G00231">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_G00031"/>
+        <rdfs:label xml:lang="en">SDK</rdfs:label>
+        <skos:altLabel xml:lang="en">Software Development Kit</skos:altLabel>
+        <skos:prefLabel xml:lang="de">SDK</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">SDK</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_G00331 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_G00331">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_G00031"/>
+        <rdfs:label xml:lang="en">Library</rdfs:label>
+        <skos:altLabel xml:lang="de">Library</skos:altLabel>
+        <skos:prefLabel xml:lang="de">Bibliothek</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Library</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_G00421 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_G00421">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N00041"/>
+        <rdfs:label xml:lang="en">Qubit Connectivity</rdfs:label>
+        <skos:prefLabel xml:lang="en">Qubit Connectivity</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Qubit-Konnektivität</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_G00431 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_G00431">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_G00031"/>
+        <rdfs:label xml:lang="en">Framework</rdfs:label>
+        <skos:prefLabel xml:lang="de">Framework</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Framework</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_G00521 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_G00521">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N00241"/>
+        <rdfs:label xml:lang="en">Readout Fidelity</rdfs:label>
+        <skos:prefLabel xml:lang="de">Readout Fidelity</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Readout Fidelity</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_G01111 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_G01111">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_G00111"/>
+        <rdfs:comment xml:lang="en">Collects quantum programming languages or libraries names that define own syntax that is embedded in a classical programming language.</rdfs:comment>
+        <rdfs:label xml:lang="en">Quantum Programming Language</rdfs:label>
+        <skos:prefLabel xml:lang="de">Quantenprogrammiersprache</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Quantum Programming Language</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_G01211 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_G01211">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_G00211"/>
+        <rdfs:label xml:lang="en">Quantum Instruction Language</rdfs:label>
+        <skos:altLabel xml:lang="en">quantum assembly language</skos:altLabel>
+        <skos:prefLabel xml:lang="de">Quantenmaschinensprache</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Quantum Instruction Language</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_G02111 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_G02111">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_G00111"/>
+        <rdfs:label xml:lang="en">Classical Programming Language</rdfs:label>
+        <skos:prefLabel xml:lang="en">Classical Programming Language</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Klassische Programmiersprache</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_G02211 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_G02211">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_G00211"/>
+        <rdfs:label xml:lang="en">Classical Instruction Language</rdfs:label>
+        <skos:prefLabel xml:lang="en">Classical Instruction Language</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Klassische Maschinensprache</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_H00001 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_H00001">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_G00001"/>
+        <owl:disjointWith rdf:resource="http://planqk/OntoQC#OntoQC_L00001"/>
+        <rdfs:comment xml:lang="en">A source code that can be executed.</rdfs:comment>
+        <rdfs:label xml:lang="en">Implementation</rdfs:label>
+        <skos:prefLabel xml:lang="en">Implementation</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Implementierung</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_I00131 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_I00131">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://planqk/OntoQC#OntoQC_J00001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://planqk/OntoQC#OntoQC_op00210"/>
+                        <owl:allValuesFrom rdf:resource="http://planqk/OntoQC#OntoQC_N01341"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_J00001"/>
+        <rdfs:comment xml:lang="en">Collects computational resources that realize only classical computational model.</rdfs:comment>
+        <rdfs:label xml:lang="en">Classical Computational Resource</rdfs:label>
+        <skos:altLabel xml:lang="en">Classical Hardware</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Classical Computational Resource</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Klassische Hardware</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_I00231 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_I00231">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://planqk/OntoQC#OntoQC_J00001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://planqk/OntoQC#OntoQC_op00210"/>
+                        <owl:allValuesFrom rdf:resource="http://planqk/OntoQC#OntoQC_N03341"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment xml:lang="en">Collects computational resources that realize only quantum computational model.</rdfs:comment>
+        <rdfs:label xml:lang="en">Quantum Computational Resource</rdfs:label>
+        <skos:altLabel xml:lang="en">Quantum Hardware</skos:altLabel>
+        <skos:prefLabel xml:lang="de">Quantenhardware</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Quantum Computational Resource</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_I01131 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_I01131">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_I00131"/>
+        <rdfs:label xml:lang="en">CPU</rdfs:label>
+        <skos:altLabel xml:lang="en">Central Processing Unit</skos:altLabel>
+        <skos:prefLabel xml:lang="de">CPU</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">CPU</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_I01231 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_I01231">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_I00231"/>
+        <rdfs:label xml:lang="en">QPU</rdfs:label>
+        <skos:altLabel xml:lang="en">Quantum Processing Unit</skos:altLabel>
+        <skos:prefLabel xml:lang="de">QPU</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">QPU</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_I02131 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_I02131">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_I00131"/>
+        <rdfs:label xml:lang="en">GPU</rdfs:label>
+        <skos:altLabel xml:lang="en">Graphics Processor Unit</skos:altLabel>
+        <skos:prefLabel xml:lang="de">GPU</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">GPU</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_I02231 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_I02231">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_I00231"/>
+        <rdfs:label xml:lang="en">Quantum Simulator</rdfs:label>
+        <skos:prefLabel xml:lang="de">Quantensimulator</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Quantum Simulator</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_I03131 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_I03131">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_I00131"/>
+        <rdfs:label xml:lang="en">TPU</rdfs:label>
+        <skos:altLabel xml:lang="en">Tensor Processing Unit</skos:altLabel>
+        <skos:prefLabel xml:lang="de">TPU</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">TPU</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_I12231 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_I12231">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_I02231"/>
+        <rdfs:label xml:lang="en">Cloud Quantum Simulator</rdfs:label>
+        <skos:prefLabel xml:lang="en">Cloud Quantum Simulator</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Cloud-Quantensimulator</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_I22231 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_I22231">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_I02231"/>
+        <rdfs:label xml:lang="en">Local Quantum Simulator</rdfs:label>
+        <skos:prefLabel xml:lang="en">Local Quantum Simulator</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Lokaler Quantensimulator</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_J00001 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_J00001">
+        <rdfs:comment xml:lang="en">Collects computational devices utilized for the execution of a programming code.</rdfs:comment>
+        <rdfs:label xml:lang="en">Computational Resource</rdfs:label>
+        <skos:altLabel xml:lang="en">Computational Device</skos:altLabel>
+        <skos:altLabel xml:lang="en">Hardware</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Computational Resource</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Hardware</skos:prefLabel>
+        <prov:wasDerivedFrom>http://mklab.iti.gr/pericles/ComputerSystem_ODP#Hardware</prov:wasDerivedFrom>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_K00001 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_K00001">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N00051"/>
+        <rdfs:comment xml:lang="en">Collects methods for limiting errors that occur during information processing (possible phases for qc: state preparation, unitary transformation, measurement).</rdfs:comment>
+        <rdfs:label xml:lang="en">Error Correction</rdfs:label>
+        <skos:prefLabel xml:lang="en">Error Correction</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Implementierung der Fehlerkorrektur</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_L00001 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_L00001">
+        <rdfs:comment xml:lang="en">Collects instances of publications about an algorithm, an algorithm
+implementation or an algorithm evaluation.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Publication/s about an algorithm.</rdfs:comment>
+        <rdfs:label xml:lang="en">Publication</rdfs:label>
+        <skos:prefLabel xml:lang="en">Publication</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Publikation</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N00001 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N00001">
+        <rdfs:label xml:lang="en">Characteristic</rdfs:label>
+        <skos:prefLabel xml:lang="en">Characteristic</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Eigenschaft</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N00011 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N00011">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N00001"/>
+        <rdfs:comment xml:lang="en">Provide the relevant information about an publication.</rdfs:comment>
+        <rdfs:label xml:lang="en">Publication Characterisitc</rdfs:label>
+        <skos:prefLabel xml:lang="en">Publication Characterisitc</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Publikationseigenschaften</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N00021 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N00021">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N00001"/>
+        <owl:disjointWith rdf:resource="http://planqk/OntoQC#OntoQC_N00261"/>
+        <rdfs:comment xml:lang="en">A task to be done.</rdfs:comment>
+        <rdfs:label xml:lang="en">Problem Type</rdfs:label>
+        <skos:altLabel xml:lang="de">Problem</skos:altLabel>
+        <skos:altLabel xml:lang="en">Problem</skos:altLabel>
+        <skos:note xml:lang="en">Inspiration: https://dl.acm.org/ccs and https://arxiv.org/corr/subjectclasses</skos:note>
+        <skos:prefLabel xml:lang="de">Problem Type</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Problem Type</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N00041 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N00041">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N00001"/>
+        <rdfs:label xml:lang="en">Quantum Resource Characteristic</rdfs:label>
+        <skos:prefLabel xml:lang="de">Quantum Hardware Eigenschaft</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Quantum Resource Characteristic</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N00051 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N00051">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N00001"/>
+        <rdfs:comment xml:lang="en">Provide the relevant information about an implementation.</rdfs:comment>
+        <rdfs:label xml:lang="en">Implementation Characterisitc</rdfs:label>
+        <skos:prefLabel xml:lang="en">Implementation Characterisitc</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Implementierungseigenschaft</skos:prefLabel>
+        <prov:wasDerivedFrom xml:lang="en">http://www.w3.org/ns/mls#ImplementationCharacteristic</prov:wasDerivedFrom>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N00061 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N00061">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N00001"/>
+        <rdfs:comment xml:lang="en">Provide the relevant characterisitcs for an algorithm.</rdfs:comment>
+        <rdfs:label xml:lang="en">Algorithm Characterisitc</rdfs:label>
+        <skos:prefLabel xml:lang="en">Algorithm Characterisitc</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Eigenschaft eines Algorithmus</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N00062 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N00062">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N00001"/>
+        <rdfs:label xml:lang="en">Application Area</rdfs:label>
+        <skos:altLabel xml:lang="en">Application Domain</skos:altLabel>
+        <skos:altLabel xml:lang="en">Industry Sector</skos:altLabel>
+        <skos:editorialNote xml:lang="en">we changed annotations: 
+-  rdfs:comment to skos:note 
+- obo:IAO_0000115(definition)-&gt; rdfs:comment
+Alternative terms: 
+all alternative terms subproperties -&gt; skos:altLabel, e.g.
+-obo:IAO_0000118 -&gt; skos:altLabel
+-subject:SRAO_0000279 -&gt; skos:altLabel
+subject:SRAO_0000278 -&gt;skos:altLabel
+subject:SRAO_0000269 -&gt;skos:altLabel</skos:editorialNote>
+        <skos:prefLabel xml:lang="de">Anwendungsgebiet</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Application Area</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N00063 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N00063">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N00001"/>
+        <obo:IAO_0000412>http://www.w3.org/ns/mls#</obo:IAO_0000412>
+        <rdfs:comment xml:lang="en">DataCharacteristic is a distinguishing quality or property that distinguish one data from another.
+Such characteristics are often statistical ones (e.g., the number of instances
+or the number of features of a data set). They may be also informationtheoretic measures (e.g., class entropy of a categorical data set) or geometric measures of data complexity (e.g., the highest discriminatory power of any single feature in the data set).</rdfs:comment>
+        <rdfs:label xml:lang="en">Data Characteristic</rdfs:label>
+        <skos:prefLabel xml:lang="en">Data Characteristic</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Dateneigenschaften</skos:prefLabel>
+        <prov:wasDerivedFrom>http://www.w3.org/ns/mls#DataCharacteristic</prov:wasDerivedFrom>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N00081 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N00081">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N00001"/>
+        <rdfs:comment xml:lang="en">Information about an algorithm, typically pseudocode or/and circuit, that describes a solution for the problem.</rdfs:comment>
+        <rdfs:label xml:lang="en">Solution</rdfs:label>
+        <skos:prefLabel xml:lang="de">Lösung</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Solution</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N00091 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N00091">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N00061"/>
+        <rdfs:label xml:lang="en">Function</rdfs:label>
+        <skos:altLabel xml:lang="en">Describes a mathematical function.</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Function</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Funktion</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N00111 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N00111">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N00011"/>
+        <rdfs:comment xml:lang="en">Provides name of the publication author.</rdfs:comment>
+        <rdfs:label xml:lang="en">Publication Author</rdfs:label>
+        <skos:altLabel xml:lang="de">Verfasser</skos:altLabel>
+        <skos:prefLabel xml:lang="de">Autor</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Publication Author</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N00121 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N00121">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N00021"/>
+        <rdfs:label xml:lang="en">Artifical Intelligence Problem</rdfs:label>
+        <skos:altLabel xml:lang="en">AI Problem</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Artifical Intelligence Problem</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">KI-Problem</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N00163 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N00163">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N00063"/>
+        <obo:IAO_0000412>http://www.w3.org/ns/mls#</obo:IAO_0000412>
+        <rdfs:comment xml:lang="en">Instance examples of &apos;Data Characteristic&apos; are numberOfFeatures, numberOfInstances, numberOfMissingValues.</rdfs:comment>
+        <rdfs:label xml:lang="en">Dataset Characteristic</rdfs:label>
+        <skos:editorialNote xml:lang="en">Examples in rdfs:comment are depicted from MLSchemaExamples https://github.com/ML-Schema/core/blob/master.</skos:editorialNote>
+        <skos:prefLabel xml:lang="en">Dataset Characteristic</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Eigenschaften eines Datasets</skos:prefLabel>
+        <prov:wasDerivedFrom>http://www.w3.org/ns/mls#DatasetCharacteristic</prov:wasDerivedFrom>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N00211 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N00211">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N00011"/>
+        <rdfs:comment xml:lang="en">Contains the name of the Journal/Boot/Proceedings etc. where the publication was printed.</rdfs:comment>
+        <rdfs:label xml:lang="en">Venue</rdfs:label>
+        <skos:altLabel xml:lang="de">Ort der Veröffentlichung</skos:altLabel>
+        <skos:altLabel xml:lang="en">Publication Venue</skos:altLabel>
+        <skos:prefLabel xml:lang="de">Ort</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Venue</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N00221 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N00221">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N00021"/>
+        <rdfs:label xml:lang="en">Machine Learning Problem</rdfs:label>
+        <skos:altLabel xml:lang="en">ML Problem</skos:altLabel>
+        <skos:prefLabel xml:lang="de">ML-Problem</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Machine Learning Problem</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N00241 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N00241">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N00041"/>
+        <rdfs:label xml:lang="en">Fidelity</rdfs:label>
+        <skos:altLabel xml:lang="de">Fidelity</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Fidelity</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Zuverlässigkeit</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N00261 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N00261">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N00061"/>
+        <rdfs:comment xml:lang="en">Contains information about the learning type wich is used by the algorithm.</rdfs:comment>
+        <rdfs:label xml:lang="en">Learning Method</rdfs:label>
+        <skos:altLabel xml:lang="en">Learning Type</skos:altLabel>
+        <skos:altLabel xml:lang="de">Lernmethode</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Learning Method</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Lerntyp</skos:prefLabel>
+        <prov:wasDerivedFrom xml:lang="en">http://mex.aksw.org/mex-algo#LearningMethod</prov:wasDerivedFrom>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N00263 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N00263">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N00063"/>
+        <rdfs:label xml:lang="en">Feature Characteristic</rdfs:label>
+        <skos:prefLabel xml:lang="en">Feature Characteristic</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Feature-Eigenschaften</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N00311 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N00311">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N00091"/>
+        <rdfs:label xml:lang="en">Oracel</rdfs:label>
+        <skos:prefLabel xml:lang="en">Oracel</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Orakel</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N00321 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N00321">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N00021"/>
+        <rdfs:label xml:lang="en">Mathematical Problem</rdfs:label>
+        <skos:prefLabel xml:lang="en">Mathematical Problem</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Mathematisches Problem</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N00341 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N00341">
+        <rdfs:comment xml:lang="en">Describes a set of rules or physical laws that guide the interaction of the hardware components.</rdfs:comment>
+        <rdfs:label xml:lang="en">Computational Model</rdfs:label>
+        <skos:prefLabel xml:lang="de">Berechnungsmodell</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Computational Model</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N00411 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N00411">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N00091"/>
+        <rdfs:label xml:lang="en">Kernel Function</rdfs:label>
+        <skos:prefLabel xml:lang="en">Kernel Function</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Kernelfunktion</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N00421 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N00421">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N00021"/>
+        <rdfs:label xml:lang="en">Search</rdfs:label>
+        <skos:prefLabel xml:lang="en">Search</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Suchproblem</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N00441 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N00441">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N00041"/>
+        <rdfs:label xml:lang="en">Gate</rdfs:label>
+        <skos:altLabel xml:lang="de">Gate</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Gate</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Gatter</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N00511 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N00511">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N00091"/>
+        <rdfs:label xml:lang="en">Activation Function</rdfs:label>
+        <skos:prefLabel xml:lang="en">Activation Function</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Aktivierungsfunktion</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N00521 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N00521">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N00021"/>
+        <rdfs:label xml:lang="en">Sorting</rdfs:label>
+        <skos:prefLabel xml:lang="de">Sortierproblem</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Sorting</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N00541 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N00541">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N00041"/>
+        <rdfs:label xml:lang="en">qRAM</rdfs:label>
+        <skos:altLabel xml:lang="en">Quantum Access Random Memory</skos:altLabel>
+        <skos:prefLabel xml:lang="de">qRAM</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">qRAM</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N00611 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N00611">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N00091"/>
+        <rdfs:label xml:lang="en">Objective Function</rdfs:label>
+        <skos:prefLabel xml:lang="en">Objective Function</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Zielfunktion</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N00641 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N00641">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N00041"/>
+        <rdfs:comment xml:lang="en">Identifies how many qubits a QPU has.</rdfs:comment>
+        <rdfs:label xml:lang="en">Number of Qubits</rdfs:label>
+        <skos:prefLabel xml:lang="de">Anzahl der Qubits</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Number of Qubits</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N01121 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N01121">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N00121"/>
+        <rdfs:label xml:lang="en">Automated Planning And Scheduling</rdfs:label>
+        <skos:prefLabel xml:lang="en">Automated Planning And Scheduling</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Automatisierte Planung und Scheduling</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N01122 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N01122">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N00121"/>
+        <rdfs:label xml:lang="en">Natural language processing</rdfs:label>
+        <skos:prefLabel xml:lang="en">Natural language processing</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Verarbeitung natürlicher Sprache</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N01123 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N01123">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N00121"/>
+        <rdfs:label xml:lang="en">Knowledge representation and reasoning</rdfs:label>
+        <rdfs:label xml:lang="de">Wissensrepräsentation und Reasoning</rdfs:label>
+        <skos:prefLabel xml:lang="en">Knowledge representation and reasoning</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N01125 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N01125">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N00121"/>
+        <rdfs:label xml:lang="en">Computer Vision Problem</rdfs:label>
+        <skos:prefLabel xml:lang="de">Computer Vision Problem</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Computer Vision Problem</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N01221 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N01221">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N00221"/>
+        <rdfs:comment xml:lang="en">Given a training set of data determine whether specific inputs are out of the ordinary.</rdfs:comment>
+        <rdfs:label xml:lang="en">Anomaly Detection</rdfs:label>
+        <skos:note xml:lang="en">https://www.razor-labs.com/ai-problem-types-and-their-definitions/</skos:note>
+        <skos:prefLabel xml:lang="en">Anomaly Detection</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Erkennung von Anomalien</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N01261 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N01261">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N00261"/>
+        <obo:IAO_0000412 xml:lang="en">http://mex.aksw.org/mex-algo</obo:IAO_0000412>
+        <rdfs:comment xml:lang="en">Reinforcement Learning is the machine learning task of learning how to map situations to actions so as to maximize a numerical reward signal.</rdfs:comment>
+        <rdfs:label xml:lang="en">Reinforcement Learning</rdfs:label>
+        <skos:altLabel xml:lang="de">Bestärkendes Lernen</skos:altLabel>
+        <skos:altLabel xml:lang="de">Verstärkendes Lernen</skos:altLabel>
+        <skos:prefLabel xml:lang="de">Reinforcement Learning</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Reinforcement Learning</skos:prefLabel>
+        <prov:wasDerivedFrom xml:lang="en">http://mex.aksw.org/mex-algo#Reinforcement</prov:wasDerivedFrom>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N01321 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N01321">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N00321"/>
+        <rdfs:label xml:lang="en">Approximation</rdfs:label>
+        <skos:prefLabel xml:lang="de">Approximation</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Approximation</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N01341 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N01341">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N00341"/>
+        <rdfs:comment xml:lang="en">Describes classical computation.</rdfs:comment>
+        <rdfs:label xml:lang="en">Classical Computational Model</rdfs:label>
+        <skos:prefLabel xml:lang="en">Classical Computational Model</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Klassisches Berechnungsmodell</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N01421 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N01421">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N00421"/>
+        <rdfs:label xml:lang="en">Continuous Space Search</rdfs:label>
+        <skos:prefLabel xml:lang="de">Continuous Space Search</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Continuous Space Search</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N01441 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N01441">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N00041"/>
+        <rdfs:label xml:lang="en">Gate Set</rdfs:label>
+        <skos:prefLabel xml:lang="de">Gate Set</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Gate Set</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N01461 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N01461">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N00061"/>
+        <rdfs:comment xml:lang="en">Describes the complexity of the computational problem.</rdfs:comment>
+        <rdfs:label xml:lang="en">Complexity Class</rdfs:label>
+        <skos:prefLabel xml:lang="en">Complexity Class</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Komplexitätsklasse</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N01462 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N01462">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N00061"/>
+        <rdfs:label xml:lang="en">Output</rdfs:label>
+        <skos:altLabel xml:lang="de">Output</skos:altLabel>
+        <skos:altLabel xml:lang="en">Specifies the output produced by an algorithm.</skos:altLabel>
+        <skos:altLabel xml:lang="en">output format</skos:altLabel>
+        <skos:prefLabel xml:lang="de">Ausgabe</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Output</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N01463 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N01463">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N00061"/>
+        <rdfs:label xml:lang="en">Input</rdfs:label>
+        <skos:altLabel xml:lang="en">Input</skos:altLabel>
+        <skos:altLabel xml:lang="en">Specifies the input accepted by an algorithm.</skos:altLabel>
+        <skos:altLabel xml:lang="en">input format</skos:altLabel>
+        <skos:prefLabel xml:lang="de">Eingabe</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Input</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N01464 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N01464">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N00061"/>
+        <rdfs:comment xml:lang="en">Describes parameters of machine learning that affect how well a model learns, these parameters are tunable.</rdfs:comment>
+        <rdfs:label xml:lang="en">Hyperparameter</rdfs:label>
+        <skos:note xml:lang="en">Now is only textual description of the hyperparameters accepted.</skos:note>
+        <skos:prefLabel xml:lang="de">Hyperparameter</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Hyperparameter</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N02221 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N02221">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N00221"/>
+        <rdfs:comment xml:lang="en">Infer likely association patterns in data</rdfs:comment>
+        <rdfs:label xml:lang="en">Association Rule Learning</rdfs:label>
+        <skos:note xml:lang="en">https://developers.google.com/machine-learning/problem-framing/cases</skos:note>
+        <skos:prefLabel xml:lang="de">Association Rule Learning</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Association Rule Learning</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N02261 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N02261">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N00261"/>
+        <obo:IAO_0000412 xml:lang="en">http://mex.aksw.org/mex-algo</obo:IAO_0000412>
+        <rdfs:comment xml:lang="en">Any combination of supervised/unsupervised/reinforcement learning methods.</rdfs:comment>
+        <rdfs:label xml:lang="en">Semi-Supervised Learning</rdfs:label>
+        <skos:prefLabel xml:lang="en">Semi-Supervised Learning</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Teilüberwachtes Lernen</skos:prefLabel>
+        <prov:wasDerivedFrom xml:lang="en">http://mex.aksw.org/mex-algo#SemiSupervised</prov:wasDerivedFrom>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N02321 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N02321">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N00321"/>
+        <rdfs:label xml:lang="en">Graph Problem</rdfs:label>
+        <skos:prefLabel xml:lang="en">Graph Problem</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Graphenproblem</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N02421 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N02421">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N00421"/>
+        <rdfs:label xml:lang="en">Discrete Space Search</rdfs:label>
+        <skos:prefLabel xml:lang="de">Discrete Space Search</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Discrete Space Search</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N03221 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N03221">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N00221"/>
+        <rdfs:comment xml:lang="en">Pick one of N labels</rdfs:comment>
+        <rdfs:label xml:lang="en">Classification</rdfs:label>
+        <skos:prefLabel xml:lang="en">Classification</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Klassifikation</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N03261 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N03261">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N00261"/>
+        <obo:IAO_0000412 xml:lang="en">http://mex.aksw.org/mex-algo</obo:IAO_0000412>
+        <rdfs:comment xml:lang="en">Supervised learning is the machine learning task of learning a function that maps an input to an output based on example input-output pairs.</rdfs:comment>
+        <rdfs:label xml:lang="en">Supervised Learning</rdfs:label>
+        <skos:prefLabel xml:lang="en">Supervised Learning</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Überwachtes Lernen</skos:prefLabel>
+        <prov:wasDerivedFrom xml:lang="en">http://mex.aksw.org/mex-algo#Supervised</prov:wasDerivedFrom>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N03321 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N03321">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N00321"/>
+        <rdfs:label xml:lang="en">Linear Algebra Problem</rdfs:label>
+        <skos:note xml:lang="en">Examples of instances &quot;Solving Systems of Linear Equations&quot; or &quot;&quot;Eigenvalue Problem</skos:note>
+        <skos:prefLabel xml:lang="en">Linear Algebra Problem</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Problem der linearen Algebra</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N03341 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N03341">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N00341"/>
+        <rdfs:comment xml:lang="en">Describes quantum computation.</rdfs:comment>
+        <rdfs:label xml:lang="en">Quantum Computational Model</rdfs:label>
+        <skos:prefLabel xml:lang="de">Quantenberechnungsmodell</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Quantum Computational Model</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N03421 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N03421">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N00421"/>
+        <rdfs:label xml:lang="en">Heristic Search</rdfs:label>
+        <skos:prefLabel xml:lang="en">Heristic Search</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Heuristische Suche</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N04221 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N04221">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N00221"/>
+        <rdfs:comment xml:lang="en">Group similar examples</rdfs:comment>
+        <rdfs:label xml:lang="en">Clustering</rdfs:label>
+        <skos:prefLabel xml:lang="de">Clustering</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Clustering</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N04261 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N04261">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N00261"/>
+        <obo:IAO_0000412 xml:lang="en">http://mex.aksw.org/mex-algo</obo:IAO_0000412>
+        <rdfs:comment xml:lang="en">The machine learning task of learning patterns in unlabeled data.</rdfs:comment>
+        <rdfs:label xml:lang="en">Unsupervised Learning</rdfs:label>
+        <skos:prefLabel xml:lang="en">Unsupervised Learning</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Unüberwachtes Lernen</skos:prefLabel>
+        <prov:wasDerivedFrom xml:lang="en">http://mex.aksw.org/mex-algo#Unsupervised</prov:wasDerivedFrom>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N04321 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N04321">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N00321"/>
+        <rdfs:label xml:lang="en">Optimization Problem</rdfs:label>
+        <skos:prefLabel xml:lang="de">Optimierungsproblem</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Optimization Problem</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N04421 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N04421">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N00421"/>
+        <rdfs:label xml:lang="en">Randomized Search</rdfs:label>
+        <skos:prefLabel xml:lang="de">Randomisierte Suche</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Randomized Search</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N05221 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N05221">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N00221"/>
+        <rdfs:label xml:lang="en">Dimensionality Reduction</rdfs:label>
+        <skos:prefLabel xml:lang="en">Dimensionality Reduction</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Dimensionalitätsreduktion</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N05321 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N05321">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N00321"/>
+        <rdfs:label xml:lang="en">Probability</rdfs:label>
+        <skos:prefLabel xml:lang="en">Probability</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Wahrscheinlichkeiten</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N05421 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N05421">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N00421"/>
+        <rdfs:label xml:lang="en">Search With Partial Observations</rdfs:label>
+        <skos:prefLabel xml:lang="de">Search With Partial Observations</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Search With Partial Observations</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N06221 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N06221">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N00221"/>
+        <rdfs:label xml:lang="en">Feature Learning</rdfs:label>
+        <skos:altLabel xml:lang="de">Lernen von Merkmalen</skos:altLabel>
+        <skos:prefLabel xml:lang="de">Feature Learning</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Feature Learning</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N07221 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N07221">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N00221"/>
+        <rdfs:comment xml:lang="en">Identifying and pulling out a sub-sequence from a
+given sequence of instances that represents information we are interested in.</rdfs:comment>
+        <rdfs:label xml:lang="en">Information Extraction</rdfs:label>
+        <skos:altLabel xml:lang="de">Extraktion von Informationen</skos:altLabel>
+        <skos:note xml:lang="en">Source: https://keg.cs.tsinghua.edu.cn/jietang/publications/Tang-et-al-Information_Extraction.pdf</skos:note>
+        <skos:prefLabel xml:lang="en">Information Extraction</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Informationsextraktion</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N08221 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N08221">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N00221"/>
+        <rdfs:label xml:lang="en">Policy Learning</rdfs:label>
+        <skos:prefLabel xml:lang="de">Policy Learning</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Policy Learning</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N09221 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N09221">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N00221"/>
+        <rdfs:comment xml:lang="en">Identify position on a scale or status</rdfs:comment>
+        <rdfs:label xml:lang="en">Ranking</rdfs:label>
+        <skos:note xml:lang="en">https://developers.google.com/machine-learning/problem-framing/cases</skos:note>
+        <skos:prefLabel xml:lang="de">Ranking</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Ranking</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N0A221 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N0A221">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N00221"/>
+        <rdfs:label xml:lang="en">Recommendation</rdfs:label>
+        <skos:prefLabel xml:lang="de">Empfehlung</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Recommendation</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N0B221 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N0B221">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N00221"/>
+        <rdfs:label xml:lang="en">Regression</rdfs:label>
+        <skos:prefLabel xml:lang="de">Regression</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Regression</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N0C221 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N0C221">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N00221"/>
+        <rdfs:label xml:lang="en">Regularization</rdfs:label>
+        <skos:prefLabel xml:lang="de">Regularisierung</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Regularization</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N0D221 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N0D221">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N00221"/>
+        <rdfs:comment xml:lang="en">Create complex output</rdfs:comment>
+        <rdfs:label xml:lang="en">Structered Output</rdfs:label>
+        <skos:prefLabel xml:lang="de">Structered Output</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Structered Output</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N0E221 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N0E221">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N00221"/>
+        <rdfs:comment xml:lang="en">Generate appropriately “original” data based on training data</rdfs:comment>
+        <rdfs:label xml:lang="en">Synthetic Data Generation</rdfs:label>
+        <skos:note xml:lang="en">https://www.razor-labs.com/ai-problem-types-and-their-definitions/</skos:note>
+        <skos:prefLabel xml:lang="en">Synthetic Data Generation</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Synthetische Datenerzeugung</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N0F221 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N0F221">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N00221"/>
+        <rdfs:label xml:lang="en">Value Function Learning</rdfs:label>
+        <skos:prefLabel xml:lang="de">Value Function Learning</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Value Function Learning</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N0F224 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N0F224">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N00221"/>
+        <rdfs:label xml:lang="en">Segmentation</rdfs:label>
+        <skos:note xml:lang="en">Source for subclasses: https://openaccess.thecvf.com/content_CVPR_2019/papers/Kirillov_Panoptic_Segmentation_CVPR_2019_paper.pdf</skos:note>
+        <skos:prefLabel xml:lang="en">Segmentation</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Segmentierung</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N0F234 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N0F234">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N0F224"/>
+        <rdfs:comment xml:lang="en">Assign each pixel of an image a semantic label and an instance id.</rdfs:comment>
+        <rdfs:label xml:lang="en">Panoptic Segmentation</rdfs:label>
+        <skos:prefLabel xml:lang="en">Panoptic Segmentation</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Panoptischen Segmentierung</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N0F244 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N0F244">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N0F224"/>
+        <rdfs:comment xml:lang="en">Detect each object and delineate it with a segmentation mask.</rdfs:comment>
+        <rdfs:label xml:lang="en">Instance Segmentation</rdfs:label>
+        <skos:altLabel xml:lang="en">Instance-Level Segmentation</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Instance Segmentation</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Instanzsegmentierung</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N0F254 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N0F254">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N0F224"/>
+        <rdfs:comment xml:lang="en">Assign a class label to each pixel in an image.</rdfs:comment>
+        <rdfs:label xml:lang="en">Semantic Segmentation</rdfs:label>
+        <skos:altLabel xml:lang="en">Per-Pixel Segmentation</skos:altLabel>
+        <skos:altLabel xml:lang="de">Per-Pixel Segmentierung</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Semantic Segmentation</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Semantische Segmentierung</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N14321 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N14321">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N04321"/>
+        <rdfs:label xml:lang="en">Continuous Optimization Problem</rdfs:label>
+        <skos:prefLabel xml:lang="en">Continuous Optimization Problem</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Kontinuierliche Optimierung</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N15321 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N15321">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N05321"/>
+        <rdfs:label xml:lang="en">Sampling</rdfs:label>
+        <skos:prefLabel xml:lang="de">Sampling</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Sampling</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N24321 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N24321">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N04321"/>
+        <rdfs:label xml:lang="en">Discrete optimization Problem</rdfs:label>
+        <skos:prefLabel xml:lang="en">Discrete optimization Problem</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Diskrete Optimierung</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N24322 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N24322">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N04321"/>
+        <rdfs:label xml:lang="en">Mixed discrete-continuous optimization</rdfs:label>
+        <skos:prefLabel xml:lang="de">Mixed discrete-continuous Optimierung</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Mixed discrete-continuous optimization</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_N34321 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_N34321">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N04321"/>
+        <rdfs:label xml:lang="en">Biologically-inspired optimization</rdfs:label>
+        <skos:prefLabel xml:lang="en">Biologically-inspired optimization</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Naturanaloge Optimierungsverfahren</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_P00001 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_P00001">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N00051"/>
+        <rdfs:comment xml:lang="en">Specifies operations that are applied on the input data before the actual algorithm steps will be executed.</rdfs:comment>
+        <rdfs:label xml:lang="en">Preprocessing</rdfs:label>
+        <skos:altLabel xml:lang="en">Data-Preprocessing</skos:altLabel>
+        <skos:altLabel xml:lang="de">Vorverarbeitung</skos:altLabel>
+        <skos:prefLabel xml:lang="de">Preprocessing</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Preprocessing</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_P00011 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_P00011">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_P00001"/>
+        <rdfs:label xml:lang="en">Data Cleaning</rdfs:label>
+        <skos:altLabel xml:lang="de">Datenbereinigung</skos:altLabel>
+        <skos:prefLabel xml:lang="de">Data Cleaning</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Data Cleaning</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_P00021 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_P00021">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_P00001"/>
+        <rdfs:label xml:lang="en">Data Transformation</rdfs:label>
+        <skos:prefLabel xml:lang="en">Data Transformation</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Datentransformation</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_P00031 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_P00031">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_P00001"/>
+        <rdfs:label xml:lang="en">Feature Selection</rdfs:label>
+        <skos:altLabel xml:lang="de">Auswahl der Merkmalen</skos:altLabel>
+        <skos:altLabel xml:lang="de">Feature-Auswahl</skos:altLabel>
+        <skos:altLabel xml:lang="de">Featureauswahl</skos:altLabel>
+        <skos:prefLabel xml:lang="de">Feature Selection</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Feature Selection</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_P00421 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_P00421">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_P00001"/>
+        <rdfs:label xml:lang="en">Data Encoding</rdfs:label>
+        <skos:altLabel xml:lang="de">Datencodierung</skos:altLabel>
+        <skos:prefLabel xml:lang="de">Data Encoding</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Data Encoding</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_P01421 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_P01421">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_P00421"/>
+        <rdfs:label xml:lang="en">State Preparation Technique</rdfs:label>
+        <skos:prefLabel xml:lang="en">State Preparation Technique</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Zustandsvorbereitung</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_T00001 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_T00001">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_N00051"/>
+        <rdfs:comment xml:lang="en">Includes methods that are applied on the algorithm output.</rdfs:comment>
+        <rdfs:label xml:lang="en">Postprocessing</rdfs:label>
+        <skos:altLabel xml:lang="en">Data-Postprocessing</skos:altLabel>
+        <skos:altLabel xml:lang="de">Nachbearbeitung</skos:altLabel>
+        <skos:prefLabel xml:lang="de">Postprocessing</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Postprocessing</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_T00011 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_T00011">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://planqk/OntoQC#OntoQC_K00001"/>
+                    <rdf:Description rdf:about="http://planqk/OntoQC#OntoQC_T00001"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Readout Error Correction</rdfs:label>
+        <skos:altLabel xml:lang="en">Read-out Error Correction</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Readout Error Correction</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Readout-Fehlerkorrektur</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_T00021 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_T00021">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_T00001"/>
+        <rdfs:label xml:lang="en">Visualization</rdfs:label>
+        <skos:prefLabel xml:lang="de">Visualisierung</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Visualization</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_W00001 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_W00001">
+        <rdfs:comment xml:lang="en">Best practices to solve specific problems.</rdfs:comment>
+        <rdfs:label xml:lang="en">Pattern</rdfs:label>
+        <skos:altLabel xml:lang="de">Entwurfsmuster</skos:altLabel>
+        <skos:prefLabel xml:lang="de">Pattern</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Pattern</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- http://planqk/OntoQC#OntoQC_W00011 -->
+
+
+    <owl:Class rdf:about="http://planqk/OntoQC#OntoQC_W00011">
+        <rdfs:subClassOf rdf:resource="http://planqk/OntoQC#OntoQC_W00001"/>
+        <rdfs:label xml:lang="en">Quantum Pattern</rdfs:label>
+        <skos:altLabel xml:lang="en">Pattern for Quantum Algorithm</skos:altLabel>
+        <skos:prefLabel xml:lang="de">Quantum Pattern</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Quantum Pattern</skos:prefLabel>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://planqk/OntoQC#qcm_153485 -->
+
+
+    <owl:NamedIndividual rdf:about="http://planqk/OntoQC#qcm_153485">
+        <rdf:type rdf:resource="http://planqk/OntoQC#OntoQC_N01341"/>
+        <rdfs:label xml:lang="en">Classical Computation</rdfs:label>
+        <skos:prefLabel xml:lang="en">Classical Computation</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Klassisches Rechenmodell</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://planqk/OntoQC#qcm_953483 -->
+
+
+    <owl:NamedIndividual rdf:about="http://planqk/OntoQC#qcm_953483">
+        <rdf:type rdf:resource="http://planqk/OntoQC#OntoQC_N03341"/>
+        <rdfs:label xml:lang="en">Quantum Annealing</rdfs:label>
+        <skos:altLabel xml:lang="en">AQC</skos:altLabel>
+        <skos:altLabel xml:lang="en">Adiabatic Quantum Computation</skos:altLabel>
+        <skos:altLabel xml:lang="de">Adiabatisches Quantenrechnen</skos:altLabel>
+        <skos:altLabel xml:lang="en">QA</skos:altLabel>
+        <skos:prefLabel xml:lang="de">Quantum Annealing</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Quantum Annealing</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://planqk/OntoQC#qcm_953484 -->
+
+
+    <owl:NamedIndividual rdf:about="http://planqk/OntoQC#qcm_953484">
+        <rdf:type rdf:resource="http://planqk/OntoQC#OntoQC_N03341"/>
+        <rdfs:label xml:lang="en">Measurement-based computation</rdfs:label>
+        <skos:prefLabel xml:lang="en">Measurement-based computation</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Messbasiertes Quantenrechnen</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://planqk/OntoQC#qcm_953485 -->
+
+
+    <owl:NamedIndividual rdf:about="http://planqk/OntoQC#qcm_953485">
+        <rdf:type rdf:resource="http://planqk/OntoQC#OntoQC_N03341"/>
+        <rdfs:label xml:lang="en">Gate-based quantum computation</rdfs:label>
+        <skos:prefLabel xml:lang="en">Gate-based quantum computation</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Gatebasiertes Quantenrechnen</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://aims.fao.org/aos/agrovoc/c_10967">
+        <skos:prefLabel xml:lang="en">Food Security</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://aims.fao.org/aos/agrovoc/c_11669">
+        <skos:prefLabel xml:lang="en">Hydrogeology</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://aims.fao.org/aos/agrovoc/c_1335455465014">
+        <skos:prefLabel xml:lang="en">Linguistics</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://aims.fao.org/aos/agrovoc/c_1344">
+        <skos:prefLabel xml:lang="en">Cartography</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://aims.fao.org/aos/agrovoc/c_16129">
+        <skos:prefLabel xml:lang="en">Forest Management</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://aims.fao.org/aos/agrovoc/c_16379">
+        <skos:prefLabel xml:lang="en">Plant Nutrition</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://aims.fao.org/aos/agrovoc/c_1648">
+        <skos:prefLabel xml:lang="de">Bauingenieurwesen</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Civil Engineering</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://aims.fao.org/aos/agrovoc/c_177f109f">
+        <skos:prefLabel xml:lang="en">Farming Systems Research</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://aims.fao.org/aos/agrovoc/c_2018">
+        <skos:prefLabel xml:lang="en">Plant Cultivation</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://aims.fao.org/aos/agrovoc/c_203">
+        <skos:prefLabel xml:lang="en">Agriculture</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://aims.fao.org/aos/agrovoc/c_211">
+        <skos:prefLabel xml:lang="en">Agronomy</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://aims.fao.org/aos/agrovoc/c_2468">
+        <skos:prefLabel xml:lang="en">Econometrics</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://aims.fao.org/aos/agrovoc/c_2481">
+        <skos:prefLabel xml:lang="en">Economics</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://aims.fao.org/aos/agrovoc/c_24848">
+        <skos:prefLabel xml:lang="de">Geochemie</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Geochemistry</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://aims.fao.org/aos/agrovoc/c_25189">
+        <skos:prefLabel xml:lang="en">Plant Physiology</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://aims.fao.org/aos/agrovoc/c_27925">
+        <skos:prefLabel xml:lang="en">Animal Nutrition</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://aims.fao.org/aos/agrovoc/c_28633">
+        <skos:prefLabel xml:lang="en">Agricultural Law</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://aims.fao.org/aos/agrovoc/c_28672">
+        <skos:prefLabel xml:lang="en">Economic Policy</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://aims.fao.org/aos/agrovoc/c_2934">
+        <skos:prefLabel xml:lang="en">Fisheries Science</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://aims.fao.org/aos/agrovoc/c_3228">
+        <skos:prefLabel xml:lang="en">Geodesy</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://aims.fao.org/aos/agrovoc/c_3235">
+        <skos:prefLabel xml:lang="en">Geophysics</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://aims.fao.org/aos/agrovoc/c_331559">
+        <skos:prefLabel xml:lang="en">Environmental Science</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://aims.fao.org/aos/agrovoc/c_3671">
+        <skos:prefLabel xml:lang="en">Horticulture</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://aims.fao.org/aos/agrovoc/c_3713">
+        <skos:prefLabel xml:lang="en">Hydraulic Engineering</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://aims.fao.org/aos/agrovoc/c_3731">
+        <skos:prefLabel xml:lang="en">Hydrology</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://aims.fao.org/aos/agrovoc/c_37948">
+        <skos:prefLabel xml:lang="en">Urban Planning</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://aims.fao.org/aos/agrovoc/c_423">
+        <skos:prefLabel xml:lang="en">Animal Breeding</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://aims.fao.org/aos/agrovoc/c_4318">
+        <skos:prefLabel xml:lang="de">Biowissenschaften</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Life Science</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://aims.fao.org/aos/agrovoc/c_4343">
+        <skos:prefLabel xml:lang="en">Limnology</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://aims.fao.org/aos/agrovoc/c_4682">
+        <skos:prefLabel xml:lang="de">Maschinenbau</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Mechanical Engineering</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://aims.fao.org/aos/agrovoc/c_4856">
+        <skos:prefLabel xml:lang="en">Mineralogy</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://aims.fao.org/aos/agrovoc/c_49985">
+        <skos:prefLabel xml:lang="en">Plant Genetics</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://aims.fao.org/aos/agrovoc/c_5807">
+        <skos:prefLabel xml:lang="en">Photogrammetry</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://aims.fao.org/aos/agrovoc/c_5836">
+        <skos:altLabel xml:lang="en">Physiography</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Physical Geography</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://aims.fao.org/aos/agrovoc/c_5956">
+        <skos:prefLabel xml:lang="en">Plant Breeding</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://aims.fao.org/aos/agrovoc/c_5963">
+        <skos:prefLabel xml:lang="en">Plant Ecology</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://aims.fao.org/aos/agrovoc/c_6347">
+        <skos:prefLabel xml:lang="en">Public Finance</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://aims.fao.org/aos/agrovoc/c_6498">
+        <skos:prefLabel xml:lang="en">Remote Sensing</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://aims.fao.org/aos/agrovoc/c_694">
+        <skos:prefLabel xml:lang="en">Atmospheric Science</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://aims.fao.org/aos/agrovoc/c_7128">
+        <skos:prefLabel xml:lang="en">Social Anthropology</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://aims.fao.org/aos/agrovoc/c_7188">
+        <skos:prefLabel xml:lang="en">Soil Science</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://aims.fao.org/aos/agrovoc/c_8320">
+        <skos:prefLabel xml:lang="en">Water Management</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://aims.fao.org/aos/agrovoc/c_8532">
+        <skos:prefLabel xml:lang="en">Animal Husbandry</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://aims.fao.org/aos/agrovoc/c_8672">
+        <skos:prefLabel xml:lang="en">Agricultural Economics</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://aims.fao.org/aos/agrovoc/c_8673">
+        <skos:prefLabel xml:lang="en">Agricultural Engineering</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://aims.fao.org/aos/agrovoc/c_9000089">
+        <skos:prefLabel xml:lang="en">Knowledge and Information Systems</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://aims.fao.org/aos/agrovoc/c_92381">
+        <skos:prefLabel xml:lang="en">Agroecology</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://edamontology.org/topic_0084">
+        <skos:prefLabel xml:lang="en">Phylogeny</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://edamontology.org/topic_0085">
+        <skos:prefLabel xml:lang="en">Functional Genomics</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://edamontology.org/topic_0089">
+        <skos:prefLabel xml:lang="en">Ontology and Terminology</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://edamontology.org/topic_0194">
+        <skos:prefLabel xml:lang="en">Phylogenomics</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://edamontology.org/topic_0209">
+        <skos:prefLabel xml:lang="en">Medicinal Chemistry</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://edamontology.org/topic_0219">
+        <skos:prefLabel xml:lang="en">Data Submission, Annotation and Curation</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://edamontology.org/topic_0605">
+        <skos:prefLabel xml:lang="en">Informatics</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://edamontology.org/topic_0780">
+        <skos:prefLabel xml:lang="en">Botany</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://edamontology.org/topic_2258">
+        <skos:altLabel xml:lang="en">Chemical informatics</skos:altLabel>
+        <skos:altLabel xml:lang="de">Chemieinformatik</skos:altLabel>
+        <skos:altLabel xml:lang="en">Chemoinformatics</skos:altLabel>
+        <skos:altLabel xml:lang="de">Chemoinformatik</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Cheminformatics</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Cheminformatik</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://edamontology.org/topic_3071">
+        <skos:prefLabel xml:lang="en">Data Management</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://edamontology.org/topic_3263">
+        <skos:prefLabel xml:lang="en">Data Security</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://edamontology.org/topic_3292">
+        <skos:prefLabel xml:lang="de">Biochemie</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Biochemistry</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://edamontology.org/topic_3293">
+        <skos:prefLabel xml:lang="en">Phylogenetics</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://edamontology.org/topic_3300">
+        <skos:prefLabel xml:lang="en">Physiology</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://edamontology.org/topic_3307">
+        <skos:prefLabel xml:lang="en">Computational Biology</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://edamontology.org/topic_3308">
+        <skos:prefLabel xml:lang="en">Transcriptomics</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://edamontology.org/topic_3315">
+        <skos:prefLabel xml:lang="en">Mathematics</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Mathematik</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://edamontology.org/topic_3316">
+        <skos:prefLabel xml:lang="de">Computer Science</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Computer Science</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://edamontology.org/topic_3318">
+        <skos:prefLabel xml:lang="en">Physics</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Physik</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://edamontology.org/topic_3321">
+        <skos:prefLabel xml:lang="en">Molecular Genetics</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://edamontology.org/topic_3336">
+        <skos:altLabel xml:lang="de">Drug Discovery</skos:altLabel>
+        <skos:altLabel xml:lang="de">Pharmaforschung</skos:altLabel>
+        <skos:prefLabel xml:lang="de">Arzneimittelforschung</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Drug Discovery</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://edamontology.org/topic_3342">
+        <skos:prefLabel xml:lang="en">Translational Medicine</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://edamontology.org/topic_3368">
+        <skos:prefLabel xml:lang="en">Biomaterials</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://edamontology.org/topic_3369">
+        <skos:prefLabel>Chemical Biology</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://edamontology.org/topic_3370">
+        <skos:prefLabel xml:lang="en">Analytical Chemistry</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Analytische Chemie</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://edamontology.org/topic_3371">
+        <skos:prefLabel xml:lang="en">Synthetic Chemistry</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://edamontology.org/topic_3396">
+        <skos:prefLabel xml:lang="en">Systems Medicine</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://edamontology.org/topic_3397">
+        <skos:prefLabel xml:lang="en">Veterinary Medicine</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://edamontology.org/topic_3399">
+        <skos:prefLabel xml:lang="en">Geriatric Medicine</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://edamontology.org/topic_3401">
+        <skos:prefLabel xml:lang="en">Pain Medicine</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://edamontology.org/topic_3402">
+        <skos:prefLabel xml:lang="en">Anaesthesiology</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://edamontology.org/topic_3403">
+        <skos:prefLabel xml:lang="en">Critical Care Medicine</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://edamontology.org/topic_3405">
+        <skos:prefLabel xml:lang="en">Dentistry</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://edamontology.org/topic_3406">
+        <skos:prefLabel xml:lang="en">Otolaryngology</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://edamontology.org/topic_3410">
+        <skos:prefLabel xml:lang="en">Gender Medicine</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://edamontology.org/topic_3414">
+        <skos:prefLabel xml:lang="en">Traumatology</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://edamontology.org/topic_3415">
+        <skos:prefLabel xml:lang="en">Medical Toxicology</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://edamontology.org/topic_3418">
+        <skos:prefLabel xml:lang="en">Pediatrics</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://edamontology.org/topic_3423">
+        <skos:prefLabel xml:lang="en">Traditional Medicine</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://edamontology.org/topic_3571">
+        <skos:prefLabel xml:lang="en">Data Governance</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://edamontology.org/topic_3574">
+        <skos:prefLabel xml:lang="en">Human Genetics</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://edamontology.org/topic_3575">
+        <skos:prefLabel xml:lang="en">Tropical Medicine</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://edamontology.org/topic_3577">
+        <skos:prefLabel xml:lang="en">Personalized Medicine</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C105692">
+        <skos:prefLabel xml:lang="en">Respiratory Medicine</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C119712">
+        <skos:prefLabel xml:lang="en">Proteogenomics</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C142491">
+        <skos:prefLabel xml:lang="en">Data Quality</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C153192">
+        <skos:prefLabel xml:lang="en">Glycomics</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C16294">
+        <skos:prefLabel xml:lang="en">Anthropology</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C16304">
+        <skos:prefLabel xml:lang="en">Architecture</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C16309">
+        <skos:prefLabel xml:lang="en">Artificial Intelligence</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C16345">
+        <skos:prefLabel xml:lang="en">Biology</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C16413">
+        <skos:prefLabel xml:lang="en">Chemical Engineering</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Chemische Verfahrenstechnik</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C16414">
+        <skos:prefLabel xml:lang="de">Chemie</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Chemistry</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C16417">
+        <skos:prefLabel xml:lang="en">Clinical Chemistry</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C16419">
+        <skos:prefLabel xml:lang="en">Organic Chemistry</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Organische Chemie</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C16421">
+        <skos:prefLabel xml:lang="en">Physical Chemistry</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Physikalische Chemie</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C16439">
+        <skos:prefLabel xml:lang="en">Medical Informatics</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C16500">
+        <skos:prefLabel xml:lang="en">Dermatology</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C16548">
+        <skos:prefLabel xml:lang="en">Engineering Science</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Ingenieurwissenschaft</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C16591">
+        <skos:prefLabel xml:lang="en">Forensic Medicine</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C16603">
+        <skos:prefLabel xml:lang="en">Gastroenterology</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C16633">
+        <skos:prefLabel xml:lang="en">Geography</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C16658">
+        <skos:prefLabel xml:lang="en">Gynecology</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C16673">
+        <skos:prefLabel xml:lang="en">Hematology</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C16902">
+        <skos:prefLabel xml:lang="en">Nephrology</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C16908">
+        <skos:prefLabel xml:lang="en">Neurology</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C16928">
+        <skos:prefLabel xml:lang="en">Obstetrics</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C16931">
+        <skos:prefLabel xml:lang="en">Occupational Medicine</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C16939">
+        <skos:prefLabel xml:lang="en">Ophthalmology</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C16974">
+        <skos:prefLabel xml:lang="en">Pharmacology</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C17026">
+        <skos:prefLabel xml:lang="en">Psychiatry</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C17027">
+        <skos:prefLabel xml:lang="en">Psychology</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C17030">
+        <skos:prefLabel xml:lang="en">Educational Psychology</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C17039">
+        <skos:prefLabel xml:lang="en">Public Health</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C17055">
+        <skos:prefLabel xml:lang="en">Radiobiology</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C17059">
+        <skos:prefLabel xml:lang="en">Radiology</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C17141">
+        <skos:prefLabel xml:lang="en">Social Science</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C17147">
+        <skos:prefLabel xml:lang="en">Software Engineering</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C17173">
+        <skos:prefLabel xml:lang="en">Surgery</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C17206">
+        <skos:prefLabel xml:lang="en">Toxicology</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C17243">
+        <skos:prefLabel xml:lang="en">Urology</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C17606">
+        <skos:prefLabel xml:lang="en">Digital Image Processing</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C17837">
+        <skos:prefLabel xml:lang="en">Oncology</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C17964">
+        <skos:prefLabel xml:lang="en">Bioinformatics</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C18076">
+        <skos:prefLabel xml:lang="de">Bioengineering</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Bioengineering</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C18097">
+        <skos:prefLabel xml:lang="en">Molecular Dynamics</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C18189">
+        <skos:prefLabel xml:lang="en">Pathology</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C18470">
+        <skos:prefLabel xml:lang="en">Computational Chemistry</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C18478">
+        <skos:prefLabel xml:lang="de">Nanotechnologie</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Nanotechnology</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C18645">
+        <skos:prefLabel xml:lang="en">Enzymology</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C18729">
+        <skos:prefLabel xml:lang="en">Database Management</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C18948">
+        <skos:prefLabel xml:lang="en">Polymer Chemistry</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C19199">
+        <skos:prefLabel xml:lang="en">Health Science</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C19349">
+        <skos:prefLabel xml:lang="en">Electrical Engineering</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Elektrotechnik</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C20179">
+        <skos:prefLabel xml:lang="en">Toxicogenomics</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C20609">
+        <skos:prefLabel xml:lang="en">Synthesis Chemistry</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C39794">
+        <skos:prefLabel xml:lang="en">Philosophy</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C54625">
+        <skos:prefLabel xml:lang="en">History</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C86055">
+        <skos:prefLabel xml:lang="en">Cardiology</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/NCIT_C93254">
+        <skos:prefLabel xml:lang="en">Regenerative Medicine</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0200111">
+        <skos:prefLabel xml:lang="en">Data Visualization</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMIT_0002286">
+        <skos:prefLabel xml:lang="en">Cultural Anthropology</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMIT_0002494">
+        <skos:prefLabel xml:lang="en">Classical Archaeology</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMIT_0002540">
+        <skos:prefLabel xml:lang="en">Art</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMIT_0002710">
+        <skos:prefLabel xml:lang="en">Automation</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMIT_0004711">
+        <skos:prefLabel xml:lang="en">Criminal Law</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMIT_0004713">
+        <skos:prefLabel xml:lang="en">Criminology</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMIT_0007039">
+        <skos:prefLabel xml:lang="en">Geology</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMIT_0007951">
+        <skos:prefLabel xml:lang="de">Geisteswissenschaften</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Humanities</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMIT_0008715">
+        <skos:prefLabel xml:lang="en">Jurisprudence</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMIT_0009577">
+        <skos:prefLabel xml:lang="en">Medicine</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMIT_0009732">
+        <skos:prefLabel xml:lang="en">Metallurgy</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMIT_0010809">
+        <skos:prefLabel xml:lang="en">Oceanography</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMIT_0010991">
+        <skos:prefLabel xml:lang="en">Musculoskeletal Medicine</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMIT_0011166">
+        <skos:prefLabel xml:lang="en">Paleontology</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMIT_0011594">
+        <skos:prefLabel xml:lang="en">Pharmacy</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMIT_0011790">
+        <skos:prefLabel xml:lang="en">Natural Science</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Naturwissenschaft</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMIT_0012276">
+        <skos:prefLabel xml:lang="en">Primary Health Care</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMIT_0012532">
+        <skos:prefLabel xml:lang="en">Medical Psychology</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMIT_0019137">
+        <skos:prefLabel xml:lang="en">Natural History</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMIT_0021467">
+        <skos:prefLabel xml:lang="en">Theology</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMIT_0024194">
+        <skos:prefLabel xml:lang="en">Ancient History</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMIT_0024195">
+        <skos:prefLabel xml:lang="en">Medieval History</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMIT_0026346">
+        <skos:prefLabel xml:lang="en">Infectious Disease Medicine</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMIT_0026522">
+        <skos:prefLabel xml:lang="en">Meteorology</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMIT_0026615">
+        <skos:prefLabel xml:lang="en">Earth Science</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Geowissenschaften</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMIT_0026929">
+        <skos:prefLabel xml:lang="en">Data Mining</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMIT_0027298">
+        <skos:prefLabel xml:lang="en">Synthetic Biology</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OMIT_0027812">
+        <skos:prefLabel xml:lang="en">Reproductive Health</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/PO_0025131">
+        <skos:prefLabel xml:lang="en">Plant Anatomy</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000002">
+        <skos:prefLabel xml:lang="de">Geistes- und Sozialwissenschaften</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Humanities and Social Sciences</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000004">
+        <skos:prefLabel xml:lang="en">Ancient Cultures</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000005">
+        <skos:prefLabel xml:lang="en">Prehistory</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000006">
+        <skos:prefLabel xml:lang="en">Classical Philology</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000009">
+        <skos:prefLabel xml:lang="en">Egyptology</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000012">
+        <skos:prefLabel xml:lang="en">Early Modern History</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000013">
+        <skos:prefLabel xml:lang="en">Modern History</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000014">
+        <skos:prefLabel xml:lang="en">History of Science</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000015">
+        <skos:prefLabel xml:lang="en">Fine Arts</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000016">
+        <skos:prefLabel xml:lang="en">Art History</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000017">
+        <skos:prefLabel xml:lang="en">Musicology</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000018">
+        <skos:prefLabel xml:lang="en">Media Studies</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000020">
+        <skos:prefLabel xml:lang="en">Applied Linguistics</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000022">
+        <skos:prefLabel xml:lang="en">Historical Linguistics</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000023">
+        <skos:prefLabel xml:lang="en">Literary Studies</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000024">
+        <skos:prefLabel xml:lang="en">Medieval German Literature</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000025">
+        <skos:prefLabel xml:lang="en">German Literature</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000026">
+        <skos:prefLabel xml:lang="en">European Literature</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000027">
+        <skos:prefLabel xml:lang="en">Comparative Literature</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000030">
+        <skos:prefLabel xml:lang="en">Asian Studies</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000031">
+        <skos:prefLabel xml:lang="en">African Studies</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000032">
+        <skos:prefLabel xml:lang="en">Islamic Studies</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000033">
+        <skos:prefLabel xml:lang="en">Religious Studies</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000035">
+        <skos:prefLabel xml:lang="en">Protestant Theology</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000036">
+        <skos:altLabel xml:lang="en">Catholic Theology</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Roman Catholic Theology</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000038">
+        <skos:prefLabel xml:lang="en">History of Philosophy</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000039">
+        <skos:prefLabel xml:lang="en">Theoretical Philosophy</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000040">
+        <skos:prefLabel xml:lang="en">Practical Philosophy</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000041">
+        <skos:prefLabel xml:lang="en">Social and Behavioural Science</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Sozial- und Verhaltenswissenschaften</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000042">
+        <skos:prefLabel xml:lang="en">Education Science</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000044">
+        <skos:prefLabel xml:lang="en">Research on Teaching, Learning and Training</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000045">
+        <skos:prefLabel xml:lang="en">Professional Socialization</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000057">
+        <skos:prefLabel xml:lang="en">Economic Theory</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000060">
+        <skos:prefLabel xml:lang="en">Business Administration</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000062">
+        <skos:prefLabel xml:lang="en">Economic and Social History</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000064">
+        <skos:prefLabel xml:lang="en">Philosophy of Law</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000065">
+        <skos:prefLabel xml:lang="en">Private Law</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000066">
+        <skos:prefLabel xml:lang="en">Public Law</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000083">
+        <skos:prefLabel xml:lang="en">Inter-organismic Interactions of Plants</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000085">
+        <skos:prefLabel xml:lang="en">Phytochemistry</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000086">
+        <skos:prefLabel xml:lang="en">Plant Cell Biology</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000103">
+        <skos:prefLabel xml:lang="en">Medical Biometry</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000109">
+        <skos:prefLabel xml:lang="en">Pathobiochemistry</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000134">
+        <skos:prefLabel xml:lang="en">Medical Physics</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000153">
+        <skos:prefLabel xml:lang="en">Phytomedicine</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000161">
+        <skos:prefLabel xml:lang="en">Clinical Veterinary Medicine</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000164">
+        <skos:prefLabel xml:lang="de">Molecular Chemistry</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Molecular Chemistry</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000165">
+        <skos:prefLabel xml:lang="en">Inorganic Molecular Chemistry</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000166">
+        <skos:prefLabel xml:lang="en">Organic Molecular Chemistry</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000169">
+        <skos:prefLabel xml:lang="en">Solid-State Chemistry</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000172">
+        <skos:prefLabel xml:lang="en">Molecular Physical Chemistry</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000173">
+        <skos:prefLabel xml:lang="en">Theoretical Chemistry</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000176">
+        <skos:prefLabel xml:lang="en">Biomimetic Chemistry</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Biomimetische Chemie</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000177">
+        <skos:prefLabel xml:lang="en">Food Chemistry</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Lebensmittelchemie</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000178">
+        <skos:prefLabel xml:lang="en">Polymer Research</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000180">
+        <skos:prefLabel xml:lang="en">Polymer Physics</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000188">
+        <skos:prefLabel xml:lang="en">Soft Matter Physics</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000198">
+        <skos:prefLabel xml:lang="en">Geoinformatics</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000202">
+        <skos:prefLabel xml:lang="en">Human Geography</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000203">
+        <skos:prefLabel xml:lang="en">Water Research</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000206">
+        <skos:prefLabel xml:lang="en">Industrial Engineering</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Wirtschaftsingenieurwesen</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000207">
+        <skos:prefLabel xml:lang="en">Production Technology</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000208">
+        <skos:prefLabel xml:lang="en">Metal-Cutting Manufacturing Engineering</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000209">
+        <skos:prefLabel xml:lang="en">Primary Shaping Technology</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000211">
+        <skos:prefLabel xml:lang="en">Plastics Engineering</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000218">
+        <skos:prefLabel xml:lang="en">Thermal Engineering</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000219">
+        <skos:prefLabel xml:lang="en">Process Engineering</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Verfahrenstechnik</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000221">
+        <skos:prefLabel xml:lang="en">Technical Chemistry</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000223">
+        <skos:prefLabel xml:lang="en">Biological Process Engineering</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000224">
+        <skos:prefLabel xml:lang="en">Thermal Technology</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000225">
+        <skos:prefLabel xml:lang="de">Energietechnik</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Energy Engineering</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000230">
+        <skos:prefLabel xml:lang="en">Materials Engineering</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Werkstofftechnik</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000231">
+        <skos:prefLabel xml:lang="en">Thermomechanical Processing</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000232">
+        <skos:prefLabel xml:lang="en">Sintering</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000233">
+        <skos:prefLabel xml:lang="en">Composite Materials</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000234">
+        <skos:prefLabel xml:lang="en">Mechanical Behaviour of Construction Materials</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000235">
+        <skos:prefLabel xml:lang="en">Coating and Surface Technology</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000236">
+        <skos:prefLabel xml:lang="en">Materials Science</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Materialwissenschaft</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000238">
+        <skos:prefLabel xml:lang="en">Functional Materials Research</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000239">
+        <skos:prefLabel xml:lang="en">Microstructural Mechanical Properties of Materials</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000240">
+        <skos:prefLabel xml:lang="en">Materials Structuring and Functionalisation</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000243">
+        <skos:prefLabel xml:lang="en">Systems Engineering</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Systemtechnik</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000250">
+        <skos:prefLabel xml:lang="en">Component Engineering</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000251">
+        <skos:prefLabel xml:lang="en">Telecommunication Engineering</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000252">
+        <skos:prefLabel xml:lang="en">Power Engineering</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000254">
+        <skos:prefLabel xml:lang="en">Theoretical Computer Science</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000258">
+        <skos:prefLabel xml:lang="en">Computer Architecture</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000259">
+        <skos:prefLabel xml:lang="en">Construction Engineering</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000260">
+        <skos:prefLabel xml:lang="en">Construction History</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000261">
+        <skos:prefLabel xml:lang="en">Transportation Planning</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000262">
+        <skos:prefLabel xml:lang="en">Building Engineering Physics</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000263">
+        <skos:prefLabel xml:lang="en">Structural Engineering</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000264">
+        <skos:prefLabel xml:lang="en">Applied Mechanics</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000265">
+        <skos:prefLabel xml:lang="en">Geotechnics</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000282">
+        <skos:prefLabel xml:lang="en">Maritime Engineering</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Schiffs- und Meerestechnik</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000283">
+        <skos:prefLabel xml:lang="en">Aerospace Engineering</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Luft- und Raumfahrttechnik</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000285">
+        <skos:prefLabel xml:lang="en">Building Informatics</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000286">
+        <skos:prefLabel xml:lang="en">Landscape Planning</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000287">
+        <skos:prefLabel xml:lang="en">Sustainable Building Technology</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000288">
+        <skos:prefLabel xml:lang="en">Building Design</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000290">
+        <skos:prefLabel xml:lang="en">Materials Informatics</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000295">
+        <skos:prefLabel xml:lang="en">Computational Neuroscience</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000298">
+        <skos:prefLabel xml:lang="en">Surface Science</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000299">
+        <skos:prefLabel xml:lang="en">Area Studies</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000300">
+        <skos:prefLabel xml:lang="en">American Studies</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000301">
+        <skos:prefLabel xml:lang="en">Oceania Studies</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000302">
+        <skos:prefLabel xml:lang="en">Arabian Studies</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000303">
+        <skos:prefLabel xml:lang="en">Jewish Studies</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000304">
+        <skos:prefLabel xml:lang="en">Diabetology</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000305">
+        <skos:altLabel xml:lang="en">Theater Studies</skos:altLabel>
+        <skos:altLabel xml:lang="en">Theatrology</skos:altLabel>
+        <skos:prefLabel xml:lang="en">Theatre Studies</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000306">
+        <skos:prefLabel xml:lang="en">Data Integration</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000307">
+        <skos:prefLabel xml:lang="en">Food Process Engineering</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000309">
+        <skos:prefLabel xml:lang="en">Angiology</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000310">
+        <skos:prefLabel xml:lang="en">Legal History</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000311">
+        <skos:prefLabel xml:lang="en">American Literature</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000312">
+        <skos:prefLabel xml:lang="en">Cultural Studies</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000313">
+        <skos:prefLabel xml:lang="en">Ancient Near Eastern Studies</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000319">
+        <skos:prefLabel xml:lang="en">Safety Science</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000320">
+        <skos:prefLabel xml:lang="en">Endocrinology</skos:prefLabel>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.fairsharing.org/ontology/subject/SRAO_0000400">
+        <skos:prefLabel xml:lang="en">Medical Virology</skos:prefLabel>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/ -->
+
+

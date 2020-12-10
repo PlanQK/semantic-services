@@ -1,0 +1,290 @@
+@prefix : <http://planqk/OntoQC/QResourceExample#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://planqk/OntoQC/QResourceExample> .
+
+<http://planqk/OntoQC/QResourceExample> rdf:type owl:Ontology ;
+                                         owl:versionIRI <http://planqk/OntoQC/QResourceExample/1.0.0> ;
+                                         owl:imports <http://planqk/OntoQC/1.0.0> ;
+                                         <http://purl.org/dc/terms/contributor> "Stoneone AG" ,
+                                                                                "University of Stuttgart, Institute of Architecture of Application Systems (IAAS)" ;
+                                         <http://purl.org/dc/terms/creator> "Fraunhofer Institute for Open Communication Systems FOKUS" ;
+                                         <http://purl.org/dc/terms/title> "Example or representation of the ibmq_santiago v1.2.1 quantum system using PlanQK ontology."@en ;
+                                         rdfs:comment "ibmq_santiago v1.2.1, IBM Quantum team. Retrieved from https://quantum-computing.ibm.com (05.12.2020)."@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+<http://www.w3.org/2004/02/skos/core#prefLabel> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://planqk/OntoQC#OntoQC_dp00008
+<http://planqk/OntoQC#OntoQC_dp00008> rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://planqk/OntoQC#OntoQC_N00441
+<http://planqk/OntoQC#OntoQC_N00441> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://planqk/OntoQC/QResourceExample#cs_436241
+:cs_436241 rdf:type owl:NamedIndividual ,
+                    <http://planqk/OntoQC#OntoQC_I01231> ;
+           <http://planqk/OntoQC#OntoQC_op00210> <http://planqk/OntoQC#qcm_953485> ;
+           <http://planqk/OntoQC#OntoQC_op00310> :nq_436243 ,
+                                                 :qc_236241 ,
+                                                 :qc_236243 ,
+                                                 :qc_236244 ,
+                                                 :re_436271 ,
+                                                 :re_436272 ,
+                                                 :re_436273 ,
+                                                 :re_436274 ,
+                                                 :re_436276 ,
+                                                 :sqer_436270 ,
+                                                 :sqer_436271 ,
+                                                 :sqer_436272 ,
+                                                 :sqer_436273 ,
+                                                 :sqer_436274 ,
+                                                 :tqer_436270 ,
+                                                 :tqer_436271 ,
+                                                 :tqer_436272 ,
+                                                 :tqer_436273 ,
+                                                 :tqer_436274 ,
+                                                 :tqer_436275 ,
+                                                 :tqer_436276 ,
+                                                 :tqer_436277 ;
+           <http://planqk/OntoQC#OntoQC_op01310> :gs_436241 ;
+           <http://planqk/OntoQC#OntoQC_dp00001> "superconducting"^^xsd:string ;
+           <http://planqk/OntoQC#OntoQC_dp0000G> "2020-12-05T15:00:16"^^xsd:dateTime ;
+           <http://planqk/OntoQC#OntoQC_dp0000Z> "v1.2.1" ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "ibmq_santiago"@en .
+
+
+###  http://planqk/OntoQC/QResourceExample#gate_436741
+:gate_436741 rdf:type owl:NamedIndividual ,
+                      <http://planqk/OntoQC#OntoQC_N00441> ;
+             <http://www.w3.org/2004/02/skos/core#prefLabel> "Identity gate"@en .
+
+
+###  http://planqk/OntoQC/QResourceExample#gate_436742
+:gate_436742 rdf:type owl:NamedIndividual ,
+                      <http://planqk/OntoQC#OntoQC_N00441> ;
+             <http://planqk/OntoQC#OntoQC_dp00008> "Single-qubit rotation about the Z axis."@en ;
+             <http://www.w3.org/2004/02/skos/core#prefLabel> "U1Gate"@en .
+
+
+###  http://planqk/OntoQC/QResourceExample#gate_436743
+:gate_436743 rdf:type owl:NamedIndividual ,
+                      <http://planqk/OntoQC#OntoQC_N00441> ;
+             <http://planqk/OntoQC#OntoQC_dp00008> "Single-qubit rotation about the X+Z axis."@en ;
+             <http://www.w3.org/2004/02/skos/core#prefLabel> "U2Gate"@en .
+
+
+###  http://planqk/OntoQC/QResourceExample#gate_436745
+:gate_436745 rdf:type owl:NamedIndividual ,
+                      <http://planqk/OntoQC#OntoQC_N00441> ;
+             <http://www.w3.org/2004/02/skos/core#prefLabel> "Controlled-X"@en .
+
+
+###  http://planqk/OntoQC/QResourceExample#gate_436747
+:gate_436747 rdf:type owl:NamedIndividual ,
+                      <http://planqk/OntoQC#OntoQC_N00441> ;
+             <http://planqk/OntoQC#OntoQC_dp00008> "Generic single-qubit rotation gate with 3 Euler angles."@en ;
+             <http://www.w3.org/2004/02/skos/core#prefLabel> "U3Gate"@en .
+
+
+###  http://planqk/OntoQC/QResourceExample#gs_436241
+:gs_436241 rdf:type owl:NamedIndividual ,
+                    <http://planqk/OntoQC#OntoQC_N01441> ;
+           <http://planqk/OntoQC#OntoQC_op00021> :gate_436741 ,
+                                                 :gate_436742 ,
+                                                 :gate_436743 ,
+                                                 :gate_436745 ,
+                                                 :gate_436747 .
+
+
+###  http://planqk/OntoQC/QResourceExample#nq_436243
+:nq_436243 rdf:type owl:NamedIndividual ,
+                    <http://planqk/OntoQC#OntoQC_N00641> ;
+           <http://planqk/OntoQC#OntoQC_dp00002> 5 .
+
+
+###  http://planqk/OntoQC/QResourceExample#qc_236241
+:qc_236241 rdf:type owl:NamedIndividual ,
+                    <http://planqk/OntoQC#OntoQC_N00041> ;
+           <http://planqk/OntoQC#OntoQC_dp00002> 32 ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "quantum volume" .
+
+
+###  http://planqk/OntoQC/QResourceExample#qc_236243
+:qc_236243 rdf:type owl:NamedIndividual ,
+                    <http://planqk/OntoQC#OntoQC_N00041> ;
+           <http://planqk/OntoQC#OntoQC_dp00002> 75 ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Maximum circuits"@en .
+
+
+###  http://planqk/OntoQC/QResourceExample#qc_236244
+:qc_236244 rdf:type owl:NamedIndividual ,
+                    <http://planqk/OntoQC#OntoQC_N00041> ;
+           <http://planqk/OntoQC#OntoQC_dp00002> 8192 ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "Maximum shots" .
+
+
+###  http://planqk/OntoQC/QResourceExample#qc_436740
+:qc_436740 rdf:type owl:NamedIndividual ,
+                    <http://planqk/OntoQC#OntoQC_G00421> ;
+           <http://planqk/OntoQC#OntoQC_dp00002> "0:1, 1:0, 1:2,2:1, 2:3,3:2, 3:4,4:3"^^xsd:string .
+
+
+###  http://planqk/OntoQC/QResourceExample#re_436271
+:re_436271 rdf:type owl:NamedIndividual ,
+                    <http://planqk/OntoQC#OntoQC_G00521> ;
+           <http://planqk/OntoQC#OntoQC_dp00002> "165999999999999"^^xsd:long ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "readout error on Q1"@en .
+
+
+###  http://planqk/OntoQC/QResourceExample#re_436272
+:re_436272 rdf:type owl:NamedIndividual ,
+                    <http://planqk/OntoQC#OntoQC_G00521> ;
+           <http://planqk/OntoQC#OntoQC_dp00002> "12000000000000"^^xsd:long ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "readout error on Q2"@en .
+
+
+###  http://planqk/OntoQC/QResourceExample#re_436273
+:re_436273 rdf:type owl:NamedIndividual ,
+                    <http://planqk/OntoQC#OntoQC_G00521> ;
+           <http://planqk/OntoQC#OntoQC_dp00002> "113000000000000"^^xsd:long ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "readout error on Q3"@en .
+
+
+###  http://planqk/OntoQC/QResourceExample#re_436274
+:re_436274 rdf:type owl:NamedIndividual ,
+                    <http://planqk/OntoQC#OntoQC_G00521> ;
+           <http://planqk/OntoQC#OntoQC_dp00002> "430999999999999"^^xsd:long ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "readout error on Q0"@en .
+
+
+###  http://planqk/OntoQC/QResourceExample#re_436276
+:re_436276 rdf:type owl:NamedIndividual ,
+                    <http://planqk/OntoQC#OntoQC_G00521> ;
+           <http://planqk/OntoQC#OntoQC_op00310> :tqer_436275 ;
+           <http://planqk/OntoQC#OntoQC_dp00002> "9500000000000"^^xsd:long ;
+           <http://www.w3.org/2004/02/skos/core#prefLabel> "readout error on Q4"@en .
+
+
+###  http://planqk/OntoQC/QResourceExample#sqer_436270
+:sqer_436270 rdf:type owl:NamedIndividual ,
+                      <http://planqk/OntoQC#OntoQC_G00121> ;
+             <http://planqk/OntoQC#OntoQC_dp00002> "943644927862"^^xsd:long ;
+             <http://www.w3.org/2004/02/skos/core#prefLabel> "Single-qubit U2 error rate on Q0"@en .
+
+
+###  http://planqk/OntoQC/QResourceExample#sqer_436271
+:sqer_436271 rdf:type owl:NamedIndividual ,
+                      <http://planqk/OntoQC#OntoQC_G00121> ;
+             <http://planqk/OntoQC#OntoQC_dp00002> "1934862137871"^^xsd:long ;
+             <http://www.w3.org/2004/02/skos/core#prefLabel> "Single-qubit U2 error rate on Q1"@en .
+
+
+###  http://planqk/OntoQC/QResourceExample#sqer_436272
+:sqer_436272 rdf:type owl:NamedIndividual ,
+                      <http://planqk/OntoQC#OntoQC_G00121> ;
+             <http://planqk/OntoQC#OntoQC_dp00002> "254202828000"^^xsd:long ;
+             <http://www.w3.org/2004/02/skos/core#prefLabel> "Single-qubit U2 error rate on Q2"@en .
+
+
+###  http://planqk/OntoQC/QResourceExample#sqer_436273
+:sqer_436273 rdf:type owl:NamedIndividual ,
+                      <http://planqk/OntoQC#OntoQC_G00121> ;
+             <http://planqk/OntoQC#OntoQC_dp00002> "227290155568"^^xsd:long ;
+             <http://www.w3.org/2004/02/skos/core#prefLabel> "Single-qubit U2 error rate on Q3"@en .
+
+
+###  http://planqk/OntoQC/QResourceExample#sqer_436274
+:sqer_436274 rdf:type owl:NamedIndividual ,
+                      <http://planqk/OntoQC#OntoQC_G00121> ;
+             <http://planqk/OntoQC#OntoQC_dp00002> "195219442408"^^xsd:long ;
+             <http://www.w3.org/2004/02/skos/core#prefLabel> "Single-qubit U2 error rate on Q4"@en .
+
+
+###  http://planqk/OntoQC/QResourceExample#tqer_436270
+:tqer_436270 rdf:type owl:NamedIndividual ,
+                      <http://planqk/OntoQC#OntoQC_G00221> ;
+             <http://planqk/OntoQC#OntoQC_dp00002> "0.01277"^^xsd:double ;
+             <http://www.w3.org/2004/02/skos/core#prefLabel> "CNOT Error rate Q0 Q1"@en .
+
+
+###  http://planqk/OntoQC/QResourceExample#tqer_436271
+:tqer_436271 rdf:type owl:NamedIndividual ,
+                      <http://planqk/OntoQC#OntoQC_G00221> ;
+             <http://planqk/OntoQC#OntoQC_dp00002> "0.01277"^^xsd:double ;
+             <http://www.w3.org/2004/02/skos/core#prefLabel> "CNOT Error rate Q1 Q0"@en .
+
+
+###  http://planqk/OntoQC/QResourceExample#tqer_436272
+:tqer_436272 rdf:type owl:NamedIndividual ,
+                      <http://planqk/OntoQC#OntoQC_G00221> ;
+             <http://planqk/OntoQC#OntoQC_dp00002> "0.007904"^^xsd:double ;
+             <http://www.w3.org/2004/02/skos/core#prefLabel> "CNOT Error rate Q2 Q1"@en .
+
+
+###  http://planqk/OntoQC/QResourceExample#tqer_436273
+:tqer_436273 rdf:type owl:NamedIndividual ,
+                      <http://planqk/OntoQC#OntoQC_G00221> ;
+             <http://planqk/OntoQC#OntoQC_dp00002> "0.009933"^^xsd:double ;
+             <http://www.w3.org/2004/02/skos/core#prefLabel> "CNOT Error rate Q3 Q2"@en .
+
+
+###  http://planqk/OntoQC/QResourceExample#tqer_436274
+:tqer_436274 rdf:type owl:NamedIndividual ,
+                      <http://planqk/OntoQC#OntoQC_G00221> ;
+             <http://planqk/OntoQC#OntoQC_dp00002> "0.006454"^^xsd:double ;
+             <http://www.w3.org/2004/02/skos/core#prefLabel> "CNOT Error rate Q4 Q3"@en .
+
+
+###  http://planqk/OntoQC/QResourceExample#tqer_436275
+:tqer_436275 rdf:type owl:NamedIndividual ,
+                      <http://planqk/OntoQC#OntoQC_G00221> ;
+             <http://planqk/OntoQC#OntoQC_dp00002> "0.007904"^^xsd:double ;
+             <http://www.w3.org/2004/02/skos/core#prefLabel> "CNOT Error rate Q1 Q2"@en .
+
+
+###  http://planqk/OntoQC/QResourceExample#tqer_436276
+:tqer_436276 rdf:type owl:NamedIndividual ,
+                      <http://planqk/OntoQC#OntoQC_G00221> ;
+             <http://planqk/OntoQC#OntoQC_dp00002> "0.009933"^^xsd:double ;
+             <http://www.w3.org/2004/02/skos/core#prefLabel> "CNOT Error rate Q2 Q3"@en .
+
+
+###  http://planqk/OntoQC/QResourceExample#tqer_436277
+:tqer_436277 rdf:type owl:NamedIndividual ,
+                      <http://planqk/OntoQC#OntoQC_G00221> ;
+             <http://planqk/OntoQC#OntoQC_dp00002> "0.006454"^^xsd:double ;
+             <http://www.w3.org/2004/02/skos/core#prefLabel> "CNOT Error rate Q3 Q4"@en .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

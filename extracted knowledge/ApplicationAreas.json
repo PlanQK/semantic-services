@@ -1,0 +1,725 @@
+{
+    "_comment":"Subclasses of the concept 'Application Area' are reused from FAIRsharing Subject Ontology (SRAO, licensed under CC BY 4.0).",
+    "result": {
+        "uri": "http://planqk/OntoQC#OntoQC_N00062",
+        "label": "Application Area",
+        "children:": [
+            {
+                "uri": "http://purl.obolibrary.org/obo/NCIT_C16548",
+                "label": "Engineering Science",
+                "children": [
+                    {
+                        "uri": "http://www.fairsharing.org/ontology/subject/SRAO_0000283",
+                        "label": "Aerospace Engineering",
+                        "children": []
+                    },
+                    {
+                        "uri": "http://purl.obolibrary.org/obo/NCIT_C18076",
+                        "label": "Bioengineering",
+                        "children": [
+                            {
+                                "uri": "http://purl.obolibrary.org/obo/OMIT_0027298",
+                                "label": "Synthetic Biology",
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "uri": "http://aims.fao.org/aos/agrovoc/c_1648",
+                        "label": "Civil Engineering",
+                        "children": [
+                            {
+                                "uri": "http://aims.fao.org/aos/agrovoc/c_8673",
+                                "label": "Agricultural Engineering",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://purl.obolibrary.org/obo/NCIT_C16304",
+                                "label": "Architecture",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://www.fairsharing.org/ontology/subject/SRAO_0000259",
+                                "label": "Construction Engineering",
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "uri": "http://edamontology.org/topic_3316",
+                        "label": "Computer Science",
+                        "children": [
+                            {
+                                "uri": "http://purl.obolibrary.org/obo/NCIT_C16309",
+                                "label": "Artificial Intelligence",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://edamontology.org/topic_3307",
+                                "label": "Computational Biology",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://purl.obolibrary.org/obo/NCIT_C18470",
+                                "label": "Computational Chemistry",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://www.fairsharing.org/ontology/subject/SRAO_0000295",
+                                "label": "Computational Neuroscience",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://www.fairsharing.org/ontology/subject/SRAO_0000258",
+                                "label": "Computer Architecture",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://purl.obolibrary.org/obo/OMIT_0026929",
+                                "label": "Data Mining",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://purl.obolibrary.org/obo/OBI_0200111",
+                                "label": "Data Visualization",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://purl.obolibrary.org/obo/NCIT_C17606",
+                                "label": "Digital Image Processing",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://edamontology.org/topic_0605",
+                                "label": "Informatics",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://aims.fao.org/aos/agrovoc/c_9000089",
+                                "label": "Knowledge and Information Systems",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://purl.obolibrary.org/obo/NCIT_C18478",
+                                "label": "Nanotechnology",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://purl.obolibrary.org/obo/NCIT_C17147",
+                                "label": "Software Engineering",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://www.fairsharing.org/ontology/subject/SRAO_0000254",
+                                "label": "Theoretical Computer Science",
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "uri": "http://purl.obolibrary.org/obo/NCIT_C19349",
+                        "label": "Electrical Engineering",
+                        "children": [
+                            {
+                                "uri": "http://www.fairsharing.org/ontology/subject/SRAO_0000250",
+                                "label": "Component Engineering",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://www.fairsharing.org/ontology/subject/SRAO_0000295",
+                                "label": "Computational Neuroscience",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://www.fairsharing.org/ontology/subject/SRAO_0000252",
+                                "label": "Power Engineering",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://www.fairsharing.org/ontology/subject/SRAO_0000251",
+                                "label": "Telecommunication Engineering",
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "uri": "http://www.fairsharing.org/ontology/subject/SRAO_0000225",
+                        "label": "Energy Engineering",
+                        "children": [
+                            {
+                                "uri": "http://www.fairsharing.org/ontology/subject/SRAO_0000218",
+                                "label": "Thermal Engineering",
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "uri": "http://www.fairsharing.org/ontology/subject/SRAO_0000206",
+                        "label": "Industrial Engineering",
+                        "children": [
+                            {
+                                "uri": "http://www.fairsharing.org/ontology/subject/SRAO_0000207",
+                                "label": "Production Technology",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://www.fairsharing.org/ontology/subject/SRAO_0000319",
+                                "label": "Safety Science",
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "uri": "http://www.fairsharing.org/ontology/subject/SRAO_0000282",
+                        "label": "Maritime Engineering",
+                        "children": []
+                    },
+                    {
+                        "uri": "http://www.fairsharing.org/ontology/subject/SRAO_0000230",
+                        "label": "Materials Engineering",
+                        "children": [
+                            {
+                                "uri": "http://www.fairsharing.org/ontology/subject/SRAO_0000235",
+                                "label": "Coating and Surface Technology",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://www.fairsharing.org/ontology/subject/SRAO_0000233",
+                                "label": "Composite Materials",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://www.fairsharing.org/ontology/subject/SRAO_0000234",
+                                "label": "Mechanical Behaviour of Construction Materials",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://purl.obolibrary.org/obo/OMIT_0009732",
+                                "label": "Metallurgy",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://www.fairsharing.org/ontology/subject/SRAO_0000232",
+                                "label": "Sintering",
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "uri": "http://www.fairsharing.org/ontology/subject/SRAO_0000236",
+                        "label": "Materials Science",
+                        "children": [
+                            {
+                                "uri": "http://edamontology.org/topic_3368",
+                                "label": "Biomaterials",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://www.fairsharing.org/ontology/subject/SRAO_0000238",
+                                "label": "Functional Materials Research",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://www.fairsharing.org/ontology/subject/SRAO_0000290",
+                                "label": "Materials Informatics",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://www.fairsharing.org/ontology/subject/SRAO_0000240",
+                                "label": "Materials Structuring and Functionalisation",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://www.fairsharing.org/ontology/subject/SRAO_0000239",
+                                "label": "Microstructural Mechanical Properties of Materials",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://purl.obolibrary.org/obo/NCIT_C18478",
+                                "label": "Nanotechnology",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://www.fairsharing.org/ontology/subject/SRAO_0000178",
+                                "label": "Polymer Research",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://www.fairsharing.org/ontology/subject/SRAO_0000169",
+                                "label": "Solid-State Chemistry",
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "uri": "http://aims.fao.org/aos/agrovoc/c_4682",
+                        "label": "Mechanical Engineering",
+                        "children": [
+                            {
+                                "uri": "http://aims.fao.org/aos/agrovoc/c_49911",
+                                "label": "Acoustics",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://aims.fao.org/aos/agrovoc/c_8673",
+                                "label": "Agricultural Engineering",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://purl.obolibrary.org/obo/NCIT_C19638",
+                                "label": "Mechanics",
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "uri": "http://www.fairsharing.org/ontology/subject/SRAO_0000307",
+                        "label": "Process Engineering",
+                        "children": [
+                            {
+                                "uri": "http://purl.obolibrary.org/obo/NCIT_C16413",
+                                "label": "Chemical Engineering",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://www.fairsharing.org/ontology/subject/SRAO_0000222",
+                                "label": "Mechanical Process Engineering",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://www.fairsharing.org/ontology/subject/SRAO_0000221",
+                                "label": "Technical Chemistry",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://www.fairsharing.org/ontology/subject/SRAO_0000231",
+                                "label": "Thermomechanical Processing",
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "uri": "http://www.fairsharing.org/ontology/subject/SRAO_0000243",
+                        "label": "Systems Engineering",
+                        "children": [
+                            {
+                                "uri": "http://aims.fao.org/aos/agrovoc/c_2638",
+                                "label": "Ergonomics",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://aims.fao.org/aos/agrovoc/c_331401",
+                                "label": "Logistics Engineering",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://www.fairsharing.org/ontology/subject/SRAO_0000244",
+                                "label": "Robotics",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://www.fairsharing.org/ontology/subject/SRAO_0000245",
+                                "label": "Measurement Systems",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://www.fairsharing.org/ontology/subject/SRAO_0000246",
+                                "label": "Microsystems",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://www.fairsharing.org/ontology/subject/SRAO_0000248",
+                                "label": "Human-Machine Systems Engineering",
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "uri": "http://www.fairsharing.org/ontology/subject/SRAO_0000002",
+                "label": "Humanities and Social Sciences",
+                "children": [
+                    {
+                        "uri": "http://purl.obolibrary.org/obo/OMIT_0007951",
+                        "label": "Humanities",
+                        "children": [
+                            {
+                                "uri": "http://www.fairsharing.org/ontology/subject/SRAO_0000004",
+                                "label": "Ancient Cultures",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://aims.fao.org/aos/agrovoc/c_7128",
+                                "label": "Anthropology",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://www.fairsharing.org/ontology/subject/SRAO_0000015",
+                                "label": "Fine Arts",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://purl.obolibrary.org/obo/NCIT_C54625",
+                                "label": "History",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://aims.fao.org/aos/agrovoc/c_1335455465014",
+                                "label": "Linguistics",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://www.fairsharing.org/ontology/subject/SRAO_0000023",
+                                "label": "Literary Studies",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://purl.obolibrary.org/obo/NCIT_C39794",
+                                "label": "Philosophy",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://purl.obolibrary.org/obo/OMIT_0021467",
+                                "label": "Theology",
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "uri": "http://www.fairsharing.org/ontology/subject/SRAO_0000041",
+                        "label": "Social and Behavioural Science",
+                        "children": [
+                            {
+                                "uri": "http://aims.fao.org/aos/agrovoc/c_2481",
+                                "label": "Economics",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://www.fairsharing.org/ontology/subject/SRAO_0000042",
+                                "label": "Education Science",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://purl.obolibrary.org/obo/OMIT_0008715",
+                                "label": "Jurisprudence",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://purl.obolibrary.org/obo/NCIT_C17027",
+                                "label": "Psychology",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://purl.obolibrary.org/obo/NCIT_C17141",
+                                "label": "Social Science",
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "uri": "http://purl.obolibrary.org/obo/OMIT_0011790",
+                "label": "Natural Science",
+                "children": [
+                    {
+                        "uri": "http://purl.obolibrary.org/obo/NCIT_C16414",
+                        "label": "Chemistry",
+                        "children": [
+                            {
+                                "uri": "http://edamontology.org/topic_3370",
+                                "label": "Analytical Chemistry",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://edamontology.org/topic_3292",
+                                "label": "Biochemistry",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://www.fairsharing.org/ontology/subject/SRAO_0000176",
+                                "label": "Biomimetic Chemistry",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://purl.obolibrary.org/obo/NCIT_C16413",
+                                "label": "Chemical Engineering",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://edamontology.org/topic_2258",
+                                "label": "Cheminformatics",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://edamontology.org/topic_3336",
+                                "label": "Drug Discovery",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://www.fairsharing.org/ontology/subject/SRAO_0000177",
+                                "label": "Food Chemistry",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://aims.fao.org/aos/agrovoc/c_24848",
+                                "label": "Geochemistry",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://www.fairsharing.org/ontology/subject/SRAO_0000164",
+                                "label": "Molecular Chemistry",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://purl.obolibrary.org/obo/NCIT_C18478",
+                                "label": "Nanotechnology",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://purl.obolibrary.org/obo/NCIT_C16419",
+                                "label": "Organic Chemistry",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://purl.obolibrary.org/obo/NCIT_C16421",
+                                "label": "Physical Chemistry",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://www.fairsharing.org/ontology/subject/SRAO_0000178",
+                                "label": "Polymer Research",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://edamontology.org/topic_3371",
+                                "label": "Synthetic Chemistry",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://www.fairsharing.org/ontology/subject/SRAO_0000221",
+                                "label": "Technical Chemistry",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://www.fairsharing.org/ontology/subject/SRAO_0000173",
+                                "label": "Theoretical Chemistry",
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "uri": "http://purl.obolibrary.org/obo/OMIT_0026615",
+                        "label": "Earth Science",
+                        "children": [
+                            {
+                                "uri": "http://aims.fao.org/aos/agrovoc/c_694",
+                                "label": "Atmospheric Science",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://aims.fao.org/aos/agrovoc/c_331559",
+                                "label": "Environmental Science",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://purl.obolibrary.org/obo/NCIT_C16633",
+                                "label": "Geography",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://purl.obolibrary.org/obo/OMIT_0007039",
+                                "label": "Geology",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://aims.fao.org/aos/agrovoc/c_3235",
+                                "label": "Geophysics",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://purl.obolibrary.org/obo/OMIT_0010809",
+                                "label": "Oceanography",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://purl.obolibrary.org/obo/OMIT_0011166",
+                                "label": "Paleontology",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://aims.fao.org/aos/agrovoc/c_7188",
+                                "label": "Soil Science",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://www.fairsharing.org/ontology/subject/SRAO_0000203",
+                                "label": "Water Research",
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "uri": "http://aims.fao.org/aos/agrovoc/c_4318",
+                        "label": "Life Science",
+                        "children": [
+                            {
+                                "uri": "http://aims.fao.org/aos/agrovoc/c_203",
+                                "label": "Agriculture",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://purl.obolibrary.org/obo/NCIT_C16345",
+                                "label": "Biology",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://aims.fao.org/aos/agrovoc/c_2934",
+                                "label": "Fisheries Science",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://purl.obolibrary.org/obo/NCIT_C19199",
+                                "label": "Health Science",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://purl.obolibrary.org/obo/OMIT_0009577",
+                                "label": "Medicine",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://purl.obolibrary.org/obo/OMIT_0019137",
+                                "label": "Natural History",
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "uri": "http://edamontology.org/topic_3315",
+                        "label": "Mathematics",
+                        "children": [
+                            {
+                                "uri": "http://purl.obolibrary.org/obo/NCIT_C17167",
+                                "label": "Statistics",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://purl.obolibrary.org/obo/OMIT_0012123",
+                                "label": "Population Dynamics",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://purl.obolibrary.org/obo/OMIT_0018016",
+                                "label": "Nonlinear Dynamics",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://www.fairsharing.org/ontology/subject/SRAO_0000296",
+                                "label": "Mathematical Psychology",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://edamontology.org/topic_3569",
+                                "label": "Applied Mathematics",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://edamontology.org/topic_3570",
+                                "label": "Pure Mathematics",
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "uri": "http://edamontology.org/topic_3318",
+                        "label": "Physics",
+                        "children": [
+                            {
+                                "uri": "http://aims.fao.org/aos/agrovoc/c_49911",
+                                "label": "Acoustics",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://www.fairsharing.org/ontology/subject/SRAO_0000189",
+                                "label": "Astrophysics and Astronomy",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://www.fairsharing.org/ontology/subject/SRAO_0000186",
+                                "label": "Atomic, Molecular, Optical and Plasma Physics",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://purl.obolibrary.org/obo/NCIT_C16349",
+                                "label": "Biophysics",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://www.fairsharing.org/ontology/subject/SRAO_0000262",
+                                "label": "Building Engineering Physics",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://www.fairsharing.org/ontology/subject/SRAO_0000295",
+                                "label": "Computational Neuroscience",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://www.fairsharing.org/ontology/subject/SRAO_0000183",
+                                "label": "Condensed Matter Physics",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://purl.obolibrary.org/obo/NCIT_C19638",
+                                "label": "Mechanics",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://purl.obolibrary.org/obo/OMIT_0026522",
+                                "label": "Meteorology",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://purl.obolibrary.org/obo/NCIT_C18478",
+                                "label": "Nanotechnology",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://purl.obolibrary.org/obo/OMIT_0018016",
+                                "label": "Nonlinear Dynamics",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://www.fairsharing.org/ontology/subject/SRAO_0000187",
+                                "label": "Particles, Nuclei and Fields",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://www.fairsharing.org/ontology/subject/SRAO_0000180",
+                                "label": "Polymer Physics",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://www.fairsharing.org/ontology/subject/SRAO_0000188",
+                                "label": "Soft Matter Physics",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://www.fairsharing.org/ontology/subject/SRAO_0000308",
+                                "label": "Statistical Physics",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://purl.obolibrary.org/obo/NCIT_C17193",
+                                "label": "Thermodynamics",
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

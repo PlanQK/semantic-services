@@ -1,0 +1,231 @@
+{
+    "_comment": "This classification is inspired by 2012 ACM Computing Classification System. The full CCS classification tree is freely available for educational and research purposes in HTML format. ",
+    "result": {
+        "uri": "http://planqk/OntoQC#OntoQC_N00021",
+        "label": "Problem Type",
+        "children:": [
+            {
+                "uri": "http://planqk/OntoQC#OntoQC_N00121",
+                "label": "Artifical Intelligence Problem",
+                "children": [
+                    {
+                        "uri": "http://planqk/OntoQC#OntoQC_N01125",
+                        "label": "Computer Vision Problem",
+                        "children": []
+                    },
+                    {
+                        "uri": "http://planqk/OntoQC#OntoQC_N01123",
+                        "label": "Knowledge representation and reasoning",
+                        "children": []
+                    },
+                    {
+                        "uri": "http://planqk/OntoQC#OntoQC_N01122",
+                        "label": "Natural language processing",
+                        "children": []
+                    },
+                    {
+                        "uri": "http://planqk/OntoQC#OntoQC_N01121",
+                        "label": "Automated Planning And Scheduling",
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "uri": "http://planqk/OntoQC#OntoQC_N00221",
+                "label": "Machine Learning Problem",
+                "children": [
+                    {
+                        "uri": "http://planqk/OntoQC#OntoQC_N01221",
+                        "label": "Anomaly Detection",
+                        "children": []
+                    },
+                    {
+                        "uri": "http://planqk/OntoQC#OntoQC_N02221",
+                        "label": "Association Rule Learning",
+                        "children": []
+                    },
+                    {
+                        "uri": "http://planqk/OntoQC#OntoQC_N03221",
+                        "label": "Classification",
+                        "children": []
+                    },
+                    {
+                        "uri": "http://planqk/OntoQC#OntoQC_N04221",
+                        "label": "Dimensionality Reduction",
+                        "children": []
+                    },
+                    {
+                        "uri": "http://planqk/OntoQC#OntoQC_N05221",
+                        "label": "Clustering",
+                        "children": []
+                    },
+                    {
+                        "uri": "http://planqk/OntoQC#OntoQC_N06221",
+                        "label": "Feature Learning",
+                        "children": []
+                    },
+                    {
+                        "uri": "http://planqk/OntoQC#OntoQC_N07221",
+                        "label": "Information Extraction",
+                        "children": []
+                    },
+                    {
+                        "uri": "http://planqk/OntoQC#OntoQC_N08221",
+                        "label": "Policy Learning",
+                        "children": []
+                    },
+                    {
+                        "uri": "http://planqk/OntoQC#OntoQC_N09221",
+                        "label": "Ranking",
+                        "children": []
+                    },
+                    {
+                        "uri": "http://planqk/OntoQC#OntoQC_N0A221",
+                        "label": "Recommendation",
+                        "children": []
+                    },
+                    {
+                        "uri": "http://planqk/OntoQC#OntoQC_N0B221",
+                        "label": "Regression",
+                        "children": []
+                    },
+                    {
+                        "uri": "http://planqk/OntoQC#OntoQC_N0C221",
+                        "label": "Regularization",
+                        "children": []
+                    },
+                    {
+                        "uri": "http://planqk/OntoQC#OntoQC_N0F224",
+                        "label": "Segmentation",
+                        "children": [
+                            {
+                                "uri": "http://planqk/OntoQC#OntoQC_N0F244",
+                                "label": "Instance Segmentation",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://planqk/OntoQC#OntoQC_N0F234",
+                                "label": "Panoptic Segmentation",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://planqk/OntoQC#OntoQC_N0F254",
+                                "label": "Semantic Segmentation",
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "uri": "http://planqk/OntoQC#OntoQC_N0D221",
+                        "label": "Structered Output",
+                        "children": []
+                    },
+                    {
+                        "uri": "http://planqk/OntoQC#OntoQC_N0E221",
+                        "label": "Synthetic Data Generation",
+                        "children": []
+                    },
+                    {
+                        "uri": "http://planqk/OntoQC#OntoQC_N0F221",
+                        "label": "Value Function Learning",
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "uri": "http://planqk/OntoQC#OntoQC_N00321",
+                "label": "Mathematical Problem",
+                "children": [
+                    {
+                        "uri": "http://planqk/OntoQC#OntoQC_N01321",
+                        "label": "Approximation",
+                        "children": []
+                    },
+                    {
+                        "uri": "http://planqk/OntoQC#OntoQC_N02321",
+                        "label": "Graph Problem",
+                        "children": []
+                    },
+                    {
+                        "uri": "http://planqk/OntoQC#OntoQC_N03321",
+                        "label": "Linear Algebra Problem",
+                        "children": []
+                    },
+                    {
+                        "uri": "http://planqk/OntoQC#OntoQC_N04321",
+                        "label": "Optimization Problem",
+                        "children": [
+                            {
+                                "uri": "http://planqk/OntoQC#OntoQC_N34321",
+                                "label": "Biologically-inspired optimization",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://planqk/OntoQC#OntoQC_N14321",
+                                "label": "Continuous Optimization Problem",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://planqk/OntoQC#OntoQC_N24321",
+                                "label": "Discrete optimization Problem",
+                                "children": []
+                            },
+                            {
+                                "uri": "http://planqk/OntoQC#OntoQC_N24322",
+                                "label": "Mixed discrete-continuous optimization",
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "uri": "http://planqk/OntoQC#OntoQC_N05321",
+                        "label": "Probability",
+                        "children": [
+                            {
+                                "uri": "http://planqk/OntoQC#OntoQC_N15321",
+                                "label": "Sampling",
+                                "children": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "uri": "http://planqk/OntoQC#OntoQC_N00421",
+                "label": "Search",
+                "children": [
+                    {
+                        "uri": "http://planqk/OntoQC#OntoQC_N01421",
+                        "label": "Continuous Space Search",
+                        "children": []
+                    },
+                    {
+                        "uri": "http://planqk/OntoQC#OntoQC_N02421",
+                        "label": "Discrete Space Search",
+                        "children": []
+                    },
+                    {
+                        "uri": "http://planqk/OntoQC#OntoQC_N03421",
+                        "label": "Heristic Search",
+                        "children": []
+                    },
+                    {
+                        "uri": "http://planqk/OntoQC#OntoQC_N04421",
+                        "label": "Randomized Search",
+                        "children": []
+                    },
+                    {
+                        "uri": "http://planqk/OntoQC#OntoQC_N05421",
+                        "label": "Search With Partial Observations",
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "uri": "http://planqk/OntoQC#OntoQC_N00521",
+                "label": "Sorting",
+                "children": []
+            }
+        ]
+    }
+}

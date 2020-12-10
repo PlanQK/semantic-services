@@ -1,0 +1,3239 @@
+@prefix : <http://planqk/OntoQC#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://planqk/OntoQC> .
+
+<http://planqk/OntoQC> rdf:type owl:Ontology ;
+                        owl:versionIRI <http://planqk/OntoQC/1.0.0> ;
+                        owl:imports <http://www.fairsharing.org/ontology/subject/SRAO_Edited.owl/0.2.2> ;
+                        <http://purl.org/dc/terms/contributor> """University of Stuttgart, Institute of Architecture of Application Systems (IAAS);
+Stoneone AG"""@en ,
+                                                               """Universität Stuttgart, Institut für Architektur von Anwendungssystemen (IAAS);
+Stoneone AG"""@de ;
+                        <http://purl.org/dc/terms/created> "12-03-2020"@en ;
+                        <http://purl.org/dc/terms/creator> "Fraunhofer Institute for Open Communication Systems FOKUS"@en ,
+                                                           "Fraunhofer-Institut für Offene Kommunikationssysteme FOKUS"@de ;
+                        <http://purl.org/dc/terms/license> "-"@en ;
+                        <http://purl.org/dc/terms/title> "PlanQK-Ontology" ;
+                        <http://purl.org/vocab/vann/preferredNamespacePrefix> "OntoQC" ;
+                        owl:priorVersion "None" ;
+                        owl:versionInfo "1.0.0"@en ;
+                        <http://www.w3.org/2003/06/sw-vocab-status/ns#status> "Development"@en ,
+                                                                              "Entwicklung"@de .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://planqk/OntoQC#OntoQC_an00000
+:OntoQC_an00000 rdf:type owl:AnnotationProperty ;
+                rdfs:comment "id from a relational database"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "db_id" ;
+                rdfs:range xsd:string ;
+                rdfs:domain owl:Thing .
+
+
+###  http://planqk/OntoQC#OntoQC_an00004
+:OntoQC_an00004 rdf:type owl:AnnotationProperty ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "unit of measurement"@en ;
+                rdfs:range xsd:string ;
+                rdfs:domain :OntoQC_N00041 .
+
+
+###  http://purl.obolibrary.org/obo/IAO_0000412
+<http://purl.obolibrary.org/obo/IAO_0000412> rdf:type owl:AnnotationProperty ;
+                                             <http://purl.obolibrary.org/obo/IAO_0000412> "imported from" .
+
+
+###  http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/source
+<http://purl.org/dc/terms/source> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#about
+rdfs:about rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2003/06/sw-vocab-status/ns#status
+<http://www.w3.org/2003/06/sw-vocab-status/ns#status> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
+<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#altLabel
+<http://www.w3.org/2004/02/skos/core#altLabel> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#editorialNote
+<http://www.w3.org/2004/02/skos/core#editorialNote> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#example
+<http://www.w3.org/2004/02/skos/core#example> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#note
+<http://www.w3.org/2004/02/skos/core#note> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+<http://www.w3.org/2004/02/skos/core#prefLabel> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/XML/1998/namespacelang
+xml:lang rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/ns/prov#wasDerivedFrom
+<http://www.w3.org/ns/prov#wasDerivedFrom> rdf:type owl:AnnotationProperty ;
+                                           rdfs:comment "A derivation is a transformation of an entity into another, an update of an entity resulting in a new one, or the construction of a new entity based on a pre-existing entity." .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/1999/02/22-rdf-syntax-ns#langString
+rdf:langString rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://planqk/OntoQC#OntoQC_op00001
+:OntoQC_op00001 rdf:type owl:ObjectProperty ;
+                owl:inverseOf :OntoQC_op0000X ;
+                rdfs:domain :OntoQC_A00001 ;
+                rdfs:range :OntoQC_A00001 ;
+                rdfs:comment """The 'based on' property relates an Algorithm to some other 
+Algorithm that provides a basic technique  for the first Algorithm.
+This relation can help to derive the relevant pubications/ blog posts to the other algorithms that needed to understand this algorithm."""@en ;
+                rdfs:label "based on"@en ;
+                <http://www.w3.org/2004/02/skos/core#altLabel> "inspired by"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "based on"@en ,
+                                                                "basiert auf"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_op00002
+:OntoQC_op00002 rdf:type owl:ObjectProperty ;
+                rdfs:domain :OntoQC_N00021 ;
+                rdfs:range :OntoQC_N01461 ;
+                rdfs:comment """The 'belongs to' property relates an 'Problem' to a 'Complexity Class'. 
+This relation can be helpful for researchers to explore the possibilities of quantum computing."""@en ;
+                rdfs:label "belongs to"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "belongs to"@en ,
+                                                                "gehört zur"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_op00003
+:OntoQC_op00003 rdf:type owl:ObjectProperty ;
+                rdfs:domain [ rdf:type owl:Class ;
+                              owl:unionOf ( :OntoQC_A00211
+                                            :OntoQC_A00311
+                                          )
+                            ] ;
+                rdfs:comment "The 'over' property depicts over which 'Classical Algorithm' a 'Quantum Algorithm' or 'Hybrid Quantum-Classical Algorithm' achieves indicated expected speedup."@en ;
+                rdfs:label "over"@en ;
+                <http://www.w3.org/2004/02/skos/core#altLabel> "in comparison to"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "over"@en ,
+                                                                "über"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_op00004
+:OntoQC_op00004 rdf:type owl:ObjectProperty ;
+                rdfs:domain :OntoQC_A00001 ;
+                rdfs:range :OntoQC_N00081 ;
+                rdfs:label "has steps"@en ;
+                <http://www.w3.org/2004/02/skos/core#altLabel> "has instructions"@en ;
+                <http://www.w3.org/2004/02/skos/core#note> "previously labeled as \"provide\""@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "has steps"@en ,
+                                                                "hat verarbeitungsschritte"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_op00005
+:OntoQC_op00005 rdf:type owl:ObjectProperty ;
+                rdfs:domain :OntoQC_G01111 ;
+                rdfs:range :OntoQC_G02111 ;
+                rdfs:label "embedded in"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "eingebettet in"@de ,
+                                                                "embedded in"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_op00006
+:OntoQC_op00006 rdf:type owl:ObjectProperty ;
+                rdfs:domain :OntoQC_B00001 ;
+                rdfs:range :OntoQC_J00001 ;
+                rdfs:label "runs on"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "ausgeführt auf"@de ,
+                                                                "runs on"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_op00007
+:OntoQC_op00007 rdf:type owl:ObjectProperty ;
+                rdfs:domain :OntoQC_A00001 ;
+                rdfs:range :OntoQC_N01463 ;
+                rdfs:label "has input"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "has input"@en ,
+                                                                "hat eingabe"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_op00008
+:OntoQC_op00008 rdf:type owl:ObjectProperty ;
+                rdfs:domain [ rdf:type owl:Class ;
+                              owl:unionOf ( :OntoQC_C00001
+                                            :OntoQC_D00001
+                                            :OntoQC_H00001
+                                          )
+                            ] ;
+                rdfs:range :OntoQC_N00062 ;
+                rdfs:label "has branche"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "has branche"@en ,
+                                                                "hat branche"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_op00009
+:OntoQC_op00009 rdf:type owl:ObjectProperty ;
+                rdfs:domain :OntoQC_A00001 ;
+                rdfs:range :OntoQC_N01462 ;
+                rdfs:label "has output"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "has output"@en ,
+                                                                "hat ausgabe"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_op0000B
+:OntoQC_op0000B rdf:type owl:ObjectProperty ;
+                rdfs:domain :OntoQC_A00001 ;
+                rdfs:range :OntoQC_E00001 ;
+                rdfs:label "has evaluation"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "has evaluation"@en ,
+                                                                "hat evaluation"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_op0000D
+:OntoQC_op0000D rdf:type owl:ObjectProperty ;
+                owl:inverseOf :OntoQC_op0000S ;
+                rdfs:domain :OntoQC_A00001 ;
+                rdfs:range :OntoQC_H00001 ;
+                rdfs:comment "Answers the question:What is the implementation of this algorithm?"@en ;
+                rdfs:label "has implementation"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "has implementation"@en ,
+                                                                "hat implementierung"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_op0000E
+:OntoQC_op0000E rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf owl:topObjectProperty ;
+                rdfs:domain :OntoQC_A00221 ;
+                rdfs:range :OntoQC_N00261 ;
+                <http://purl.obolibrary.org/obo/IAO_0000412> "http://mex.aksw.org/mex-algo#" ;
+                rdfs:label "has learning type"@en ;
+                <http://www.w3.org/2004/02/skos/core#altLabel> "has learning method" ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "has learning type"@en ,
+                                                                "hat lerntyp"@de ;
+                <http://www.w3.org/ns/prov#wasDerivedFrom> "http://mex.aksw.org/mex-algo#hasLearningMethod" .
+
+
+###  http://planqk/OntoQC#OntoQC_op0000F
+:OntoQC_op0000F rdf:type owl:ObjectProperty ;
+                rdfs:domain :OntoQC_A00221 ;
+                rdfs:range :OntoQC_N01464 ;
+                rdfs:comment "A relation between an machine learning algogorithm and description of its hyperparameter in a textual form."@en ;
+                rdfs:label "has hyperparameter"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "has hyperparameter"@en ,
+                                                                "hat hyperparameter"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_op0000M
+:OntoQC_op0000M rdf:type owl:ObjectProperty ;
+                owl:inverseOf :OntoQC_op00910 ;
+                rdfs:domain :OntoQC_I00231 ;
+                rdfs:range :OntoQC_F00001 ;
+                rdfs:label "provided by"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "bereitgestellt von"@de ,
+                                                                "provided by"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_op0000N
+:OntoQC_op0000N rdf:type owl:ObjectProperty ;
+                owl:inverseOf :OntoQC_op0000V ;
+                rdfs:domain [ rdf:type owl:Class ;
+                              owl:unionOf ( :OntoQC_A00001
+                                            :OntoQC_E00001
+                                            :OntoQC_H00001
+                                          )
+                            ] ;
+                rdfs:range :OntoQC_L00001 ;
+                rdfs:label "referenced by"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "referenced by"@en ,
+                                                                "referenziert durch"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_op0000O
+:OntoQC_op0000O rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf owl:topObjectProperty ;
+                rdfs:domain :OntoQC_L00001 ;
+                rdfs:range :OntoQC_N00111 ;
+                rdfs:label "has author"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "has author"@en ,
+                                                                "hat autor"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_op0000S
+:OntoQC_op0000S rdf:type owl:ObjectProperty ;
+                rdfs:domain :OntoQC_H00001 ;
+                rdfs:range :OntoQC_A00001 ;
+                rdfs:comment "Ansers the following question: Which algorithm is implemented by the particular implementation?"@en ;
+                rdfs:label "implements"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "implementiert"@de ,
+                                                                "implements"@en ;
+                <http://www.w3.org/ns/prov#wasDerivedFrom> "http://www.w3.org/ns/mls#implements"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_op0000V
+:OntoQC_op0000V rdf:type owl:ObjectProperty ;
+                rdfs:domain :OntoQC_L00001 ;
+                rdfs:range [ rdf:type owl:Class ;
+                             owl:unionOf ( :OntoQC_A00001
+                                           :OntoQC_E00001
+                                           :OntoQC_H00001
+                                         )
+                           ] ;
+                rdfs:label "references"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "references"@en ,
+                                                                "referenziert"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_op0000X
+:OntoQC_op0000X rdf:type owl:ObjectProperty ;
+                rdfs:domain :OntoQC_A00001 ;
+                rdfs:range :OntoQC_A00001 ;
+                rdfs:label "provides basis for"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "bietet grundlage für"@de ,
+                                                                "provides basis for"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_op0000Y
+:OntoQC_op0000Y rdf:type owl:ObjectProperty ;
+                rdfs:domain [ rdf:type owl:Class ;
+                              owl:unionOf ( :OntoQC_A00001
+                                            :OntoQC_H00001
+                                          )
+                            ] ;
+                rdfs:range :OntoQC_N00021 ;
+                owl:propertyChainAxiom ( :OntoQC_op0000S
+                                         :OntoQC_op0000Y
+                                       ) ;
+                rdfs:label "solves"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "löst"@de ,
+                                                                "solves"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_op00021
+:OntoQC_op00021 rdf:type owl:ObjectProperty ;
+                owl:inverseOf :OntoQC_op00121 ;
+                rdfs:domain :OntoQC_N01441 ;
+                rdfs:range :OntoQC_N00441 ;
+                rdfs:label "has element"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "has element"@en ,
+                                                                "hat element"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_op00022
+:OntoQC_op00022 rdf:type owl:ObjectProperty ;
+                rdfs:domain [ rdf:type owl:Class ;
+                              owl:unionOf ( :OntoQC_A00001
+                                            :OntoQC_H00001
+                                            :OntoQC_N00081
+                                          )
+                            ] ;
+                rdfs:range [ rdf:type owl:Class ;
+                             owl:unionOf ( :OntoQC_K00001
+                                           :OntoQC_N00091
+                                           :OntoQC_P00001
+                                           :OntoQC_T00001
+                                         )
+                           ] ;
+                owl:propertyChainAxiom ( :OntoQC_op00004
+                                         :OntoQC_op00022
+                                       ) ;
+                rdfs:label "has part"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "has part"@en ,
+                                                                "hat teil"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_op00030
+:OntoQC_op00030 rdf:type owl:ObjectProperty ;
+                rdfs:domain [ rdf:type owl:Class ;
+                              owl:unionOf ( :OntoQC_E00001
+                                            :OntoQC_H00001
+                                          )
+                            ] ;
+                rdfs:range :OntoQC_D00011 ;
+                rdfs:label "uses dataset"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "benutzt daten"@de ,
+                                                                "uses dataset"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_op00032
+:OntoQC_op00032 rdf:type owl:ObjectProperty ;
+                rdfs:domain :OntoQC_N00021 ;
+                rdfs:range :OntoQC_N00021 ;
+                rdfs:label "formalized as"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "formalisiert als"@de ,
+                                                                "formalized as"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_op00042
+:OntoQC_op00042 rdf:type owl:ObjectProperty ;
+                owl:inverseOf :OntoQC_op00043 ;
+                rdfs:domain :OntoQC_N00081 ;
+                rdfs:range :OntoQC_W00001 ;
+                rdfs:label "uses"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "benutzt"@de ,
+                                                                "uses"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_op00043
+:OntoQC_op00043 rdf:type owl:ObjectProperty ;
+                rdfs:domain :OntoQC_W00001 ;
+                rdfs:range :OntoQC_N00081 ;
+                rdfs:label "is used by"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "is used by"@en ,
+                                                                "wird verwendet in"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_op00050
+:OntoQC_op00050 rdf:type owl:ObjectProperty ;
+                rdfs:domain [ rdf:type owl:Class ;
+                              owl:unionOf ( :OntoQC_A00001
+                                            :OntoQC_H00001
+                                          )
+                            ] ;
+                rdfs:range :OntoQC_N00341 ;
+                rdfs:label "designed for"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "designed for"@en ,
+                                                                "entworfen für"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_op00052
+:OntoQC_op00052 rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf :OntoQC_op00053 ;
+                rdfs:domain [ rdf:type owl:Class ;
+                              owl:unionOf ( :OntoQC_A00211
+                                            :OntoQC_A00311
+                                          )
+                            ] ;
+                rdfs:range :OntoQC_A00111 ;
+                rdfs:comment "This property depicts over which 'Classical Algorithm' a 'Quantum Algorithm' or a 'Hybrid Quantum-Classical Algorithm' achieves indicated expected speedup."@en ;
+                rdfs:label "achieves quantum speedup over"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "achieves quantum speedup over"@en ,
+                                                                "erreicht Quantenbeschleunigung gegenüber"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_op00053
+:OntoQC_op00053 rdf:type owl:ObjectProperty ;
+                rdfs:domain :OntoQC_A00001 ;
+                rdfs:range :OntoQC_A00001 ;
+                rdfs:comment "This property relates two algorithms that solve the same problem, but the domain algorithm solves the problem more effitiently than the range algorithm."@en ;
+                rdfs:label "achieves speedup over"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "achieves speedup over"@en ,
+                                                                "erzielt eine beschleunigung über"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_op00062
+:OntoQC_op00062 rdf:type owl:ObjectProperty ;
+                rdfs:domain :OntoQC_A00001 ;
+                rdfs:range :OntoQC_A00001 ;
+                rdfs:comment "This relation between two algorithms exist when an algorithm add improvements to another existing algorithm."@en ;
+                rdfs:label "improves"@en ;
+                <http://www.w3.org/2004/02/skos/core#altLabel> "modifies"@en ,
+                                                               "modifiziert"@de ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "improves"@en ,
+                                                                "verbessert"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_op00110
+:OntoQC_op00110 rdf:type owl:ObjectProperty ;
+                rdfs:domain :OntoQC_B00001 ;
+                rdfs:range :OntoQC_H00001 ;
+                rdfs:label "executes"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "executes"@en ,
+                                                                "führt  aus"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_op00121
+:OntoQC_op00121 rdf:type owl:ObjectProperty ;
+                rdfs:domain :OntoQC_N00441 ;
+                rdfs:range :OntoQC_N01441 ;
+                rdfs:label "is element of"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "is element of"@en ,
+                                                                "ist element von"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_op00210
+:OntoQC_op00210 rdf:type owl:ObjectProperty ;
+                owl:inverseOf :OntoQC_op00220 ;
+                rdfs:domain :OntoQC_J00001 ;
+                rdfs:range :OntoQC_N00341 ;
+                rdfs:comment "The 'realizes' property relates an 'Computational Resource' to a 'Computational Model'. This relation can be used in the future to derive devices, on which an Implementation is executable."@en ;
+                rdfs:label "realizes"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "realisiert"@de ,
+                                                                "realizes"@en ;
+                <http://www.w3.org/ns/prov#wasDerivedFrom> "http://www.w3.org/ns/mls#realizes"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_op00220
+:OntoQC_op00220 rdf:type owl:ObjectProperty ;
+                rdfs:comment "The 'realized in' property relates an 'Computational Model' to a 'Computational Resource'. This relation can be used in the future to derive devices, on which an Implementation is executable."@en ;
+                rdfs:label "realized in"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "realized in"@en ,
+                                                                "realiziert in"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_op00310
+:OntoQC_op00310 rdf:type owl:ObjectProperty ;
+                rdfs:domain :OntoQC_I00231 ;
+                rdfs:range :OntoQC_N00041 ;
+                rdfs:label "has characteristic"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "has characteristic"@en ,
+                                                                "hat eigenschaft"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_op00410
+:OntoQC_op00410 rdf:type owl:ObjectProperty ;
+                rdfs:domain [ rdf:type owl:Class ;
+                              owl:unionOf ( :OntoQC_A00211
+                                            :OntoQC_A00311
+                                          )
+                            ] ;
+                rdfs:range :OntoQC_N00041 ;
+                rdfs:label "requires"@en ;
+                <http://www.w3.org/2004/02/skos/core#altLabel> "braucht"@de ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "erfordert"@de ,
+                                                                "requires"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_op00510
+:OntoQC_op00510 rdf:type owl:ObjectProperty ;
+                rdfs:domain :OntoQC_H00001 ;
+                rdfs:range :OntoQC_G00011 ;
+                rdfs:label "written in"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "geschrieben in"@de ,
+                                                                "written in"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_op00610
+:OntoQC_op00610 rdf:type owl:ObjectProperty ;
+                rdfs:domain [ rdf:type owl:Class ;
+                              owl:unionOf ( :OntoQC_G00001
+                                            :OntoQC_I02231
+                                          )
+                            ] ;
+                rdfs:range [ rdf:type owl:Class ;
+                             owl:unionOf ( :OntoQC_G00001
+                                           :OntoQC_J00001
+                                         )
+                           ] ;
+                owl:propertyChainAxiom ( :OntoQC_op00810
+                                         :OntoQC_op00910
+                                       ) ;
+                rdfs:label "compatible with"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "compatible with"@en ,
+                                                                "kompatibel mit"@de ;
+                <http://www.w3.org/ns/prov#wasDerivedFrom> "http://mklab.iti.gr/pericles/ComputerSystem_ODP#isCompatibleWith" .
+
+
+###  http://planqk/OntoQC#OntoQC_op00710
+:OntoQC_op00710 rdf:type owl:ObjectProperty ;
+                rdfs:domain :OntoQC_H00001 ;
+                rdfs:range :OntoQC_G00031 ;
+                rdfs:comment """The 'depends on' property relates an 'Implementation' to a 'Software Tool'. 
+This relation can be used to derive implementations that uses an specific framework, i. e. qiskit, TensorflowQuantum etc."""@en ;
+                rdfs:label "depends on"@en ;
+                <http://www.w3.org/2004/02/skos/core#altLabel> "calls"@en ,
+                                                               "ruft auf"@de ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "depends on"@en ,
+                                                                "hängt ab von"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_op00810
+:OntoQC_op00810 rdf:type owl:ObjectProperty ;
+                rdfs:domain :OntoQC_G00031 ;
+                rdfs:range :OntoQC_F00001 ;
+                rdfs:label "supports"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "supports"@en ,
+                                                                "unterstützt"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_op00910
+:OntoQC_op00910 rdf:type owl:ObjectProperty ;
+                rdfs:domain :OntoQC_F00001 ;
+                rdfs:range :OntoQC_I00231 ;
+                rdfs:label "provides"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "provides"@en ,
+                                                                "slellt zur verfügung"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_op01310
+:OntoQC_op01310 rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf :OntoQC_op00310 ;
+                rdfs:domain :OntoQC_I00231 ;
+                rdfs:range :OntoQC_N01441 ;
+                rdfs:label "has gate set"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "has gate set"@en ,
+                                                                "hat gate set"@de .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://planqk/OntoQC#OntoQC_dp00000
+:OntoQC_dp00000 rdf:type owl:DatatypeProperty ;
+                rdfs:domain :OntoQC_L00001 ;
+                rdfs:range xsd:string ;
+                rdfs:label "abstract"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "abstract"@en ,
+                                                                "abstrakt"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_dp00001
+:OntoQC_dp00001 rdf:type owl:DatatypeProperty ;
+                rdfs:domain :OntoQC_I00231 ;
+                rdfs:range xsd:string ;
+                rdfs:comment "Quantum technologies used to create a quantum hardware."@en ;
+                rdfs:label "quantum technology" ;
+                <http://www.w3.org/2004/02/skos/core#altLabel> "quantum technology"@en ,
+                                                               "technologie"@de ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "quantum technology"@en ,
+                                                                "quantumtechologie"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_dp00002
+:OntoQC_dp00002 rdf:type owl:DatatypeProperty ;
+                rdfs:domain :OntoQC_N00041 ;
+                rdfs:label "value"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "Wert"@de ,
+                                                                "value"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_dp00003
+:OntoQC_dp00003 rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf owl:topDataProperty ;
+                rdfs:domain :OntoQC_G00001 ;
+                rdfs:range xsd:string ;
+                rdfs:comment "Information about the software license"@en ;
+                rdfs:label "license"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "license"@en ,
+                                                                "lizenz"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_dp00004
+:OntoQC_dp00004 rdf:type owl:DatatypeProperty ;
+                rdfs:domain :OntoQC_N00081 ;
+                rdfs:range xsd:string ;
+                rdfs:comment "Comes as String (in LatTex form or as simple textual description)"@en ;
+                rdfs:label "pseudocode"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "pseudocode"@de ,
+                                                                "pseudocode"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_dp00005
+:OntoQC_dp00005 rdf:type owl:DatatypeProperty ;
+                rdfs:domain [ rdf:type owl:Class ;
+                              owl:unionOf ( :OntoQC_A00001
+                                            :OntoQC_H00001
+                                          )
+                            ] ;
+                rdfs:range xsd:string ;
+                rdfs:label "assumption"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "annahme"@de ,
+                                                                "assumption"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_dp00006
+:OntoQC_dp00006 rdf:type owl:DatatypeProperty ;
+                rdfs:domain :OntoQC_N00081 ;
+                rdfs:range xsd:string ;
+                rdfs:label "circuit"@en ;
+                <http://www.w3.org/2004/02/skos/core#altLabel> "quantenschaltung"@de ,
+                                                               "quantum circuit"@en ,
+                                                               "schaltkreis"@de ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "circuit"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_dp00007
+:OntoQC_dp00007 rdf:type owl:DatatypeProperty ;
+                rdfs:domain :OntoQC_A00001 ;
+                rdfs:range xsd:string ;
+                rdfs:label "limitation"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "Limitation"@de ,
+                                                                "limitation"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_dp00008
+:OntoQC_dp00008 rdf:type owl:DatatypeProperty ;
+                rdfs:domain owl:Thing ;
+                rdfs:range rdfs:Literal ;
+                rdfs:label "description"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "beschreibung"@de ,
+                                                                "description"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_dp00009
+:OntoQC_dp00009 rdf:type owl:DatatypeProperty ;
+                rdfs:domain :OntoQC_L00001 ;
+                rdfs:range xsd:string ;
+                rdfs:label "doi"@en ;
+                <http://www.w3.org/2004/02/skos/core#altLabel> "Digital Object Identifier"@de ,
+                                                               "Digital Object Identifier"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "doi"@de ,
+                                                                "doi"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_dp0000A
+:OntoQC_dp0000A rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf :OntoQC_dp00010 ;
+                rdfs:domain :OntoQC_L00001 ;
+                rdfs:range xsd:string ;
+                rdfs:comment "Link to the implementation/software/algorithm explanation that is not a publication, e. g. a blogpost."@en ;
+                rdfs:label "article link"@en ;
+                <http://www.w3.org/2004/02/skos/core#altLabel> "Link zur Publikation"@de ,
+                                                               "article url"@en ,
+                                                               "paper link"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "article link"@en ,
+                                                                "link zum Artikel"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_dp0000B
+:OntoQC_dp0000B rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf :OntoQC_dp00010 ;
+                rdfs:domain :OntoQC_G00001 ;
+                rdfs:range xsd:string ;
+                rdfs:comment "Link to the source code."@en ;
+                rdfs:label "source code link"@en ;
+                <http://www.w3.org/2004/02/skos/core#altLabel> "source code url"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "link zum quellcode"@de ,
+                                                                "source code link"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_dp0000C
+:OntoQC_dp0000C rdf:type owl:DatatypeProperty ;
+                rdfs:domain [ rdf:type owl:Class ;
+                              owl:unionOf ( :OntoQC_A00001
+                                            :OntoQC_H00001
+                                            :OntoQC_W00001
+                                          )
+                            ] ;
+                rdfs:range xsd:string ;
+                rdfs:comment "A short description of the algorithm (Purpose, Idea)"@en ,
+                             "As image and/or as text"@en ;
+                rdfs:label "intent"@en ;
+                <http://www.w3.org/2004/02/skos/core#altLabel> "beschreibung"@de ,
+                                                               "description"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "intent"@en ,
+                                                                "zweck"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_dp0000D
+:OntoQC_dp0000D rdf:type owl:DatatypeProperty ;
+                rdfs:domain :OntoQC_G00001 ;
+                rdfs:range xsd:boolean ;
+                rdfs:label "is open source"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "is open source"@en ,
+                                                                "ist open-source"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_dp0000E
+:OntoQC_dp0000E rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf owl:topDataProperty ;
+                rdfs:domain [ rdf:type owl:Class ;
+                              owl:unionOf ( :OntoQC_A00211
+                                            :OntoQC_A00311
+                                          )
+                            ] ;
+                rdfs:range xsd:string ;
+                rdfs:comment """The advantage in runtime obtained by a quantum algorithm
+over the classical methods for the same task."""@en ;
+                rdfs:label "expected quantum speedup"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "erwartete Quantenbeschleunigung"@de ,
+                                                                "expected quantum speedup"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_dp0000F
+:OntoQC_dp0000F rdf:type owl:DatatypeProperty ;
+                rdfs:domain :OntoQC_N00091 ;
+                rdfs:label "mathematical formulation"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "mathematical formulation"@en ,
+                                                                "mathematische Formulierung"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_dp0000G
+:OntoQC_dp0000G rdf:type owl:DatatypeProperty ;
+                rdfs:domain :OntoQC_I01231 ;
+                rdfs:range xsd:dateTime ;
+                rdfs:label "last calibration update" ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "last calibration update"@en ,
+                                                                "letzte Kalibrierung"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_dp0000M
+:OntoQC_dp0000M rdf:type owl:DatatypeProperty ;
+                rdfs:domain :OntoQC_L00001 ;
+                rdfs:range xsd:dateTime ;
+                rdfs:comment "Specifies the date \"YYYY-MM-DD\" when the publication was printed."@en ;
+                rdfs:label "date"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "date"@en ,
+                                                                "datum"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_dp0000N
+:OntoQC_dp0000N rdf:type owl:DatatypeProperty ;
+                rdfs:domain :OntoQC_L00001 ;
+                rdfs:range xsd:string ;
+                rdfs:label "keywords"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "keywords"@en ,
+                                                                "schlüsselwörter"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_dp0000O
+:OntoQC_dp0000O rdf:type owl:DatatypeProperty ,
+                         owl:FunctionalProperty ;
+                rdfs:domain :OntoQC_L00001 ;
+                rdfs:range rdfs:Literal ;
+                rdfs:comment "Specifies the title of the publication."@en ;
+                rdfs:label "title"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "titel"@de ,
+                                                                "title"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_dp0000S
+:OntoQC_dp0000S rdf:type owl:DatatypeProperty ;
+                rdfs:domain :OntoQC_N00041 ;
+                rdfs:range xsd:string ;
+                rdfs:label "notation"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "Notation"@de ,
+                                                                "notation"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_dp0000V
+:OntoQC_dp0000V rdf:type owl:DatatypeProperty ;
+                rdfs:domain [ rdf:type owl:Class ;
+                              owl:unionOf ( :OntoQC_A00211
+                                            :OntoQC_A00311
+                                          )
+                            ] ;
+                rdfs:range xsd:boolean ;
+                rdfs:label "NISQ-ready"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "NISQ-geeignet"@de ,
+                                                                "NISQ-ready"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_dp0000Z
+:OntoQC_dp0000Z rdf:type owl:DatatypeProperty ;
+                rdfs:domain [ rdf:type owl:Class ;
+                              owl:unionOf ( :OntoQC_G00001
+                                            :OntoQC_H00001
+                                            :OntoQC_J00001
+                                          )
+                            ] ;
+                rdfs:range xsd:string ;
+                rdfs:label "version"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "version"@de ,
+                                                                "version"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_dp00010
+:OntoQC_dp00010 rdf:type owl:DatatypeProperty ;
+                rdfs:domain [ rdf:type owl:Class ;
+                              owl:unionOf ( :OntoQC_G00001
+                                            :OntoQC_I00231
+                                            :OntoQC_L00001
+                                          )
+                            ] ;
+                rdfs:range xsd:string ;
+                rdfs:label "link"@en ;
+                <http://www.w3.org/2004/02/skos/core#altLabel> "url"@de ,
+                                                               "url"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "link"@de ,
+                                                                "link"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_dp0001C
+:OntoQC_dp0001C rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf :OntoQC_dp00010 ;
+                rdfs:domain [ rdf:type owl:Class ;
+                              owl:unionOf ( :OntoQC_G00001
+                                            :OntoQC_I00231
+                                          )
+                            ] ;
+                rdfs:range xsd:string ;
+                rdfs:label "documentation link"@en ;
+                <http://www.w3.org/2004/02/skos/core#altLabel> "documentation url"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "documentation link"@en ,
+                                                                "link zur dokumentation"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_dp0001Z
+:OntoQC_dp0001Z rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf :OntoQC_dp0000Z ;
+                rdfs:domain :OntoQC_G00001 ;
+                rdfs:range xsd:string ;
+                rdfs:label "latest version"@en ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "latest version"@en ,
+                                                                "letzte Version"@de .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://planqk/OntoQC#OntoQC_A00001
+:OntoQC_A00001 rdf:type owl:Class ;
+               owl:disjointWith :OntoQC_H00001 ,
+                                :OntoQC_L00001 ;
+               rdfs:label "Algorithm"@en ;
+               <http://www.w3.org/2004/02/skos/core#altLabel> "Method"@en ,
+                                                              "Verfahren"@de ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Algorithm"@en ,
+                                                               "Algorithmus"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_A00111
+:OntoQC_A00111 rdf:type owl:Class ;
+               owl:equivalentClass [ owl:intersectionOf ( :OntoQC_A00001
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty :OntoQC_op00050 ;
+                                                            owl:allValuesFrom :OntoQC_N01341
+                                                          ]
+                                                        ) ;
+                                     rdf:type owl:Class
+                                   ] ;
+               rdfs:comment "An Algorithm that is based only on the subclasses of the 'Classical Computational Model'."@en ;
+               rdfs:label "Classical Algorithm"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Classical Algorithm"@en ,
+                                                               "Klassischer Algorithmus"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_A00121
+:OntoQC_A00121 rdf:type owl:Class ;
+               owl:equivalentClass [ owl:intersectionOf ( :OntoQC_A00001
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty :OntoQC_op0000Y ;
+                                                            owl:someValuesFrom :OntoQC_N00121
+                                                          ]
+                                                        ) ;
+                                     rdf:type owl:Class
+                                   ] ;
+               rdfs:comment "An Algorithm that solves an AI problem."@en ;
+               rdfs:label "Artifical Intelligence Algorithm"@en ;
+               <http://www.w3.org/2004/02/skos/core#altLabel> "AI Algorithm"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Artifical Intelligence Algorithm"@en ,
+                                                               "KI-Algorithmus"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_A00211
+:OntoQC_A00211 rdf:type owl:Class ;
+               owl:equivalentClass [ owl:intersectionOf ( :OntoQC_A00001
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty :OntoQC_op00050 ;
+                                                            owl:someValuesFrom :OntoQC_N01341
+                                                          ]
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty :OntoQC_op00050 ;
+                                                            owl:someValuesFrom :OntoQC_N03341
+                                                          ]
+                                                        ) ;
+                                     rdf:type owl:Class
+                                   ] ;
+               rdfs:comment "An Algorithm that is based on some Subclass of the 'Quantum Computation Model'  AND some subclass of the 'Classical Computational Model'"@en ;
+               rdfs:label "Hybrid Quantum-Classical Algorithm"@en ;
+               <http://www.w3.org/2004/02/skos/core#altLabel> "Quanten-klassischer Hybrid-Algorithmus"@de ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Hybrid Quantum-Classical Algorithm"@en ,
+                                                               "Hybrider Quantenalgorithmus"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_A00221
+:OntoQC_A00221 rdf:type owl:Class ;
+               owl:equivalentClass [ owl:intersectionOf ( :OntoQC_A00001
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty :OntoQC_op0000Y ;
+                                                            owl:someValuesFrom :OntoQC_N00221
+                                                          ]
+                                                        ) ;
+                                     rdf:type owl:Class
+                                   ] ;
+               rdfs:comment "An Algorithm that solves a machine learning problem."@en ;
+               rdfs:label "Machine Learning Algorithm"@en ;
+               <http://www.w3.org/2004/02/skos/core#altLabel> "ML Algorirthm"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "ML-Algorithmus"@de ,
+                                                               "Machine Learning Algorithm"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_A00311
+:OntoQC_A00311 rdf:type owl:Class ;
+               owl:equivalentClass [ owl:intersectionOf ( :OntoQC_A00001
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty :OntoQC_op00050 ;
+                                                            owl:allValuesFrom :OntoQC_N03341
+                                                          ]
+                                                        ) ;
+                                     rdf:type owl:Class
+                                   ] ;
+               rdfs:comment "An Algorithm that is based only on the subclasses of the 'Quantum Computation Model' ."@en ;
+               rdfs:label "Quantum Algorithm"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Quantenalgorithmus"@de ,
+                                                               "Quantum Algorithm"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_A00321
+:OntoQC_A00321 rdf:type owl:Class ;
+               owl:equivalentClass [ owl:intersectionOf ( :OntoQC_A00001
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty :OntoQC_op0000Y ;
+                                                            owl:someValuesFrom :OntoQC_N00321
+                                                          ]
+                                                        ) ;
+                                     rdf:type owl:Class
+                                   ] ;
+               rdfs:comment "An Algorithm that solves a mathematical problem."@en ;
+               rdfs:label "Mathematical Algorithm"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Mathematical Algorithm"@en ,
+                                                               "Mathematischer Algorithmus"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_A00421
+:OntoQC_A00421 rdf:type owl:Class ;
+               owl:equivalentClass [ owl:intersectionOf ( :OntoQC_A00001
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty :OntoQC_op0000Y ;
+                                                            owl:someValuesFrom :OntoQC_N00421
+                                                          ]
+                                                        ) ;
+                                     rdf:type owl:Class
+                                   ] ;
+               rdfs:comment "An Algorithm that solves a search problem."@en ;
+               rdfs:label "Search Algorithm"@en ;
+               <http://www.w3.org/2004/02/skos/core#altLabel> "Suchverfahren"@de ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Search Algorithm"@en ,
+                                                               "Suchalgorithmus"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_A006521
+:OntoQC_A006521 rdf:type owl:Class ;
+                owl:equivalentClass [ owl:intersectionOf ( :OntoQC_A00001
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :OntoQC_op0000Y ;
+                                                             owl:someValuesFrom :OntoQC_N00521
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
+                rdfs:comment "An Algorithm that solves a sorting problem."@en ;
+                rdfs:label "Sorting Algorithm"@en ;
+                <http://www.w3.org/2004/02/skos/core#altLabel> "Sortierverfahren"@de ;
+                <http://www.w3.org/2004/02/skos/core#prefLabel> "Sortieralgorithmus"@de ,
+                                                                "Sorting Algorithm"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_B00001
+:OntoQC_B00001 rdf:type owl:Class ;
+               rdfs:comment "Collects runs of a source code on a hardware with a specific algorithm configuration."@en ;
+               rdfs:label "Execution"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Ausführung"@de ,
+                                                               "Execution"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_C00001
+:OntoQC_C00001 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_G00001 ;
+               rdfs:comment "A real industial use case/problem in its context including application data, implementation and a clearly defined goal."@en ;
+               rdfs:label "Application"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Application"@en ,
+                                                               "Applikation"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_D00001
+:OntoQC_D00001 rdf:type owl:Class ;
+               <http://purl.obolibrary.org/obo/IAO_0000412> "http://www.w3.org/ns/mls#" ;
+               rdfs:comment """Data is a data item composed of data examples and it may be of a various level of granularity and complexity. 
+With regard to granularity, it can be a whole dataset (for instance, one main table and possibly other tables), or only a single table, or only a feature (e.g., a column of a table), or only an instance (e.g., row of a table), or a single feature-value pair. 
+With regard to complexity, data examples are characterized by their datatype, which may be arbitrarily complex (e.g., instead of a table it can be an arbitrary graph)."""@en ;
+               rdfs:label "Data"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Data"@en ,
+                                                               "Daten"@en ;
+               <http://www.w3.org/ns/prov#wasDerivedFrom> "http://www.w3.org/ns/mls#Data" .
+
+
+###  http://planqk/OntoQC#OntoQC_D00011
+:OntoQC_D00011 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_D00001 ;
+               <http://purl.obolibrary.org/obo/IAO_0000412> "http://www.w3.org/ns/mls#" ;
+               rdfs:comment """Collects datasets that can be used for algorithms execution.
+Example of individuals of the datasets class can include: Iris dataset, FaceScrub dataset, IMDB-WIKI dataset, and others."""@en ;
+               rdfs:label "Dataset"@en ;
+               <http://www.w3.org/2004/02/skos/core#editorialNote> "Examples in rdfs:comment are cited from the Paper \"ML-Schema: An interchangeable format for description of machine learning experiments\"."@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Dataset"@de ,
+                                                               "Dataset"@en ;
+               <http://www.w3.org/ns/prov#wasDerivedFrom> "http://www.w3.org/ns/mls#Dataset" .
+
+
+###  http://planqk/OntoQC#OntoQC_D00021
+:OntoQC_D00021 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_D00001 ;
+               <http://purl.obolibrary.org/obo/IAO_0000412> "http://www.w3.org/ns/mls#" ;
+               rdfs:comment """This concept specifies a feauture contained in a dataset.
+Examples of individuals of features that appear in the Iris dataset are as follows: sepal length, sepal width, petal length, petal width, and class."""@en ;
+               rdfs:label "Feature"@en ;
+               <http://www.w3.org/2004/02/skos/core#editorialNote> "Examples in rdfs:comment are cited from the Paper \"ML-Schema: An interchangeable format for description of machine learning experiments\"."@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Feature"@de ,
+                                                               "Feature"@en ;
+               <http://www.w3.org/ns/prov#wasDerivedFrom> "http://www.w3.org/ns/mls#Feature" .
+
+
+###  http://planqk/OntoQC#OntoQC_E00001
+:OntoQC_E00001 rdf:type owl:Class ;
+               rdfs:comment "Describes an evaluation of an algorithm using specific metrics."@en ;
+               rdfs:label "Evaluation"@en ;
+               <http://www.w3.org/2004/02/skos/core#altLabel> "Performance"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Evaluation"@de ,
+                                                               "Evaluation"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_F00001
+:OntoQC_F00001 rdf:type owl:Class ;
+               rdfs:comment "Collects vendors that provide access to quantum computational resources."@en ;
+               rdfs:label "Quantum Provider"@en ;
+               <http://www.w3.org/2004/02/skos/core#altLabel> "Quantum Hardware Provider"@en ,
+                                                              "Vendor"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "QC-Hersteller"@de ,
+                                                               "Quantum Provider"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_G00001
+:OntoQC_G00001 rdf:type owl:Class ;
+               rdfs:comment "Collects different software resources."@en ;
+               rdfs:label "Software"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Software"@de ,
+                                                               "Software"@en ;
+               <http://www.w3.org/ns/prov#wasDerivedFrom> "http://mklab.iti.gr/pericles/ComputerSystem_ODP#Software" .
+
+
+###  http://planqk/OntoQC#OntoQC_G00011
+:OntoQC_G00011 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_G00001 ;
+               rdfs:label "Computer Language"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Computer Language"@en ,
+                                                               "Computersprache"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_G00021
+:OntoQC_G00021 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_G00001 ;
+               rdfs:label "Operating System"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Betriebssystem"@de ,
+                                                               "Operating System"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_G00031
+:OntoQC_G00031 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_G00001 ;
+               rdfs:comment "Collects various frameworks, libraries, SDKs, or APIs that developers can use for implementing an algorithm."@en ;
+               rdfs:label "Software Tool"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Software Tool"@de ,
+                                                               "Software Tool"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_G00111
+:OntoQC_G00111 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_G00011 ;
+               rdfs:comment "Contains languages that have a human readable syntax."@en ;
+               rdfs:label "Programming Language"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Programmiersprache"@de ,
+                                                               "Programming Language"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_G00121
+:OntoQC_G00121 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N00241 ;
+               rdfs:label "1-Qubit Gate Fidelity"@en ;
+               <http://www.w3.org/2004/02/skos/core#altLabel> "Single-qubit U2 error rate"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "1-Qubit Gate Fidelity"@de ,
+                                                               "1-Qubit Gate Fidelity"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_G00131
+:OntoQC_G00131 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_G00031 ;
+               rdfs:label "API"@en ;
+               <http://www.w3.org/2004/02/skos/core#altLabel> "Application Programming Interface"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "API"@de ,
+                                                               "API"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_G00211
+:OntoQC_G00211 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_G00011 ;
+               rdfs:comment "Collects a low-level machine languages used to instruct the computer which physical operation to perform on which bit."@en ;
+               rdfs:label "Instruction Language"@en ;
+               <http://www.w3.org/2004/02/skos/core#altLabel> "Assembly Language"@en ,
+                                                              "QMI"@en ,
+                                                              "Quantum Machine Instruction"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Instruction Language"@en ,
+                                                               "Maschinensprache"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_G00221
+:OntoQC_G00221 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N00241 ;
+               rdfs:label "2-Qubit Gate Fidelity"@en ;
+               <http://www.w3.org/2004/02/skos/core#altLabel> "CNOT error rate"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "2-Qubit Gate Fidelity"@de ,
+                                                               "2-Qubit Gate Fidelity"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_G00231
+:OntoQC_G00231 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_G00031 ;
+               rdfs:label "SDK"@en ;
+               <http://www.w3.org/2004/02/skos/core#altLabel> "Software Development Kit"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "SDK"@de ,
+                                                               "SDK"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_G00331
+:OntoQC_G00331 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_G00031 ;
+               rdfs:label "Library"@en ;
+               <http://www.w3.org/2004/02/skos/core#altLabel> "Library"@de ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Bibliothek"@de ,
+                                                               "Library"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_G00421
+:OntoQC_G00421 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N00041 ;
+               rdfs:label "Qubit Connectivity"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Qubit Connectivity"@en ,
+                                                               "Qubit-Konnektivität"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_G00431
+:OntoQC_G00431 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_G00031 ;
+               rdfs:label "Framework"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Framework"@de ,
+                                                               "Framework"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_G00521
+:OntoQC_G00521 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N00241 ;
+               rdfs:label "Readout Fidelity"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Readout Fidelity"@de ,
+                                                               "Readout Fidelity"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_G01111
+:OntoQC_G01111 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_G00111 ;
+               rdfs:comment "Collects quantum programming languages or libraries names that define own syntax that is embedded in a classical programming language."@en ;
+               rdfs:label "Quantum Programming Language"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Quantenprogrammiersprache"@de ,
+                                                               "Quantum Programming Language"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_G01211
+:OntoQC_G01211 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_G00211 ;
+               rdfs:label "Quantum Instruction Language"@en ;
+               <http://www.w3.org/2004/02/skos/core#altLabel> "quantum assembly language"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Quantenmaschinensprache"@de ,
+                                                               "Quantum Instruction Language"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_G02111
+:OntoQC_G02111 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_G00111 ;
+               rdfs:label "Classical Programming Language"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Classical Programming Language"@en ,
+                                                               "Klassische Programmiersprache"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_G02211
+:OntoQC_G02211 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_G00211 ;
+               rdfs:label "Classical Instruction Language"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Classical Instruction Language"@en ,
+                                                               "Klassische Maschinensprache"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_H00001
+:OntoQC_H00001 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_G00001 ;
+               owl:disjointWith :OntoQC_L00001 ;
+               rdfs:comment "A source code that can be executed."@en ;
+               rdfs:label "Implementation"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Implementation"@en ,
+                                                               "Implementierung"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_I00131
+:OntoQC_I00131 rdf:type owl:Class ;
+               owl:equivalentClass [ owl:intersectionOf ( :OntoQC_J00001
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty :OntoQC_op00210 ;
+                                                            owl:allValuesFrom :OntoQC_N01341
+                                                          ]
+                                                        ) ;
+                                     rdf:type owl:Class
+                                   ] ;
+               rdfs:subClassOf :OntoQC_J00001 ;
+               rdfs:comment "Collects computational resources that realize only classical computational model."@en ;
+               rdfs:label "Classical Computational Resource"@en ;
+               <http://www.w3.org/2004/02/skos/core#altLabel> "Classical Hardware"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Classical Computational Resource"@en ,
+                                                               "Klassische Hardware"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_I00231
+:OntoQC_I00231 rdf:type owl:Class ;
+               owl:equivalentClass [ owl:intersectionOf ( :OntoQC_J00001
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty :OntoQC_op00210 ;
+                                                            owl:allValuesFrom :OntoQC_N03341
+                                                          ]
+                                                        ) ;
+                                     rdf:type owl:Class
+                                   ] ;
+               rdfs:comment "Collects computational resources that realize only quantum computational model."@en ;
+               rdfs:label "Quantum Computational Resource"@en ;
+               <http://www.w3.org/2004/02/skos/core#altLabel> "Quantum Hardware"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Quantenhardware"@de ,
+                                                               "Quantum Computational Resource"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_I01131
+:OntoQC_I01131 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_I00131 ;
+               rdfs:label "CPU"@en ;
+               <http://www.w3.org/2004/02/skos/core#altLabel> "Central Processing Unit"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "CPU"@de ,
+                                                               "CPU"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_I01231
+:OntoQC_I01231 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_I00231 ;
+               rdfs:label "QPU"@en ;
+               <http://www.w3.org/2004/02/skos/core#altLabel> "Quantum Processing Unit"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "QPU"@de ,
+                                                               "QPU"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_I02131
+:OntoQC_I02131 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_I00131 ;
+               rdfs:label "GPU"@en ;
+               <http://www.w3.org/2004/02/skos/core#altLabel> "Graphics Processor Unit"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "GPU"@de ,
+                                                               "GPU"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_I02231
+:OntoQC_I02231 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_I00231 ;
+               rdfs:label "Quantum Simulator"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Quantensimulator"@de ,
+                                                               "Quantum Simulator"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_I03131
+:OntoQC_I03131 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_I00131 ;
+               rdfs:label "TPU"@en ;
+               <http://www.w3.org/2004/02/skos/core#altLabel> "Tensor Processing Unit"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "TPU"@de ,
+                                                               "TPU"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_I12231
+:OntoQC_I12231 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_I02231 ;
+               rdfs:label "Cloud Quantum Simulator"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Cloud Quantum Simulator"@en ,
+                                                               "Cloud-Quantensimulator"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_I22231
+:OntoQC_I22231 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_I02231 ;
+               rdfs:label "Local Quantum Simulator"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Local Quantum Simulator"@en ,
+                                                               "Lokaler Quantensimulator"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_J00001
+:OntoQC_J00001 rdf:type owl:Class ;
+               rdfs:comment "Collects computational devices utilized for the execution of a programming code."@en ;
+               rdfs:label "Computational Resource"@en ;
+               <http://www.w3.org/2004/02/skos/core#altLabel> "Computational Device"@en ,
+                                                              "Hardware"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Computational Resource"@en ,
+                                                               "Hardware"@de ;
+               <http://www.w3.org/ns/prov#wasDerivedFrom> "http://mklab.iti.gr/pericles/ComputerSystem_ODP#Hardware" .
+
+
+###  http://planqk/OntoQC#OntoQC_K00001
+:OntoQC_K00001 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N00051 ;
+               rdfs:comment "Collects methods for limiting errors that occur during information processing (possible phases for qc: state preparation, unitary transformation, measurement)."@en ;
+               rdfs:label "Error Correction"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Error Correction"@en ,
+                                                               "Implementierung der Fehlerkorrektur"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_L00001
+:OntoQC_L00001 rdf:type owl:Class ;
+               rdfs:comment """Collects instances of publications about an algorithm, an algorithm
+implementation or an algorithm evaluation."""@en ,
+                            "Publication/s about an algorithm."@en ;
+               rdfs:label "Publication"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Publication"@en ,
+                                                               "Publikation"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_N00001
+:OntoQC_N00001 rdf:type owl:Class ;
+               rdfs:label "Characteristic"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Characteristic"@en ,
+                                                               "Eigenschaft"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_N00011
+:OntoQC_N00011 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N00001 ;
+               rdfs:comment "Provide the relevant information about an publication."@en ;
+               rdfs:label "Publication Characterisitc"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Publication Characterisitc"@en ,
+                                                               "Publikationseigenschaften"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_N00021
+:OntoQC_N00021 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N00001 ;
+               owl:disjointWith :OntoQC_N00261 ;
+               rdfs:comment "A task to be done."@en ;
+               rdfs:label "Problem Type"@en ;
+               <http://www.w3.org/2004/02/skos/core#altLabel> "Problem"@de ,
+                                                              "Problem"@en ;
+               <http://www.w3.org/2004/02/skos/core#note> "Inspiration: https://dl.acm.org/ccs and https://arxiv.org/corr/subjectclasses"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Problem Type"@de ,
+                                                               "Problem Type"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_N00041
+:OntoQC_N00041 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N00001 ;
+               rdfs:label "Quantum Resource Characteristic"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Quantum Hardware Eigenschaft"@de ,
+                                                               "Quantum Resource Characteristic"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_N00051
+:OntoQC_N00051 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N00001 ;
+               rdfs:comment "Provide the relevant information about an implementation."@en ;
+               rdfs:label "Implementation Characterisitc"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Implementation Characterisitc"@en ,
+                                                               "Implementierungseigenschaft"@de ;
+               <http://www.w3.org/ns/prov#wasDerivedFrom> "http://www.w3.org/ns/mls#ImplementationCharacteristic"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_N00061
+:OntoQC_N00061 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N00001 ;
+               rdfs:comment "Provide the relevant characterisitcs for an algorithm."@en ;
+               rdfs:label "Algorithm Characterisitc"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Algorithm Characterisitc"@en ,
+                                                               "Eigenschaft eines Algorithmus"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_N00062
+:OntoQC_N00062 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N00001 ;
+               rdfs:label "Application Area"@en ;
+               <http://www.w3.org/2004/02/skos/core#altLabel> "Application Domain"@en ,
+                                                              "Industry Sector"@en ;
+               <http://www.w3.org/2004/02/skos/core#editorialNote> """we changed annotations: 
+-  rdfs:comment to skos:note 
+- obo:IAO_0000115(definition)-> rdfs:comment
+Alternative terms: 
+all alternative terms subproperties -> skos:altLabel, e.g.
+-obo:IAO_0000118 -> skos:altLabel
+-subject:SRAO_0000279 -> skos:altLabel
+subject:SRAO_0000278 ->skos:altLabel
+subject:SRAO_0000269 ->skos:altLabel"""@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Anwendungsgebiet"@de ,
+                                                               "Application Area"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_N00063
+:OntoQC_N00063 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N00001 ;
+               <http://purl.obolibrary.org/obo/IAO_0000412> "http://www.w3.org/ns/mls#" ;
+               rdfs:comment """DataCharacteristic is a distinguishing quality or property that distinguish one data from another.
+Such characteristics are often statistical ones (e.g., the number of instances
+or the number of features of a data set). They may be also informationtheoretic measures (e.g., class entropy of a categorical data set) or geometric measures of data complexity (e.g., the highest discriminatory power of any single feature in the data set)."""@en ;
+               rdfs:label "Data Characteristic"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Data Characteristic"@en ,
+                                                               "Dateneigenschaften"@de ;
+               <http://www.w3.org/ns/prov#wasDerivedFrom> "http://www.w3.org/ns/mls#DataCharacteristic" .
+
+
+###  http://planqk/OntoQC#OntoQC_N00081
+:OntoQC_N00081 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N00001 ;
+               rdfs:comment "Information about an algorithm, typically pseudocode or/and circuit, that describes a solution for the problem."@en ;
+               rdfs:label "Solution"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Lösung"@de ,
+                                                               "Solution"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_N00091
+:OntoQC_N00091 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N00061 ;
+               rdfs:label "Function"@en ;
+               <http://www.w3.org/2004/02/skos/core#altLabel> "Describes a mathematical function."@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Function"@en ,
+                                                               "Funktion"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_N00111
+:OntoQC_N00111 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N00011 ;
+               rdfs:comment "Provides name of the publication author."@en ;
+               rdfs:label "Publication Author"@en ;
+               <http://www.w3.org/2004/02/skos/core#altLabel> "Verfasser"@de ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Autor"@de ,
+                                                               "Publication Author"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_N00121
+:OntoQC_N00121 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N00021 ;
+               rdfs:label "Artifical Intelligence Problem"@en ;
+               <http://www.w3.org/2004/02/skos/core#altLabel> "AI Problem"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Artifical Intelligence Problem"@en ,
+                                                               "KI-Problem"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_N00163
+:OntoQC_N00163 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N00063 ;
+               <http://purl.obolibrary.org/obo/IAO_0000412> "http://www.w3.org/ns/mls#" ;
+               rdfs:comment "Instance examples of 'Data Characteristic' are numberOfFeatures, numberOfInstances, numberOfMissingValues."@en ;
+               rdfs:label "Dataset Characteristic"@en ;
+               <http://www.w3.org/2004/02/skos/core#editorialNote> "Examples in rdfs:comment are depicted from MLSchemaExamples https://github.com/ML-Schema/core/blob/master."@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Dataset Characteristic"@en ,
+                                                               "Eigenschaften eines Datasets"@de ;
+               <http://www.w3.org/ns/prov#wasDerivedFrom> "http://www.w3.org/ns/mls#DatasetCharacteristic" .
+
+
+###  http://planqk/OntoQC#OntoQC_N00211
+:OntoQC_N00211 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N00011 ;
+               rdfs:comment "Contains the name of the Journal/Boot/Proceedings etc. where the publication was printed."@en ;
+               rdfs:label "Venue"@en ;
+               <http://www.w3.org/2004/02/skos/core#altLabel> "Ort der Veröffentlichung"@de ,
+                                                              "Publication Venue"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Ort"@de ,
+                                                               "Venue"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_N00221
+:OntoQC_N00221 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N00021 ;
+               rdfs:label "Machine Learning Problem"@en ;
+               <http://www.w3.org/2004/02/skos/core#altLabel> "ML Problem"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "ML-Problem"@de ,
+                                                               "Machine Learning Problem"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_N00241
+:OntoQC_N00241 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N00041 ;
+               rdfs:label "Fidelity"@en ;
+               <http://www.w3.org/2004/02/skos/core#altLabel> "Fidelity"@de ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Fidelity"@en ,
+                                                               "Zuverlässigkeit"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_N00261
+:OntoQC_N00261 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N00061 ;
+               rdfs:comment "Contains information about the learning type wich is used by the algorithm."@en ;
+               rdfs:label "Learning Method"@en ;
+               <http://www.w3.org/2004/02/skos/core#altLabel> "Learning Type"@en ,
+                                                              "Lernmethode"@de ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Learning Method"@en ,
+                                                               "Lerntyp"@de ;
+               <http://www.w3.org/ns/prov#wasDerivedFrom> "http://mex.aksw.org/mex-algo#LearningMethod"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_N00263
+:OntoQC_N00263 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N00063 ;
+               rdfs:label "Feature Characteristic"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Feature Characteristic"@en ,
+                                                               "Feature-Eigenschaften"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_N00311
+:OntoQC_N00311 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N00091 ;
+               rdfs:label "Oracel"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Oracel"@en ,
+                                                               "Orakel"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_N00321
+:OntoQC_N00321 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N00021 ;
+               rdfs:label "Mathematical Problem"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Mathematical Problem"@en ,
+                                                               "Mathematisches Problem"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_N00341
+:OntoQC_N00341 rdf:type owl:Class ;
+               rdfs:comment "Describes a set of rules or physical laws that guide the interaction of the hardware components."@en ;
+               rdfs:label "Computational Model"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Berechnungsmodell"@de ,
+                                                               "Computational Model"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_N00411
+:OntoQC_N00411 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N00091 ;
+               rdfs:label "Kernel Function"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Kernel Function"@en ,
+                                                               "Kernelfunktion"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_N00421
+:OntoQC_N00421 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N00021 ;
+               rdfs:label "Search"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Search"@en ,
+                                                               "Suchproblem"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_N00441
+:OntoQC_N00441 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N00041 ;
+               rdfs:label "Gate"@en ;
+               <http://www.w3.org/2004/02/skos/core#altLabel> "Gate"@de ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Gate"@en ,
+                                                               "Gatter"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_N00511
+:OntoQC_N00511 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N00091 ;
+               rdfs:label "Activation Function"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Activation Function"@en ,
+                                                               "Aktivierungsfunktion"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_N00521
+:OntoQC_N00521 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N00021 ;
+               rdfs:label "Sorting"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Sortierproblem"@de ,
+                                                               "Sorting"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_N00541
+:OntoQC_N00541 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N00041 ;
+               rdfs:label "qRAM"@en ;
+               <http://www.w3.org/2004/02/skos/core#altLabel> "Quantum Access Random Memory"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "qRAM"@de ,
+                                                               "qRAM"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_N00611
+:OntoQC_N00611 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N00091 ;
+               rdfs:label "Objective Function"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Objective Function"@en ,
+                                                               "Zielfunktion"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_N00641
+:OntoQC_N00641 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N00041 ;
+               rdfs:comment "Identifies how many qubits a QPU has."@en ;
+               rdfs:label "Number of Qubits"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Anzahl der Qubits"@de ,
+                                                               "Number of Qubits"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_N01121
+:OntoQC_N01121 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N00121 ;
+               rdfs:label "Automated Planning And Scheduling"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Automated Planning And Scheduling"@en ,
+                                                               "Automatisierte Planung und Scheduling"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_N01122
+:OntoQC_N01122 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N00121 ;
+               rdfs:label "Natural language processing"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Natural language processing"@en ,
+                                                               "Verarbeitung natürlicher Sprache"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_N01123
+:OntoQC_N01123 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N00121 ;
+               rdfs:label "Knowledge representation and reasoning"@en ,
+                          "Wissensrepräsentation und Reasoning"@de ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Knowledge representation and reasoning"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_N01125
+:OntoQC_N01125 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N00121 ;
+               rdfs:label "Computer Vision Problem"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Computer Vision Problem"@de ,
+                                                               "Computer Vision Problem"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_N01221
+:OntoQC_N01221 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N00221 ;
+               rdfs:comment "Given a training set of data determine whether specific inputs are out of the ordinary."@en ;
+               rdfs:label "Anomaly Detection"@en ;
+               <http://www.w3.org/2004/02/skos/core#note> "https://www.razor-labs.com/ai-problem-types-and-their-definitions/"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Anomaly Detection"@en ,
+                                                               "Erkennung von Anomalien"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_N01261
+:OntoQC_N01261 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N00261 ;
+               <http://purl.obolibrary.org/obo/IAO_0000412> "http://mex.aksw.org/mex-algo"@en ;
+               rdfs:comment "Reinforcement Learning is the machine learning task of learning how to map situations to actions so as to maximize a numerical reward signal."@en ;
+               rdfs:label "Reinforcement Learning"@en ;
+               <http://www.w3.org/2004/02/skos/core#altLabel> "Bestärkendes Lernen"@de ,
+                                                              "Verstärkendes Lernen"@de ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Reinforcement Learning"@de ,
+                                                               "Reinforcement Learning"@en ;
+               <http://www.w3.org/ns/prov#wasDerivedFrom> "http://mex.aksw.org/mex-algo#Reinforcement"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_N01321
+:OntoQC_N01321 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N00321 ;
+               rdfs:label "Approximation"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Approximation"@de ,
+                                                               "Approximation"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_N01341
+:OntoQC_N01341 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N00341 ;
+               rdfs:comment "Describes classical computation."@en ;
+               rdfs:label "Classical Computational Model"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Classical Computational Model"@en ,
+                                                               "Klassisches Berechnungsmodell"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_N01421
+:OntoQC_N01421 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N00421 ;
+               rdfs:label "Continuous Space Search"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Continuous Space Search"@de ,
+                                                               "Continuous Space Search"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_N01441
+:OntoQC_N01441 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N00041 ;
+               rdfs:label "Gate Set"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Gate Set"@de ,
+                                                               "Gate Set"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_N01461
+:OntoQC_N01461 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N00061 ;
+               rdfs:comment "Describes the complexity of the computational problem."@en ;
+               rdfs:label "Complexity Class"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Complexity Class"@en ,
+                                                               "Komplexitätsklasse"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_N01462
+:OntoQC_N01462 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N00061 ;
+               rdfs:label "Output"@en ;
+               <http://www.w3.org/2004/02/skos/core#altLabel> "Output"@de ,
+                                                              "Specifies the output produced by an algorithm."@en ,
+                                                              "output format"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Ausgabe"@de ,
+                                                               "Output"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_N01463
+:OntoQC_N01463 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N00061 ;
+               rdfs:label "Input"@en ;
+               <http://www.w3.org/2004/02/skos/core#altLabel> "Input"@en ,
+                                                              "Specifies the input accepted by an algorithm."@en ,
+                                                              "input format"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Eingabe"@de ,
+                                                               "Input"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_N01464
+:OntoQC_N01464 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N00061 ;
+               rdfs:comment "Describes parameters of machine learning that affect how well a model learns, these parameters are tunable."@en ;
+               rdfs:label "Hyperparameter"@en ;
+               <http://www.w3.org/2004/02/skos/core#note> "Now is only textual description of the hyperparameters accepted."@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Hyperparameter"@de ,
+                                                               "Hyperparameter"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_N02221
+:OntoQC_N02221 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N00221 ;
+               rdfs:comment "Infer likely association patterns in data"@en ;
+               rdfs:label "Association Rule Learning"@en ;
+               <http://www.w3.org/2004/02/skos/core#note> "https://developers.google.com/machine-learning/problem-framing/cases"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Association Rule Learning"@de ,
+                                                               "Association Rule Learning"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_N02261
+:OntoQC_N02261 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N00261 ;
+               <http://purl.obolibrary.org/obo/IAO_0000412> "http://mex.aksw.org/mex-algo"@en ;
+               rdfs:comment "Any combination of supervised/unsupervised/reinforcement learning methods."@en ;
+               rdfs:label "Semi-Supervised Learning"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Semi-Supervised Learning"@en ,
+                                                               "Teilüberwachtes Lernen"@de ;
+               <http://www.w3.org/ns/prov#wasDerivedFrom> "http://mex.aksw.org/mex-algo#SemiSupervised"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_N02321
+:OntoQC_N02321 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N00321 ;
+               rdfs:label "Graph Problem"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Graph Problem"@en ,
+                                                               "Graphenproblem"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_N02421
+:OntoQC_N02421 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N00421 ;
+               rdfs:label "Discrete Space Search"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Discrete Space Search"@de ,
+                                                               "Discrete Space Search"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_N03221
+:OntoQC_N03221 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N00221 ;
+               rdfs:comment "Pick one of N labels"@en ;
+               rdfs:label "Classification"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Classification"@en ,
+                                                               "Klassifikation"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_N03261
+:OntoQC_N03261 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N00261 ;
+               <http://purl.obolibrary.org/obo/IAO_0000412> "http://mex.aksw.org/mex-algo"@en ;
+               rdfs:comment "Supervised learning is the machine learning task of learning a function that maps an input to an output based on example input-output pairs."@en ;
+               rdfs:label "Supervised Learning"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Supervised Learning"@en ,
+                                                               "Überwachtes Lernen"@de ;
+               <http://www.w3.org/ns/prov#wasDerivedFrom> "http://mex.aksw.org/mex-algo#Supervised"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_N03321
+:OntoQC_N03321 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N00321 ;
+               rdfs:label "Linear Algebra Problem"@en ;
+               <http://www.w3.org/2004/02/skos/core#note> "Examples of instances \"Solving Systems of Linear Equations\" or \"\"Eigenvalue Problem"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Linear Algebra Problem"@en ,
+                                                               "Problem der linearen Algebra"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_N03341
+:OntoQC_N03341 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N00341 ;
+               rdfs:comment "Describes quantum computation."@en ;
+               rdfs:label "Quantum Computational Model"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Quantenberechnungsmodell"@de ,
+                                                               "Quantum Computational Model"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_N03421
+:OntoQC_N03421 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N00421 ;
+               rdfs:label "Heristic Search"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Heristic Search"@en ,
+                                                               "Heuristische Suche"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_N04221
+:OntoQC_N04221 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N00221 ;
+               rdfs:comment "Group similar examples"@en ;
+               rdfs:label "Clustering"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Clustering"@de ,
+                                                               "Clustering"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_N04261
+:OntoQC_N04261 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N00261 ;
+               <http://purl.obolibrary.org/obo/IAO_0000412> "http://mex.aksw.org/mex-algo"@en ;
+               rdfs:comment "The machine learning task of learning patterns in unlabeled data."@en ;
+               rdfs:label "Unsupervised Learning"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Unsupervised Learning"@en ,
+                                                               "Unüberwachtes Lernen"@de ;
+               <http://www.w3.org/ns/prov#wasDerivedFrom> "http://mex.aksw.org/mex-algo#Unsupervised"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_N04321
+:OntoQC_N04321 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N00321 ;
+               rdfs:label "Optimization Problem"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Optimierungsproblem"@de ,
+                                                               "Optimization Problem"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_N04421
+:OntoQC_N04421 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N00421 ;
+               rdfs:label "Randomized Search"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Randomisierte Suche"@de ,
+                                                               "Randomized Search"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_N05221
+:OntoQC_N05221 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N00221 ;
+               rdfs:label "Dimensionality Reduction"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Dimensionality Reduction"@en ,
+                                                               "Dimensionalitätsreduktion"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_N05321
+:OntoQC_N05321 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N00321 ;
+               rdfs:label "Probability"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Probability"@en ,
+                                                               "Wahrscheinlichkeiten"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_N05421
+:OntoQC_N05421 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N00421 ;
+               rdfs:label "Search With Partial Observations"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Search With Partial Observations"@de ,
+                                                               "Search With Partial Observations"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_N06221
+:OntoQC_N06221 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N00221 ;
+               rdfs:label "Feature Learning"@en ;
+               <http://www.w3.org/2004/02/skos/core#altLabel> "Lernen von Merkmalen"@de ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Feature Learning"@de ,
+                                                               "Feature Learning"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_N07221
+:OntoQC_N07221 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N00221 ;
+               rdfs:comment """Identifying and pulling out a sub-sequence from a
+given sequence of instances that represents information we are interested in."""@en ;
+               rdfs:label "Information Extraction"@en ;
+               <http://www.w3.org/2004/02/skos/core#altLabel> "Extraktion von Informationen"@de ;
+               <http://www.w3.org/2004/02/skos/core#note> "Source: https://keg.cs.tsinghua.edu.cn/jietang/publications/Tang-et-al-Information_Extraction.pdf"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Information Extraction"@en ,
+                                                               "Informationsextraktion"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_N08221
+:OntoQC_N08221 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N00221 ;
+               rdfs:label "Policy Learning"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Policy Learning"@de ,
+                                                               "Policy Learning"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_N09221
+:OntoQC_N09221 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N00221 ;
+               rdfs:comment "Identify position on a scale or status"@en ;
+               rdfs:label "Ranking"@en ;
+               <http://www.w3.org/2004/02/skos/core#note> "https://developers.google.com/machine-learning/problem-framing/cases"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Ranking"@de ,
+                                                               "Ranking"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_N0A221
+:OntoQC_N0A221 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N00221 ;
+               rdfs:label "Recommendation"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Empfehlung"@de ,
+                                                               "Recommendation"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_N0B221
+:OntoQC_N0B221 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N00221 ;
+               rdfs:label "Regression"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Regression"@de ,
+                                                               "Regression"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_N0C221
+:OntoQC_N0C221 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N00221 ;
+               rdfs:label "Regularization"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Regularisierung"@de ,
+                                                               "Regularization"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_N0D221
+:OntoQC_N0D221 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N00221 ;
+               rdfs:comment "Create complex output"@en ;
+               rdfs:label "Structered Output"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Structered Output"@de ,
+                                                               "Structered Output"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_N0E221
+:OntoQC_N0E221 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N00221 ;
+               rdfs:comment "Generate appropriately “original” data based on training data"@en ;
+               rdfs:label "Synthetic Data Generation"@en ;
+               <http://www.w3.org/2004/02/skos/core#note> "https://www.razor-labs.com/ai-problem-types-and-their-definitions/"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Synthetic Data Generation"@en ,
+                                                               "Synthetische Datenerzeugung"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_N0F221
+:OntoQC_N0F221 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N00221 ;
+               rdfs:label "Value Function Learning"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Value Function Learning"@de ,
+                                                               "Value Function Learning"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_N0F224
+:OntoQC_N0F224 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N00221 ;
+               rdfs:label "Segmentation"@en ;
+               <http://www.w3.org/2004/02/skos/core#note> "Source for subclasses: https://openaccess.thecvf.com/content_CVPR_2019/papers/Kirillov_Panoptic_Segmentation_CVPR_2019_paper.pdf"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Segmentation"@en ,
+                                                               "Segmentierung"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_N0F234
+:OntoQC_N0F234 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N0F224 ;
+               rdfs:comment "Assign each pixel of an image a semantic label and an instance id."@en ;
+               rdfs:label "Panoptic Segmentation"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Panoptic Segmentation"@en ,
+                                                               "Panoptischen Segmentierung"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_N0F244
+:OntoQC_N0F244 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N0F224 ;
+               rdfs:comment "Detect each object and delineate it with a segmentation mask."@en ;
+               rdfs:label "Instance Segmentation"@en ;
+               <http://www.w3.org/2004/02/skos/core#altLabel> "Instance-Level Segmentation"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Instance Segmentation"@en ,
+                                                               "Instanzsegmentierung"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_N0F254
+:OntoQC_N0F254 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N0F224 ;
+               rdfs:comment "Assign a class label to each pixel in an image."@en ;
+               rdfs:label "Semantic Segmentation"@en ;
+               <http://www.w3.org/2004/02/skos/core#altLabel> "Per-Pixel Segmentation"@en ,
+                                                              "Per-Pixel Segmentierung"@de ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Semantic Segmentation"@en ,
+                                                               "Semantische Segmentierung"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_N14321
+:OntoQC_N14321 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N04321 ;
+               rdfs:label "Continuous Optimization Problem"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Continuous Optimization Problem"@en ,
+                                                               "Kontinuierliche Optimierung"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_N15321
+:OntoQC_N15321 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N05321 ;
+               rdfs:label "Sampling"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Sampling"@de ,
+                                                               "Sampling"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_N24321
+:OntoQC_N24321 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N04321 ;
+               rdfs:label "Discrete optimization Problem"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Discrete optimization Problem"@en ,
+                                                               "Diskrete Optimierung"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_N24322
+:OntoQC_N24322 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N04321 ;
+               rdfs:label "Mixed discrete-continuous optimization"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Mixed discrete-continuous Optimierung"@de ,
+                                                               "Mixed discrete-continuous optimization"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_N34321
+:OntoQC_N34321 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N04321 ;
+               rdfs:label "Biologically-inspired optimization"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Biologically-inspired optimization"@en ,
+                                                               "Naturanaloge Optimierungsverfahren"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_P00001
+:OntoQC_P00001 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N00051 ;
+               rdfs:comment "Specifies operations that are applied on the input data before the actual algorithm steps will be executed."@en ;
+               rdfs:label "Preprocessing"@en ;
+               <http://www.w3.org/2004/02/skos/core#altLabel> "Data-Preprocessing"@en ,
+                                                              "Vorverarbeitung"@de ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Preprocessing"@de ,
+                                                               "Preprocessing"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_P00011
+:OntoQC_P00011 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_P00001 ;
+               rdfs:label "Data Cleaning"@en ;
+               <http://www.w3.org/2004/02/skos/core#altLabel> "Datenbereinigung"@de ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Data Cleaning"@de ,
+                                                               "Data Cleaning"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_P00021
+:OntoQC_P00021 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_P00001 ;
+               rdfs:label "Data Transformation"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Data Transformation"@en ,
+                                                               "Datentransformation"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_P00031
+:OntoQC_P00031 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_P00001 ;
+               rdfs:label "Feature Selection"@en ;
+               <http://www.w3.org/2004/02/skos/core#altLabel> "Auswahl der Merkmalen"@de ,
+                                                              "Feature-Auswahl"@de ,
+                                                              "Featureauswahl"@de ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Feature Selection"@de ,
+                                                               "Feature Selection"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_P00421
+:OntoQC_P00421 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_P00001 ;
+               rdfs:label "Data Encoding"@en ;
+               <http://www.w3.org/2004/02/skos/core#altLabel> "Datencodierung"@de ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Data Encoding"@de ,
+                                                               "Data Encoding"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_P01421
+:OntoQC_P01421 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_P00421 ;
+               rdfs:label "State Preparation Technique"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "State Preparation Technique"@en ,
+                                                               "Zustandsvorbereitung"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_T00001
+:OntoQC_T00001 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_N00051 ;
+               rdfs:comment "Includes methods that are applied on the algorithm output."@en ;
+               rdfs:label "Postprocessing"@en ;
+               <http://www.w3.org/2004/02/skos/core#altLabel> "Data-Postprocessing"@en ,
+                                                              "Nachbearbeitung"@de ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Postprocessing"@de ,
+                                                               "Postprocessing"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_T00011
+:OntoQC_T00011 rdf:type owl:Class ;
+               rdfs:subClassOf [ owl:intersectionOf ( :OntoQC_K00001
+                                                      :OntoQC_T00001
+                                                    ) ;
+                                 rdf:type owl:Class
+                               ] ;
+               rdfs:label "Readout Error Correction"@en ;
+               <http://www.w3.org/2004/02/skos/core#altLabel> "Read-out Error Correction"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Readout Error Correction"@en ,
+                                                               "Readout-Fehlerkorrektur"@de .
+
+
+###  http://planqk/OntoQC#OntoQC_T00021
+:OntoQC_T00021 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_T00001 ;
+               rdfs:label "Visualization"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Visualisierung"@de ,
+                                                               "Visualization"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_W00001
+:OntoQC_W00001 rdf:type owl:Class ;
+               rdfs:comment "Best practices to solve specific problems."@en ;
+               rdfs:label "Pattern"@en ;
+               <http://www.w3.org/2004/02/skos/core#altLabel> "Entwurfsmuster"@de ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Pattern"@de ,
+                                                               "Pattern"@en .
+
+
+###  http://planqk/OntoQC#OntoQC_W00011
+:OntoQC_W00011 rdf:type owl:Class ;
+               rdfs:subClassOf :OntoQC_W00001 ;
+               rdfs:label "Quantum Pattern"@en ;
+               <http://www.w3.org/2004/02/skos/core#altLabel> "Pattern for Quantum Algorithm"@en ;
+               <http://www.w3.org/2004/02/skos/core#prefLabel> "Quantum Pattern"@de ,
+                                                               "Quantum Pattern"@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://planqk/OntoQC#qcm_153485
+:qcm_153485 rdf:type owl:NamedIndividual ,
+                     :OntoQC_N01341 ;
+            rdfs:label "Classical Computation"@en ;
+            <http://www.w3.org/2004/02/skos/core#prefLabel> "Classical Computation"@en ,
+                                                            "Klassisches Rechenmodell"@de .
+
+
+###  http://planqk/OntoQC#qcm_953483
+:qcm_953483 rdf:type owl:NamedIndividual ,
+                     :OntoQC_N03341 ;
+            rdfs:label "Quantum Annealing"@en ;
+            <http://www.w3.org/2004/02/skos/core#altLabel> "AQC"@en ,
+                                                           "Adiabatic Quantum Computation"@en ,
+                                                           "Adiabatisches Quantenrechnen"@de ,
+                                                           "QA"@en ;
+            <http://www.w3.org/2004/02/skos/core#prefLabel> "Quantum Annealing"@de ,
+                                                            "Quantum Annealing"@en .
+
+
+###  http://planqk/OntoQC#qcm_953484
+:qcm_953484 rdf:type owl:NamedIndividual ,
+                     :OntoQC_N03341 ;
+            rdfs:label "Measurement-based computation"@en ;
+            <http://www.w3.org/2004/02/skos/core#prefLabel> "Measurement-based computation"@en ,
+                                                            "Messbasiertes Quantenrechnen"@de .
+
+
+###  http://planqk/OntoQC#qcm_953485
+:qcm_953485 rdf:type owl:NamedIndividual ,
+                     :OntoQC_N03341 ;
+            rdfs:label "Gate-based quantum computation"@en ;
+            <http://www.w3.org/2004/02/skos/core#prefLabel> "Gate-based quantum computation"@en ,
+                                                            "Gatebasiertes Quantenrechnen"@de .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+<http://aims.fao.org/aos/agrovoc/c_10967> <http://www.w3.org/2004/02/skos/core#prefLabel> "Food Security"@en .
+
+
+<http://aims.fao.org/aos/agrovoc/c_11669> <http://www.w3.org/2004/02/skos/core#prefLabel> "Hydrogeology"@en .
+
+
+<http://aims.fao.org/aos/agrovoc/c_1335455465014> <http://www.w3.org/2004/02/skos/core#prefLabel> "Linguistics"@en .
+
+
+<http://aims.fao.org/aos/agrovoc/c_1344> <http://www.w3.org/2004/02/skos/core#prefLabel> "Cartography"@en .
+
+
+<http://aims.fao.org/aos/agrovoc/c_16129> <http://www.w3.org/2004/02/skos/core#prefLabel> "Forest Management"@en .
+
+
+<http://aims.fao.org/aos/agrovoc/c_16379> <http://www.w3.org/2004/02/skos/core#prefLabel> "Plant Nutrition"@en .
+
+
+<http://aims.fao.org/aos/agrovoc/c_1648> <http://www.w3.org/2004/02/skos/core#prefLabel> "Bauingenieurwesen"@de ,
+                                                                                         "Civil Engineering"@en .
+
+
+<http://aims.fao.org/aos/agrovoc/c_177f109f> <http://www.w3.org/2004/02/skos/core#prefLabel> "Farming Systems Research"@en .
+
+
+<http://aims.fao.org/aos/agrovoc/c_2018> <http://www.w3.org/2004/02/skos/core#prefLabel> "Plant Cultivation"@en .
+
+
+<http://aims.fao.org/aos/agrovoc/c_203> <http://www.w3.org/2004/02/skos/core#prefLabel> "Agriculture"@en .
+
+
+<http://aims.fao.org/aos/agrovoc/c_211> <http://www.w3.org/2004/02/skos/core#prefLabel> "Agronomy"@en .
+
+
+<http://aims.fao.org/aos/agrovoc/c_2468> <http://www.w3.org/2004/02/skos/core#prefLabel> "Econometrics"@en .
+
+
+<http://aims.fao.org/aos/agrovoc/c_2481> <http://www.w3.org/2004/02/skos/core#prefLabel> "Economics"@en .
+
+
+<http://aims.fao.org/aos/agrovoc/c_24848> <http://www.w3.org/2004/02/skos/core#prefLabel> "Geochemie"@de ,
+                                                                                          "Geochemistry"@en .
+
+
+<http://aims.fao.org/aos/agrovoc/c_25189> <http://www.w3.org/2004/02/skos/core#prefLabel> "Plant Physiology"@en .
+
+
+<http://aims.fao.org/aos/agrovoc/c_27925> <http://www.w3.org/2004/02/skos/core#prefLabel> "Animal Nutrition"@en .
+
+
+<http://aims.fao.org/aos/agrovoc/c_28633> <http://www.w3.org/2004/02/skos/core#prefLabel> "Agricultural Law"@en .
+
+
+<http://aims.fao.org/aos/agrovoc/c_28672> <http://www.w3.org/2004/02/skos/core#prefLabel> "Economic Policy"@en .
+
+
+<http://aims.fao.org/aos/agrovoc/c_2934> <http://www.w3.org/2004/02/skos/core#prefLabel> "Fisheries Science"@en .
+
+
+<http://aims.fao.org/aos/agrovoc/c_3228> <http://www.w3.org/2004/02/skos/core#prefLabel> "Geodesy"@en .
+
+
+<http://aims.fao.org/aos/agrovoc/c_3235> <http://www.w3.org/2004/02/skos/core#prefLabel> "Geophysics"@en .
+
+
+<http://aims.fao.org/aos/agrovoc/c_331559> <http://www.w3.org/2004/02/skos/core#prefLabel> "Environmental Science"@en .
+
+
+<http://aims.fao.org/aos/agrovoc/c_3671> <http://www.w3.org/2004/02/skos/core#prefLabel> "Horticulture"@en .
+
+
+<http://aims.fao.org/aos/agrovoc/c_3713> <http://www.w3.org/2004/02/skos/core#prefLabel> "Hydraulic Engineering"@en .
+
+
+<http://aims.fao.org/aos/agrovoc/c_3731> <http://www.w3.org/2004/02/skos/core#prefLabel> "Hydrology"@en .
+
+
+<http://aims.fao.org/aos/agrovoc/c_37948> <http://www.w3.org/2004/02/skos/core#prefLabel> "Urban Planning"@en .
+
+
+<http://aims.fao.org/aos/agrovoc/c_423> <http://www.w3.org/2004/02/skos/core#prefLabel> "Animal Breeding"@en .
+
+
+<http://aims.fao.org/aos/agrovoc/c_4318> <http://www.w3.org/2004/02/skos/core#prefLabel> "Biowissenschaften"@de ,
+                                                                                         "Life Science"@en .
+
+
+<http://aims.fao.org/aos/agrovoc/c_4343> <http://www.w3.org/2004/02/skos/core#prefLabel> "Limnology"@en .
+
+
+<http://aims.fao.org/aos/agrovoc/c_4682> <http://www.w3.org/2004/02/skos/core#prefLabel> "Maschinenbau"@de ,
+                                                                                         "Mechanical Engineering"@en .
+
+
+<http://aims.fao.org/aos/agrovoc/c_4856> <http://www.w3.org/2004/02/skos/core#prefLabel> "Mineralogy"@en .
+
+
+<http://aims.fao.org/aos/agrovoc/c_49985> <http://www.w3.org/2004/02/skos/core#prefLabel> "Plant Genetics"@en .
+
+
+<http://aims.fao.org/aos/agrovoc/c_5807> <http://www.w3.org/2004/02/skos/core#prefLabel> "Photogrammetry"@en .
+
+
+<http://aims.fao.org/aos/agrovoc/c_5836> <http://www.w3.org/2004/02/skos/core#altLabel> "Physiography"@en ;
+                                         <http://www.w3.org/2004/02/skos/core#prefLabel> "Physical Geography"@en .
+
+
+<http://aims.fao.org/aos/agrovoc/c_5956> <http://www.w3.org/2004/02/skos/core#prefLabel> "Plant Breeding"@en .
+
+
+<http://aims.fao.org/aos/agrovoc/c_5963> <http://www.w3.org/2004/02/skos/core#prefLabel> "Plant Ecology"@en .
+
+
+<http://aims.fao.org/aos/agrovoc/c_6347> <http://www.w3.org/2004/02/skos/core#prefLabel> "Public Finance"@en .
+
+
+<http://aims.fao.org/aos/agrovoc/c_6498> <http://www.w3.org/2004/02/skos/core#prefLabel> "Remote Sensing"@en .
+
+
+<http://aims.fao.org/aos/agrovoc/c_694> <http://www.w3.org/2004/02/skos/core#prefLabel> "Atmospheric Science"@en .
+
+
+<http://aims.fao.org/aos/agrovoc/c_7128> <http://www.w3.org/2004/02/skos/core#prefLabel> "Social Anthropology"@en .
+
+
+<http://aims.fao.org/aos/agrovoc/c_7188> <http://www.w3.org/2004/02/skos/core#prefLabel> "Soil Science"@en .
+
+
+<http://aims.fao.org/aos/agrovoc/c_8320> <http://www.w3.org/2004/02/skos/core#prefLabel> "Water Management"@en .
+
+
+<http://aims.fao.org/aos/agrovoc/c_8532> <http://www.w3.org/2004/02/skos/core#prefLabel> "Animal Husbandry"@en .
+
+
+<http://aims.fao.org/aos/agrovoc/c_8672> <http://www.w3.org/2004/02/skos/core#prefLabel> "Agricultural Economics"@en .
+
+
+<http://aims.fao.org/aos/agrovoc/c_8673> <http://www.w3.org/2004/02/skos/core#prefLabel> "Agricultural Engineering"@en .
+
+
+<http://aims.fao.org/aos/agrovoc/c_9000089> <http://www.w3.org/2004/02/skos/core#prefLabel> "Knowledge and Information Systems"@en .
+
+
+<http://aims.fao.org/aos/agrovoc/c_92381> <http://www.w3.org/2004/02/skos/core#prefLabel> "Agroecology"@en .
+
+
+<http://edamontology.org/topic_0084> <http://www.w3.org/2004/02/skos/core#prefLabel> "Phylogeny"@en .
+
+
+<http://edamontology.org/topic_0085> <http://www.w3.org/2004/02/skos/core#prefLabel> "Functional Genomics"@en .
+
+
+<http://edamontology.org/topic_0089> <http://www.w3.org/2004/02/skos/core#prefLabel> "Ontology and Terminology"@en .
+
+
+<http://edamontology.org/topic_0194> <http://www.w3.org/2004/02/skos/core#prefLabel> "Phylogenomics"@en .
+
+
+<http://edamontology.org/topic_0209> <http://www.w3.org/2004/02/skos/core#prefLabel> "Medicinal Chemistry"@en .
+
+
+<http://edamontology.org/topic_0219> <http://www.w3.org/2004/02/skos/core#prefLabel> "Data Submission, Annotation and Curation"@en .
+
+
+<http://edamontology.org/topic_0605> <http://www.w3.org/2004/02/skos/core#prefLabel> "Informatics"@en .
+
+
+<http://edamontology.org/topic_0780> <http://www.w3.org/2004/02/skos/core#prefLabel> "Botany"@en .
+
+
+<http://edamontology.org/topic_2258> <http://www.w3.org/2004/02/skos/core#altLabel> "Chemical informatics"@en ,
+                                                                                    "Chemieinformatik"@de ,
+                                                                                    "Chemoinformatics"@en ,
+                                                                                    "Chemoinformatik"@de ;
+                                     <http://www.w3.org/2004/02/skos/core#prefLabel> "Cheminformatics"@en ,
+                                                                                     "Cheminformatik"@de .
+
+
+<http://edamontology.org/topic_3071> <http://www.w3.org/2004/02/skos/core#prefLabel> "Data Management"@en .
+
+
+<http://edamontology.org/topic_3263> <http://www.w3.org/2004/02/skos/core#prefLabel> "Data Security"@en .
+
+
+<http://edamontology.org/topic_3292> <http://www.w3.org/2004/02/skos/core#prefLabel> "Biochemie"@de ,
+                                                                                     "Biochemistry"@en .
+
+
+<http://edamontology.org/topic_3293> <http://www.w3.org/2004/02/skos/core#prefLabel> "Phylogenetics"@en .
+
+
+<http://edamontology.org/topic_3300> <http://www.w3.org/2004/02/skos/core#prefLabel> "Physiology"@en .
+
+
+<http://edamontology.org/topic_3307> <http://www.w3.org/2004/02/skos/core#prefLabel> "Computational Biology"@en .
+
+
+<http://edamontology.org/topic_3308> <http://www.w3.org/2004/02/skos/core#prefLabel> "Transcriptomics"@en .
+
+
+<http://edamontology.org/topic_3315> <http://www.w3.org/2004/02/skos/core#prefLabel> "Mathematics"@en ,
+                                                                                     "Mathematik"@de .
+
+
+<http://edamontology.org/topic_3316> <http://www.w3.org/2004/02/skos/core#prefLabel> "Computer Science"@de ,
+                                                                                     "Computer Science"@en .
+
+
+<http://edamontology.org/topic_3318> <http://www.w3.org/2004/02/skos/core#prefLabel> "Physics"@en ,
+                                                                                     "Physik"@de .
+
+
+<http://edamontology.org/topic_3321> <http://www.w3.org/2004/02/skos/core#prefLabel> "Molecular Genetics"@en .
+
+
+<http://edamontology.org/topic_3336> <http://www.w3.org/2004/02/skos/core#altLabel> "Drug Discovery"@de ,
+                                                                                    "Pharmaforschung"@de ;
+                                     <http://www.w3.org/2004/02/skos/core#prefLabel> "Arzneimittelforschung"@de ,
+                                                                                     "Drug Discovery"@en .
+
+
+<http://edamontology.org/topic_3342> <http://www.w3.org/2004/02/skos/core#prefLabel> "Translational Medicine"@en .
+
+
+<http://edamontology.org/topic_3368> <http://www.w3.org/2004/02/skos/core#prefLabel> "Biomaterials"@en .
+
+
+<http://edamontology.org/topic_3369> <http://www.w3.org/2004/02/skos/core#prefLabel> "Chemical Biology" .
+
+
+<http://edamontology.org/topic_3370> <http://www.w3.org/2004/02/skos/core#prefLabel> "Analytical Chemistry"@en ,
+                                                                                     "Analytische Chemie"@de .
+
+
+<http://edamontology.org/topic_3371> <http://www.w3.org/2004/02/skos/core#prefLabel> "Synthetic Chemistry"@en .
+
+
+<http://edamontology.org/topic_3396> <http://www.w3.org/2004/02/skos/core#prefLabel> "Systems Medicine"@en .
+
+
+<http://edamontology.org/topic_3397> <http://www.w3.org/2004/02/skos/core#prefLabel> "Veterinary Medicine"@en .
+
+
+<http://edamontology.org/topic_3399> <http://www.w3.org/2004/02/skos/core#prefLabel> "Geriatric Medicine"@en .
+
+
+<http://edamontology.org/topic_3401> <http://www.w3.org/2004/02/skos/core#prefLabel> "Pain Medicine"@en .
+
+
+<http://edamontology.org/topic_3402> <http://www.w3.org/2004/02/skos/core#prefLabel> "Anaesthesiology"@en .
+
+
+<http://edamontology.org/topic_3403> <http://www.w3.org/2004/02/skos/core#prefLabel> "Critical Care Medicine"@en .
+
+
+<http://edamontology.org/topic_3405> <http://www.w3.org/2004/02/skos/core#prefLabel> "Dentistry"@en .
+
+
+<http://edamontology.org/topic_3406> <http://www.w3.org/2004/02/skos/core#prefLabel> "Otolaryngology"@en .
+
+
+<http://edamontology.org/topic_3410> <http://www.w3.org/2004/02/skos/core#prefLabel> "Gender Medicine"@en .
+
+
+<http://edamontology.org/topic_3414> <http://www.w3.org/2004/02/skos/core#prefLabel> "Traumatology"@en .
+
+
+<http://edamontology.org/topic_3415> <http://www.w3.org/2004/02/skos/core#prefLabel> "Medical Toxicology"@en .
+
+
+<http://edamontology.org/topic_3418> <http://www.w3.org/2004/02/skos/core#prefLabel> "Pediatrics"@en .
+
+
+<http://edamontology.org/topic_3423> <http://www.w3.org/2004/02/skos/core#prefLabel> "Traditional Medicine"@en .
+
+
+<http://edamontology.org/topic_3571> <http://www.w3.org/2004/02/skos/core#prefLabel> "Data Governance"@en .
+
+
+<http://edamontology.org/topic_3574> <http://www.w3.org/2004/02/skos/core#prefLabel> "Human Genetics"@en .
+
+
+<http://edamontology.org/topic_3575> <http://www.w3.org/2004/02/skos/core#prefLabel> "Tropical Medicine"@en .
+
+
+<http://edamontology.org/topic_3577> <http://www.w3.org/2004/02/skos/core#prefLabel> "Personalized Medicine"@en .
+
+
+<http://purl.obolibrary.org/obo/NCIT_C105692> <http://www.w3.org/2004/02/skos/core#prefLabel> "Respiratory Medicine"@en .
+
+
+<http://purl.obolibrary.org/obo/NCIT_C119712> <http://www.w3.org/2004/02/skos/core#prefLabel> "Proteogenomics"@en .
+
+
+<http://purl.obolibrary.org/obo/NCIT_C142491> <http://www.w3.org/2004/02/skos/core#prefLabel> "Data Quality"@en .
+
+
+<http://purl.obolibrary.org/obo/NCIT_C153192> <http://www.w3.org/2004/02/skos/core#prefLabel> "Glycomics"@en .
+
+
+<http://purl.obolibrary.org/obo/NCIT_C16294> <http://www.w3.org/2004/02/skos/core#prefLabel> "Anthropology"@en .
+
+
+<http://purl.obolibrary.org/obo/NCIT_C16304> <http://www.w3.org/2004/02/skos/core#prefLabel> "Architecture"@en .
+
+
+<http://purl.obolibrary.org/obo/NCIT_C16309> <http://www.w3.org/2004/02/skos/core#prefLabel> "Artificial Intelligence"@en .
+
+
+<http://purl.obolibrary.org/obo/NCIT_C16345> <http://www.w3.org/2004/02/skos/core#prefLabel> "Biology"@en .
+
+
+<http://purl.obolibrary.org/obo/NCIT_C16413> <http://www.w3.org/2004/02/skos/core#prefLabel> "Chemical Engineering"@en ,
+                                                                                             "Chemische Verfahrenstechnik"@de .
+
+
+<http://purl.obolibrary.org/obo/NCIT_C16414> <http://www.w3.org/2004/02/skos/core#prefLabel> "Chemie"@de ,
+                                                                                             "Chemistry"@en .
+
+
+<http://purl.obolibrary.org/obo/NCIT_C16417> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clinical Chemistry"@en .
+
+
+<http://purl.obolibrary.org/obo/NCIT_C16419> <http://www.w3.org/2004/02/skos/core#prefLabel> "Organic Chemistry"@en ,
+                                                                                             "Organische Chemie"@de .
+
+
+<http://purl.obolibrary.org/obo/NCIT_C16421> <http://www.w3.org/2004/02/skos/core#prefLabel> "Physical Chemistry"@en ,
+                                                                                             "Physikalische Chemie"@de .
+
+
+<http://purl.obolibrary.org/obo/NCIT_C16439> <http://www.w3.org/2004/02/skos/core#prefLabel> "Medical Informatics"@en .
+
+
+<http://purl.obolibrary.org/obo/NCIT_C16500> <http://www.w3.org/2004/02/skos/core#prefLabel> "Dermatology"@en .
+
+
+<http://purl.obolibrary.org/obo/NCIT_C16548> <http://www.w3.org/2004/02/skos/core#prefLabel> "Engineering Science"@en ,
+                                                                                             "Ingenieurwissenschaft"@de .
+
+
+<http://purl.obolibrary.org/obo/NCIT_C16591> <http://www.w3.org/2004/02/skos/core#prefLabel> "Forensic Medicine"@en .
+
+
+<http://purl.obolibrary.org/obo/NCIT_C16603> <http://www.w3.org/2004/02/skos/core#prefLabel> "Gastroenterology"@en .
+
+
+<http://purl.obolibrary.org/obo/NCIT_C16633> <http://www.w3.org/2004/02/skos/core#prefLabel> "Geography"@en .
+
+
+<http://purl.obolibrary.org/obo/NCIT_C16658> <http://www.w3.org/2004/02/skos/core#prefLabel> "Gynecology"@en .
+
+
+<http://purl.obolibrary.org/obo/NCIT_C16673> <http://www.w3.org/2004/02/skos/core#prefLabel> "Hematology"@en .
+
+
+<http://purl.obolibrary.org/obo/NCIT_C16902> <http://www.w3.org/2004/02/skos/core#prefLabel> "Nephrology"@en .
+
+
+<http://purl.obolibrary.org/obo/NCIT_C16908> <http://www.w3.org/2004/02/skos/core#prefLabel> "Neurology"@en .
+
+
+<http://purl.obolibrary.org/obo/NCIT_C16928> <http://www.w3.org/2004/02/skos/core#prefLabel> "Obstetrics"@en .
+
+
+<http://purl.obolibrary.org/obo/NCIT_C16931> <http://www.w3.org/2004/02/skos/core#prefLabel> "Occupational Medicine"@en .
+
+
+<http://purl.obolibrary.org/obo/NCIT_C16939> <http://www.w3.org/2004/02/skos/core#prefLabel> "Ophthalmology"@en .
+
+
+<http://purl.obolibrary.org/obo/NCIT_C16974> <http://www.w3.org/2004/02/skos/core#prefLabel> "Pharmacology"@en .
+
+
+<http://purl.obolibrary.org/obo/NCIT_C17026> <http://www.w3.org/2004/02/skos/core#prefLabel> "Psychiatry"@en .
+
+
+<http://purl.obolibrary.org/obo/NCIT_C17027> <http://www.w3.org/2004/02/skos/core#prefLabel> "Psychology"@en .
+
+
+<http://purl.obolibrary.org/obo/NCIT_C17030> <http://www.w3.org/2004/02/skos/core#prefLabel> "Educational Psychology"@en .
+
+
+<http://purl.obolibrary.org/obo/NCIT_C17039> <http://www.w3.org/2004/02/skos/core#prefLabel> "Public Health"@en .
+
+
+<http://purl.obolibrary.org/obo/NCIT_C17055> <http://www.w3.org/2004/02/skos/core#prefLabel> "Radiobiology"@en .
+
+
+<http://purl.obolibrary.org/obo/NCIT_C17059> <http://www.w3.org/2004/02/skos/core#prefLabel> "Radiology"@en .
+
+
+<http://purl.obolibrary.org/obo/NCIT_C17141> <http://www.w3.org/2004/02/skos/core#prefLabel> "Social Science"@en .
+
+
+<http://purl.obolibrary.org/obo/NCIT_C17147> <http://www.w3.org/2004/02/skos/core#prefLabel> "Software Engineering"@en .
+
+
+<http://purl.obolibrary.org/obo/NCIT_C17173> <http://www.w3.org/2004/02/skos/core#prefLabel> "Surgery"@en .
+
+
+<http://purl.obolibrary.org/obo/NCIT_C17206> <http://www.w3.org/2004/02/skos/core#prefLabel> "Toxicology"@en .
+
+
+<http://purl.obolibrary.org/obo/NCIT_C17243> <http://www.w3.org/2004/02/skos/core#prefLabel> "Urology"@en .
+
+
+<http://purl.obolibrary.org/obo/NCIT_C17606> <http://www.w3.org/2004/02/skos/core#prefLabel> "Digital Image Processing"@en .
+
+
+<http://purl.obolibrary.org/obo/NCIT_C17837> <http://www.w3.org/2004/02/skos/core#prefLabel> "Oncology"@en .
+
+
+<http://purl.obolibrary.org/obo/NCIT_C17964> <http://www.w3.org/2004/02/skos/core#prefLabel> "Bioinformatics"@en .
+
+
+<http://purl.obolibrary.org/obo/NCIT_C18076> <http://www.w3.org/2004/02/skos/core#prefLabel> "Bioengineering"@de ,
+                                                                                             "Bioengineering"@en .
+
+
+<http://purl.obolibrary.org/obo/NCIT_C18097> <http://www.w3.org/2004/02/skos/core#prefLabel> "Molecular Dynamics"@en .
+
+
+<http://purl.obolibrary.org/obo/NCIT_C18189> <http://www.w3.org/2004/02/skos/core#prefLabel> "Pathology"@en .
+
+
+<http://purl.obolibrary.org/obo/NCIT_C18470> <http://www.w3.org/2004/02/skos/core#prefLabel> "Computational Chemistry"@en .
+
+
+<http://purl.obolibrary.org/obo/NCIT_C18478> <http://www.w3.org/2004/02/skos/core#prefLabel> "Nanotechnologie"@de ,
+                                                                                             "Nanotechnology"@en .
+
+
+<http://purl.obolibrary.org/obo/NCIT_C18645> <http://www.w3.org/2004/02/skos/core#prefLabel> "Enzymology"@en .
+
+
+<http://purl.obolibrary.org/obo/NCIT_C18729> <http://www.w3.org/2004/02/skos/core#prefLabel> "Database Management"@en .
+
+
+<http://purl.obolibrary.org/obo/NCIT_C18948> <http://www.w3.org/2004/02/skos/core#prefLabel> "Polymer Chemistry"@en .
+
+
+<http://purl.obolibrary.org/obo/NCIT_C19199> <http://www.w3.org/2004/02/skos/core#prefLabel> "Health Science"@en .
+
+
+<http://purl.obolibrary.org/obo/NCIT_C19349> <http://www.w3.org/2004/02/skos/core#prefLabel> "Electrical Engineering"@en ,
+                                                                                             "Elektrotechnik"@de .
+
+
+<http://purl.obolibrary.org/obo/NCIT_C20179> <http://www.w3.org/2004/02/skos/core#prefLabel> "Toxicogenomics"@en .
+
+
+<http://purl.obolibrary.org/obo/NCIT_C20609> <http://www.w3.org/2004/02/skos/core#prefLabel> "Synthesis Chemistry"@en .
+
+
+<http://purl.obolibrary.org/obo/NCIT_C39794> <http://www.w3.org/2004/02/skos/core#prefLabel> "Philosophy"@en .
+
+
+<http://purl.obolibrary.org/obo/NCIT_C54625> <http://www.w3.org/2004/02/skos/core#prefLabel> "History"@en .
+
+
+<http://purl.obolibrary.org/obo/NCIT_C86055> <http://www.w3.org/2004/02/skos/core#prefLabel> "Cardiology"@en .
+
+
+<http://purl.obolibrary.org/obo/NCIT_C93254> <http://www.w3.org/2004/02/skos/core#prefLabel> "Regenerative Medicine"@en .
+
+
+<http://purl.obolibrary.org/obo/OBI_0200111> <http://www.w3.org/2004/02/skos/core#prefLabel> "Data Visualization"@en .
+
+
+<http://purl.obolibrary.org/obo/OMIT_0002286> <http://www.w3.org/2004/02/skos/core#prefLabel> "Cultural Anthropology"@en .
+
+
+<http://purl.obolibrary.org/obo/OMIT_0002494> <http://www.w3.org/2004/02/skos/core#prefLabel> "Classical Archaeology"@en .
+
+
+<http://purl.obolibrary.org/obo/OMIT_0002540> <http://www.w3.org/2004/02/skos/core#prefLabel> "Art"@en .
+
+
+<http://purl.obolibrary.org/obo/OMIT_0002710> <http://www.w3.org/2004/02/skos/core#prefLabel> "Automation"@en .
+
+
+<http://purl.obolibrary.org/obo/OMIT_0004711> <http://www.w3.org/2004/02/skos/core#prefLabel> "Criminal Law"@en .
+
+
+<http://purl.obolibrary.org/obo/OMIT_0004713> <http://www.w3.org/2004/02/skos/core#prefLabel> "Criminology"@en .
+
+
+<http://purl.obolibrary.org/obo/OMIT_0007039> <http://www.w3.org/2004/02/skos/core#prefLabel> "Geology"@en .
+
+
+<http://purl.obolibrary.org/obo/OMIT_0007951> <http://www.w3.org/2004/02/skos/core#prefLabel> "Geisteswissenschaften"@de ,
+                                                                                              "Humanities"@en .
+
+
+<http://purl.obolibrary.org/obo/OMIT_0008715> <http://www.w3.org/2004/02/skos/core#prefLabel> "Jurisprudence"@en .
+
+
+<http://purl.obolibrary.org/obo/OMIT_0009577> <http://www.w3.org/2004/02/skos/core#prefLabel> "Medicine"@en .
+
+
+<http://purl.obolibrary.org/obo/OMIT_0009732> <http://www.w3.org/2004/02/skos/core#prefLabel> "Metallurgy"@en .
+
+
+<http://purl.obolibrary.org/obo/OMIT_0010809> <http://www.w3.org/2004/02/skos/core#prefLabel> "Oceanography"@en .
+
+
+<http://purl.obolibrary.org/obo/OMIT_0010991> <http://www.w3.org/2004/02/skos/core#prefLabel> "Musculoskeletal Medicine"@en .
+
+
+<http://purl.obolibrary.org/obo/OMIT_0011166> <http://www.w3.org/2004/02/skos/core#prefLabel> "Paleontology"@en .
+
+
+<http://purl.obolibrary.org/obo/OMIT_0011594> <http://www.w3.org/2004/02/skos/core#prefLabel> "Pharmacy"@en .
+
+
+<http://purl.obolibrary.org/obo/OMIT_0011790> <http://www.w3.org/2004/02/skos/core#prefLabel> "Natural Science"@en ,
+                                                                                              "Naturwissenschaft"@de .
+
+
+<http://purl.obolibrary.org/obo/OMIT_0012276> <http://www.w3.org/2004/02/skos/core#prefLabel> "Primary Health Care"@en .
+
+
+<http://purl.obolibrary.org/obo/OMIT_0012532> <http://www.w3.org/2004/02/skos/core#prefLabel> "Medical Psychology"@en .
+
+
+<http://purl.obolibrary.org/obo/OMIT_0019137> <http://www.w3.org/2004/02/skos/core#prefLabel> "Natural History"@en .
+
+
+<http://purl.obolibrary.org/obo/OMIT_0021467> <http://www.w3.org/2004/02/skos/core#prefLabel> "Theology"@en .
+
+
+<http://purl.obolibrary.org/obo/OMIT_0024194> <http://www.w3.org/2004/02/skos/core#prefLabel> "Ancient History"@en .
+
+
+<http://purl.obolibrary.org/obo/OMIT_0024195> <http://www.w3.org/2004/02/skos/core#prefLabel> "Medieval History"@en .
+
+
+<http://purl.obolibrary.org/obo/OMIT_0026346> <http://www.w3.org/2004/02/skos/core#prefLabel> "Infectious Disease Medicine"@en .
+
+
+<http://purl.obolibrary.org/obo/OMIT_0026522> <http://www.w3.org/2004/02/skos/core#prefLabel> "Meteorology"@en .
+
+
+<http://purl.obolibrary.org/obo/OMIT_0026615> <http://www.w3.org/2004/02/skos/core#prefLabel> "Earth Science"@en ,
+                                                                                              "Geowissenschaften"@de .
+
+
+<http://purl.obolibrary.org/obo/OMIT_0026929> <http://www.w3.org/2004/02/skos/core#prefLabel> "Data Mining"@en .
+
+
+<http://purl.obolibrary.org/obo/OMIT_0027298> <http://www.w3.org/2004/02/skos/core#prefLabel> "Synthetic Biology"@en .
+
+
+<http://purl.obolibrary.org/obo/OMIT_0027812> <http://www.w3.org/2004/02/skos/core#prefLabel> "Reproductive Health"@en .
+
+
+<http://purl.obolibrary.org/obo/PO_0025131> <http://www.w3.org/2004/02/skos/core#prefLabel> "Plant Anatomy"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000002> <http://www.w3.org/2004/02/skos/core#prefLabel> "Geistes- und Sozialwissenschaften"@de ,
+                                                                                                           "Humanities and Social Sciences"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000004> <http://www.w3.org/2004/02/skos/core#prefLabel> "Ancient Cultures"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000005> <http://www.w3.org/2004/02/skos/core#prefLabel> "Prehistory"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000006> <http://www.w3.org/2004/02/skos/core#prefLabel> "Classical Philology"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000009> <http://www.w3.org/2004/02/skos/core#prefLabel> "Egyptology"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000012> <http://www.w3.org/2004/02/skos/core#prefLabel> "Early Modern History"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000013> <http://www.w3.org/2004/02/skos/core#prefLabel> "Modern History"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000014> <http://www.w3.org/2004/02/skos/core#prefLabel> "History of Science"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000015> <http://www.w3.org/2004/02/skos/core#prefLabel> "Fine Arts"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000016> <http://www.w3.org/2004/02/skos/core#prefLabel> "Art History"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000017> <http://www.w3.org/2004/02/skos/core#prefLabel> "Musicology"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000018> <http://www.w3.org/2004/02/skos/core#prefLabel> "Media Studies"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000020> <http://www.w3.org/2004/02/skos/core#prefLabel> "Applied Linguistics"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000022> <http://www.w3.org/2004/02/skos/core#prefLabel> "Historical Linguistics"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000023> <http://www.w3.org/2004/02/skos/core#prefLabel> "Literary Studies"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000024> <http://www.w3.org/2004/02/skos/core#prefLabel> "Medieval German Literature"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000025> <http://www.w3.org/2004/02/skos/core#prefLabel> "German Literature"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000026> <http://www.w3.org/2004/02/skos/core#prefLabel> "European Literature"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000027> <http://www.w3.org/2004/02/skos/core#prefLabel> "Comparative Literature"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000030> <http://www.w3.org/2004/02/skos/core#prefLabel> "Asian Studies"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000031> <http://www.w3.org/2004/02/skos/core#prefLabel> "African Studies"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000032> <http://www.w3.org/2004/02/skos/core#prefLabel> "Islamic Studies"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000033> <http://www.w3.org/2004/02/skos/core#prefLabel> "Religious Studies"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000035> <http://www.w3.org/2004/02/skos/core#prefLabel> "Protestant Theology"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000036> <http://www.w3.org/2004/02/skos/core#altLabel> "Catholic Theology"@en ;
+                                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "Roman Catholic Theology"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000038> <http://www.w3.org/2004/02/skos/core#prefLabel> "History of Philosophy"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000039> <http://www.w3.org/2004/02/skos/core#prefLabel> "Theoretical Philosophy"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000040> <http://www.w3.org/2004/02/skos/core#prefLabel> "Practical Philosophy"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000041> <http://www.w3.org/2004/02/skos/core#prefLabel> "Social and Behavioural Science"@en ,
+                                                                                                           "Sozial- und Verhaltenswissenschaften"@de .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000042> <http://www.w3.org/2004/02/skos/core#prefLabel> "Education Science"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000044> <http://www.w3.org/2004/02/skos/core#prefLabel> "Research on Teaching, Learning and Training"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000045> <http://www.w3.org/2004/02/skos/core#prefLabel> "Professional Socialization"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000057> <http://www.w3.org/2004/02/skos/core#prefLabel> "Economic Theory"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000060> <http://www.w3.org/2004/02/skos/core#prefLabel> "Business Administration"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000062> <http://www.w3.org/2004/02/skos/core#prefLabel> "Economic and Social History"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000064> <http://www.w3.org/2004/02/skos/core#prefLabel> "Philosophy of Law"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000065> <http://www.w3.org/2004/02/skos/core#prefLabel> "Private Law"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000066> <http://www.w3.org/2004/02/skos/core#prefLabel> "Public Law"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000083> <http://www.w3.org/2004/02/skos/core#prefLabel> "Inter-organismic Interactions of Plants"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000085> <http://www.w3.org/2004/02/skos/core#prefLabel> "Phytochemistry"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000086> <http://www.w3.org/2004/02/skos/core#prefLabel> "Plant Cell Biology"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000103> <http://www.w3.org/2004/02/skos/core#prefLabel> "Medical Biometry"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000109> <http://www.w3.org/2004/02/skos/core#prefLabel> "Pathobiochemistry"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000134> <http://www.w3.org/2004/02/skos/core#prefLabel> "Medical Physics"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000153> <http://www.w3.org/2004/02/skos/core#prefLabel> "Phytomedicine"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000161> <http://www.w3.org/2004/02/skos/core#prefLabel> "Clinical Veterinary Medicine"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000164> <http://www.w3.org/2004/02/skos/core#prefLabel> "Molecular Chemistry"@de ,
+                                                                                                           "Molecular Chemistry"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000165> <http://www.w3.org/2004/02/skos/core#prefLabel> "Inorganic Molecular Chemistry"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000166> <http://www.w3.org/2004/02/skos/core#prefLabel> "Organic Molecular Chemistry"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000169> <http://www.w3.org/2004/02/skos/core#prefLabel> "Solid-State Chemistry"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000172> <http://www.w3.org/2004/02/skos/core#prefLabel> "Molecular Physical Chemistry"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000173> <http://www.w3.org/2004/02/skos/core#prefLabel> "Theoretical Chemistry"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000176> <http://www.w3.org/2004/02/skos/core#prefLabel> "Biomimetic Chemistry"@en ,
+                                                                                                           "Biomimetische Chemie"@de .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000177> <http://www.w3.org/2004/02/skos/core#prefLabel> "Food Chemistry"@en ,
+                                                                                                           "Lebensmittelchemie"@de .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000178> <http://www.w3.org/2004/02/skos/core#prefLabel> "Polymer Research"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000180> <http://www.w3.org/2004/02/skos/core#prefLabel> "Polymer Physics"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000188> <http://www.w3.org/2004/02/skos/core#prefLabel> "Soft Matter Physics"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000198> <http://www.w3.org/2004/02/skos/core#prefLabel> "Geoinformatics"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000202> <http://www.w3.org/2004/02/skos/core#prefLabel> "Human Geography"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000203> <http://www.w3.org/2004/02/skos/core#prefLabel> "Water Research"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000206> <http://www.w3.org/2004/02/skos/core#prefLabel> "Industrial Engineering"@en ,
+                                                                                                           "Wirtschaftsingenieurwesen"@de .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000207> <http://www.w3.org/2004/02/skos/core#prefLabel> "Production Technology"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000208> <http://www.w3.org/2004/02/skos/core#prefLabel> "Metal-Cutting Manufacturing Engineering"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000209> <http://www.w3.org/2004/02/skos/core#prefLabel> "Primary Shaping Technology"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000211> <http://www.w3.org/2004/02/skos/core#prefLabel> "Plastics Engineering"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000218> <http://www.w3.org/2004/02/skos/core#prefLabel> "Thermal Engineering"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000219> <http://www.w3.org/2004/02/skos/core#prefLabel> "Process Engineering"@en ,
+                                                                                                           "Verfahrenstechnik"@de .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000221> <http://www.w3.org/2004/02/skos/core#prefLabel> "Technical Chemistry"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000223> <http://www.w3.org/2004/02/skos/core#prefLabel> "Biological Process Engineering"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000224> <http://www.w3.org/2004/02/skos/core#prefLabel> "Thermal Technology"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000225> <http://www.w3.org/2004/02/skos/core#prefLabel> "Energietechnik"@de ,
+                                                                                                           "Energy Engineering"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000230> <http://www.w3.org/2004/02/skos/core#prefLabel> "Materials Engineering"@en ,
+                                                                                                           "Werkstofftechnik"@de .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000231> <http://www.w3.org/2004/02/skos/core#prefLabel> "Thermomechanical Processing"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000232> <http://www.w3.org/2004/02/skos/core#prefLabel> "Sintering"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000233> <http://www.w3.org/2004/02/skos/core#prefLabel> "Composite Materials"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000234> <http://www.w3.org/2004/02/skos/core#prefLabel> "Mechanical Behaviour of Construction Materials"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000235> <http://www.w3.org/2004/02/skos/core#prefLabel> "Coating and Surface Technology"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000236> <http://www.w3.org/2004/02/skos/core#prefLabel> "Materials Science"@en ,
+                                                                                                           "Materialwissenschaft"@de .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000238> <http://www.w3.org/2004/02/skos/core#prefLabel> "Functional Materials Research"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000239> <http://www.w3.org/2004/02/skos/core#prefLabel> "Microstructural Mechanical Properties of Materials"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000240> <http://www.w3.org/2004/02/skos/core#prefLabel> "Materials Structuring and Functionalisation"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000243> <http://www.w3.org/2004/02/skos/core#prefLabel> "Systems Engineering"@en ,
+                                                                                                           "Systemtechnik"@de .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000250> <http://www.w3.org/2004/02/skos/core#prefLabel> "Component Engineering"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000251> <http://www.w3.org/2004/02/skos/core#prefLabel> "Telecommunication Engineering"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000252> <http://www.w3.org/2004/02/skos/core#prefLabel> "Power Engineering"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000254> <http://www.w3.org/2004/02/skos/core#prefLabel> "Theoretical Computer Science"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000258> <http://www.w3.org/2004/02/skos/core#prefLabel> "Computer Architecture"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000259> <http://www.w3.org/2004/02/skos/core#prefLabel> "Construction Engineering"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000260> <http://www.w3.org/2004/02/skos/core#prefLabel> "Construction History"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000261> <http://www.w3.org/2004/02/skos/core#prefLabel> "Transportation Planning"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000262> <http://www.w3.org/2004/02/skos/core#prefLabel> "Building Engineering Physics"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000263> <http://www.w3.org/2004/02/skos/core#prefLabel> "Structural Engineering"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000264> <http://www.w3.org/2004/02/skos/core#prefLabel> "Applied Mechanics"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000265> <http://www.w3.org/2004/02/skos/core#prefLabel> "Geotechnics"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000282> <http://www.w3.org/2004/02/skos/core#prefLabel> "Maritime Engineering"@en ,
+                                                                                                           "Schiffs- und Meerestechnik"@de .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000283> <http://www.w3.org/2004/02/skos/core#prefLabel> "Aerospace Engineering"@en ,
+                                                                                                           "Luft- und Raumfahrttechnik"@de .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000285> <http://www.w3.org/2004/02/skos/core#prefLabel> "Building Informatics"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000286> <http://www.w3.org/2004/02/skos/core#prefLabel> "Landscape Planning"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000287> <http://www.w3.org/2004/02/skos/core#prefLabel> "Sustainable Building Technology"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000288> <http://www.w3.org/2004/02/skos/core#prefLabel> "Building Design"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000290> <http://www.w3.org/2004/02/skos/core#prefLabel> "Materials Informatics"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000295> <http://www.w3.org/2004/02/skos/core#prefLabel> "Computational Neuroscience"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000298> <http://www.w3.org/2004/02/skos/core#prefLabel> "Surface Science"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000299> <http://www.w3.org/2004/02/skos/core#prefLabel> "Area Studies"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000300> <http://www.w3.org/2004/02/skos/core#prefLabel> "American Studies"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000301> <http://www.w3.org/2004/02/skos/core#prefLabel> "Oceania Studies"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000302> <http://www.w3.org/2004/02/skos/core#prefLabel> "Arabian Studies"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000303> <http://www.w3.org/2004/02/skos/core#prefLabel> "Jewish Studies"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000304> <http://www.w3.org/2004/02/skos/core#prefLabel> "Diabetology"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000305> <http://www.w3.org/2004/02/skos/core#altLabel> "Theater Studies"@en ,
+                                                                                                          "Theatrology"@en ;
+                                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "Theatre Studies"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000306> <http://www.w3.org/2004/02/skos/core#prefLabel> "Data Integration"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000307> <http://www.w3.org/2004/02/skos/core#prefLabel> "Food Process Engineering"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000309> <http://www.w3.org/2004/02/skos/core#prefLabel> "Angiology"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000310> <http://www.w3.org/2004/02/skos/core#prefLabel> "Legal History"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000311> <http://www.w3.org/2004/02/skos/core#prefLabel> "American Literature"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000312> <http://www.w3.org/2004/02/skos/core#prefLabel> "Cultural Studies"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000313> <http://www.w3.org/2004/02/skos/core#prefLabel> "Ancient Near Eastern Studies"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000319> <http://www.w3.org/2004/02/skos/core#prefLabel> "Safety Science"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000320> <http://www.w3.org/2004/02/skos/core#prefLabel> "Endocrinology"@en .
+
+
+<http://www.fairsharing.org/ontology/subject/SRAO_0000400> <http://www.w3.org/2004/02/skos/core#prefLabel> "Medical Virology"@en .
+
+
+###  Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/
