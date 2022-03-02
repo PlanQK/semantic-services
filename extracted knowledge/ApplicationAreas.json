@@ -1,7 +1,7 @@
 {
     "_comment":"Subclasses of the concept 'Application Area' are reused from FAIRsharing Subject Ontology (SRAO, licensed under CC BY 4.0).",
     "result": {
-        "uri": "http://planqk/OntoQC#OntoQC_N00062",
+        "uri": "http://planqk.de/ontologies/qco/ApplicationArea",
         "label": "Application Area",
         "children:": [
             {
