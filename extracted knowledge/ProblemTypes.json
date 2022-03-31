@@ -6,7 +6,7 @@
     "children:": [
       {
         "uri": "http://planqk.de/ontologies/qco/ArtificalIntelligenceProblem",
-        "label": "Artifical Intelligence Problem",
+        "label": "Artificial Intelligence Problem",
         "children": [
           {
             "uri": "http://planqk.de/ontologies/qco/NaturalLanguageProcessing",
@@ -325,6 +325,74 @@
             "uri": "http://planqk.de/ontologies/qco/Approximation",
             "label": "Approximation",
             "children": []
+          },
+          {
+            "uri": "http://planqk.de/ontologies/qco/GraphProblem",
+            "label": "Graph Problem",
+            "children": [
+              {
+                "uri": "http://planqk.de/ontologies/qco/TheTravelingSalesmanProblem",
+                "label": "Traveling Salesman Problem",
+                "children": []
+              },
+              {
+                "uri": "http://planqk.de/ontologies/qco/ShortestPathProblem",
+                "label": "Shortest Path Problem",
+                "children": []
+              },
+              {
+                "uri": "http://planqk.de/ontologies/qco/NetworkFlowProblem",
+                "label": "Network Flow Problem",
+                "children": [
+                  {
+                    "uri": "http://planqk.de/ontologies/qco/NowhereZeroFlowProblem",
+                    "label": "Nowhere-Zero Flow",
+                    "children": []
+                  },
+                  {
+                    "uri": "http://planqk.de/ontologies/qco/MinimumCostFlowProblem",
+                    "label": "Minimum-Cost Flow",
+                    "children": []
+                  },
+                  {
+                    "uri": "http://planqk.de/ontologies/qco/MaximumFlowProblem",
+                    "label": "Maximum Flow",
+                    "children": []
+                  },
+                  {
+                    "uri": "http://planqk.de/ontologies/qco/MultiCommodityFlowProblem",
+                    "label": "Multi-Commodity Flow",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "uri": "http://planqk.de/ontologies/qco/VertexCover",
+                "label": "Vertex Cover",
+                "children": []
+              },
+              {
+                "uri": "http://planqk.de/ontologies/qco/GraphColoring",
+                "label": "Graph Coloring Problem",
+                "children": [
+                  {
+                    "uri": "http://planqk.de/ontologies/qco/EdgeColoring",
+                    "label": "Edge Coloring",
+                    "children": []
+                  },
+                  {
+                    "uri": "http://planqk.de/ontologies/qco/FaceColoring",
+                    "label": "Face Coloring",
+                    "children": []
+                  },
+                  {
+                    "uri": "http://planqk.de/ontologies/qco/VertexColoring",
+                    "label": "Vertex Coloring",
+                    "children": []
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
