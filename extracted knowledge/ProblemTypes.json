@@ -5,7 +5,7 @@
     "label": "Problem",
     "children:": [
       {
-        "uri": "http://planqk.de/ontologies/qco/ArtificalIntelligenceProblem",
+        "uri": "http://planqk.de/ontologies/qco/ArtificialIntelligenceProblem",
         "label": "Artificial Intelligence Problem",
         "children": [
           {
