@@ -1,0 +1,229 @@
+{
+  "_comment":"A licence clause is a component of a licence which defines some aspect of a restriction or conversely permission in how something corresponding to a licence may be legally redistributed, partially redistrubed, extended, modified or otherwise used in some way.",
+  "result": {
+    "uri": "http://www.ebi.ac.uk/swo/SWO_9000005",
+    "label": "license clause",
+    "children:": [
+      {
+        "uri": "http://www.ebi.ac.uk/swo/SWO_9000009",
+        "label": "Platform clause",
+        "children": [
+          {
+            "uri": "http://www.ebi.ac.uk/swo/SWO_9000022",
+            "label": "Platform restricted",
+            "children": []
+          },
+          {
+            "uri": "http://www.ebi.ac.uk/swo/SWO_9000023",
+            "label": "Platform unrestricted",
+            "children": []
+          }
+        ]
+      },
+      {
+        "uri": "http://www.ebi.ac.uk/swo/SWO_9000013",
+        "label": "Usage clause",
+        "children": [
+          {
+            "uri": "http://www.ebi.ac.uk/swo/SWO_9000030",
+            "label": "Usage unrestricted",
+            "children": []
+          },
+          {
+            "uri": "http://www.ebi.ac.uk/swo/SWO_9000031",
+            "label": "Usage restricted",
+            "children": [
+              {
+                "uri": "http://www.ebi.ac.uk/swo/SWO_9000033",
+                "label": "Academic use only",
+                "children": []
+              },
+              {
+                "uri": "http://www.ebi.ac.uk/swo/SWO_9000032",
+                "label": "Non-commercial use only",
+                "children": []
+              },
+              {
+                "uri": "http://www.ebi.ac.uk/swo/license/SWO_1000136",
+                "label": "Commercial use only",
+                "children": [
+                  {
+                    "uri": "http://www.ebi.ac.uk/swo/license/SWO_1000143",
+                    "label": "Permission required for commercial use",
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uri": "http://www.ebi.ac.uk/swo/SWO_9000007",
+        "label": "Derivatives clause",
+        "children": [
+          {
+            "uri": "http://www.ebi.ac.uk/swo/SWO_9000018",
+            "label": "Derivatives not allowed",
+            "children": []
+          },
+          {
+            "uri": "http://www.ebi.ac.uk/swo/license/SWO_10000038",
+            "label": "Derivatives allowed",
+            "children": [
+              {
+                "uri": "http://www.ebi.ac.uk/swo/SWO_9000016",
+                "label": "No restrictions on derivatives",
+                "children": []
+              },
+              {
+                "uri": "http://www.ebi.ac.uk/swo/SWO_9000017",
+                "label": "Restrictions on derivative software",
+                "children": [
+                  {
+                    "uri": "http://www.ebi.ac.uk/swo/SWO_9000034",
+                    "label": "derivative code linked same license",
+                    "children": []
+                  },
+                  {
+                    "uri": "http://www.ebi.ac.uk/swo/SWO_9000019",
+                    "label": "derivative code same license",
+                    "children": [
+                      {
+                        "uri": "http://www.ebi.ac.uk/swo/license/SWO_1000045",
+                        "label": "Copyleft",
+                        "children": []
+                      }
+                    ]
+                  },
+                  {
+                    "uri": "http://www.ebi.ac.uk/swo/license/SWO_1000144",
+                    "label": "Permission required for derivative work",
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "uri": "http://www.ebi.ac.uk/swo/license/SWO_1000058",
+        "label": "Purchase cost",
+        "children":  [
+          {
+            "uri": "http://www.ebi.ac.uk/swo/license/SWO_1000059",
+            "label": "Free",
+            "children":  []
+          },
+          {
+            "uri": "http://www.ebi.ac.uk/swo/license/SWO_1000060",
+            "label": "Not Free",
+            "children":  []
+          }
+        ]
+      },
+      {
+        "uri": "http://www.ebi.ac.uk/swo/SWO_9000011",
+        "label": "Number of users clause",
+        "children":  [
+          {
+            "uri": "http://www.ebi.ac.uk/swo/SWO_9000026",
+            "label": "Number of users restricted",
+            "children":  []
+          },
+          {
+            "uri": "http://www.ebi.ac.uk/swo/SWO_9000027",
+            "label": "Number of users unrestricted",
+            "children":  []
+          }
+        ]
+      },
+      {
+        "uri": "http://www.ebi.ac.uk/swo/SWO_9000006",
+        "label": "Attribution clause",
+        "children":  [
+          {
+            "uri": "http://www.ebi.ac.uk/swo/license/SWO_1000051",
+            "label": "Attribution required",
+            "children":  []
+          },
+          {
+            "uri": "http://www.ebi.ac.uk/swo/license/SWO_1000066",
+            "label": "Attribution not required",
+            "children":  []
+          }
+        ]
+      },
+      {
+        "uri": "http://www.ebi.ac.uk/swo/SWO_9000012",
+        "label": "Time clause",
+        "children":  [
+          {
+            "uri": "http://www.ebi.ac.uk/swo/SWO_9000028",
+            "label": "Time for use restricted",
+            "children":  []
+          },
+          {
+            "uri": "http://www.ebi.ac.uk/swo/SWO_9000029",
+            "label": "Time for use unrestricted",
+            "children":  []
+          }
+        ]
+      },
+      {
+        "uri": "http://www.ebi.ac.uk/swo/SWO_9000008",
+        "label": "Source code clause",
+        "children":  [
+          {
+            "uri": "http://www.ebi.ac.uk/swo/SWO_9000020",
+            "label": "Source code available",
+            "children":  []
+          },
+          {
+            "uri": "http://www.ebi.ac.uk/swo/SWO_9000021",
+            "label": "Source code unavailable",
+            "children":  []
+          }
+        ]
+      },
+      {
+        "uri": "http://www.ebi.ac.uk/swo/license/SWO_10000035",
+        "label": "Distribution clause",
+        "children": [
+          {
+            "uri": "http://www.ebi.ac.uk/swo/license/SWO_10000037",
+            "label": "Distribution unrestricted",
+            "children":  []
+          },
+          {
+            "uri": "http://www.ebi.ac.uk/swo/license/SWO_10000036",
+            "label": "Distribution restricted",
+            "children":  []
+          },
+          {
+            "uri": "http://www.ebi.ac.uk/swo/license/SWO_9000059",
+            "label": "Distribution with notices",
+            "children":  []
+          }
+        ]
+      },
+      {
+        "uri": "http://www.ebi.ac.uk/swo/SWO_9000010",
+        "label": "Number of installations clause",
+        "children":  [
+          {
+            "uri": "http://www.ebi.ac.uk/swo/SWO_9000024",
+            "label": "Number of installations restricted",
+            "children":  []
+          },
+          {
+            "uri": "http://www.ebi.ac.uk/swo/SWO_9000025",
+            "label": "Number of installations unrestricted",
+            "children":  []
+          }
+        ]
+      }
+    ]
+  }
+}
