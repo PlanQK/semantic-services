@@ -1,0 +1,269 @@
+{
+  "_comment": "The concept 'Classical Programming Language' contains information about the programming language used by the implementation/service. This concept and its subclasses are reused from the SWO ontology and extended.",
+  "result": {
+    "uri": "http://planqk.de/ontologies/qco/ClassicalProgrammingLanguage",
+    "label": "Classical Programming Language",
+    "children:": [
+      {
+        "uri": "http://www.ebi.ac.uk/swo/SWO_0000091",
+        "label": "ActionScript",
+        "children:": []
+      },
+      {
+        "uri": "http://www.ebi.ac.uk/swo/SWO_0000092",
+        "label": "Ada",
+        "children:": []
+      },
+      {
+        "uri": "http://www.ebi.ac.uk/swo/SWO_0000093",
+        "label": "AppleScript",
+        "children:": []
+      },
+      {
+        "uri": "http://www.ebi.ac.uk/swo/SWO_0000094",
+        "label": "Assembly",
+        "children:": []
+      },
+      {
+        "uri": "http://www.ebi.ac.uk/swo/SWO_0000095",
+        "label": "C",
+        "children:": []
+      },
+      {
+        "uri": "http://www.ebi.ac.uk/swo/SWO_0000096",
+        "label": "C Sharp",
+        "children:": []
+      },
+      {
+        "uri": "http://www.ebi.ac.uk/swo/SWO_0000097",
+        "label": "C++",
+        "children:": []
+      },
+      {
+        "uri": "http://www.ebi.ac.uk/swo/SWO_0000098",
+        "label": "COBOL",
+        "children:": []
+      },
+      {
+        "uri": "http://www.ebi.ac.uk/swo/SWO_0000099",
+        "label": "ColdFusion",
+        "children:": []
+      },
+      {
+        "uri": "http://www.ebi.ac.uk/swo/SWO_0000100",
+        "label": "D",
+        "children:": []
+      },
+      {
+        "uri": "http://www.ebi.ac.uk/swo/SWO_0000101",
+        "label": "Delphi",
+        "children:": []
+      },
+      {
+        "uri": "http://www.ebi.ac.uk/swo/SWO_0000102",
+        "label": "Dylan",
+        "children:": []
+      },
+      {
+        "uri": "http://www.ebi.ac.uk/swo/SWO_0000103",
+        "label": "Eiffel",
+        "children:": []
+      },
+      {
+        "uri": "http://www.ebi.ac.uk/swo/SWO_0000104",
+        "label": "Forth",
+        "children:": []
+      },
+      {
+        "uri": "http://www.ebi.ac.uk/swo/SWO_0000105",
+        "label": "Fortran",
+        "children:": []
+      },
+      {
+        "uri": "http://www.ebi.ac.uk/swo/SWO_0000106",
+        "label": "Groovy",
+        "children:": []
+      },
+      {
+        "uri": "http://www.ebi.ac.uk/swo/SWO_0000107",
+        "label": "Haskell",
+        "children:": []
+      },
+      {
+        "uri": "http://www.ebi.ac.uk/swo/SWO_0000108",
+        "label": "JavaScript",
+        "children:": []
+      },
+      {
+        "uri": "http://www.ebi.ac.uk/swo/SWO_0000109",
+        "label": "LabVIEW",
+        "children:": []
+      },
+      {
+        "uri": "http://www.ebi.ac.uk/swo/SWO_0000110",
+        "label": "Lisp",
+        "children:": []
+      },
+      {
+        "uri": "http://www.ebi.ac.uk/swo/SWO_0000111",
+        "label": "Lua",
+        "children:": []
+      },
+      {
+        "uri": "http://www.ebi.ac.uk/swo/SWO_0000112",
+        "label": "Maple",
+        "children:": []
+      },
+      {
+        "uri": "http://www.ebi.ac.uk/swo/SWO_0000113",
+        "label": "Mathematica",
+        "children:": []
+      },
+      {
+        "uri": "http://www.ebi.ac.uk/swo/SWO_0000114",
+        "label": "Pascal",
+        "children:": []
+      },
+      {
+        "uri": "http://www.ebi.ac.uk/swo/SWO_0000115",
+        "label": "Perl",
+        "children:": []
+      },
+      {
+        "uri": "http://www.ebi.ac.uk/swo/SWO_0000116",
+        "label": "PHP",
+        "children:": []
+      },
+      {
+        "uri": "http://www.ebi.ac.uk/swo/SWO_0000117",
+        "label": "Prolog",
+        "children:": []
+      },
+      {
+        "uri": "http://www.ebi.ac.uk/swo/SWO_0000118",
+        "label": "Python",
+        "children:": []
+      },
+      {
+        "uri": "http://www.ebi.ac.uk/swo/SWO_0000119",
+        "label": "REXX",
+        "children:": []
+      },
+      {
+        "uri": "http://www.ebi.ac.uk/swo/SWO_0000120",
+        "label": "Ruby",
+        "children:": []
+      },
+      {
+        "uri": "http://www.ebi.ac.uk/swo/SWO_0000121",
+        "label": "SAS",
+        "children:": []
+      },
+      {
+        "uri": "http://www.ebi.ac.uk/swo/SWO_0000122",
+        "label": "Scala",
+        "children:": []
+      },
+      {
+        "uri": "http://www.ebi.ac.uk/swo/SWO_0000123",
+        "label": "Scheme",
+        "children:": []
+      },
+      {
+        "uri": "http://www.ebi.ac.uk/swo/SWO_0000124",
+        "label": "Shell",
+        "children:": []
+      },
+      {
+        "uri": "http://www.ebi.ac.uk/swo/SWO_0000125",
+        "label": "Smalltalk",
+        "children:": []
+      },
+      {
+        "uri": "http://www.ebi.ac.uk/swo/SWO_0000126",
+        "label": "SQL",
+        "children:": []
+      },
+      {
+        "uri": "http://www.ebi.ac.uk/swo/SWO_0000127",
+        "label": "Turing",
+        "children:": []
+      },
+      {
+        "uri": "http://www.ebi.ac.uk/swo/SWO_0000128",
+        "label": "Verilog",
+        "children:": []
+      },
+      {
+        "uri": "http://www.ebi.ac.uk/swo/SWO_0000129",
+        "label": "VHDL",
+        "children:": []
+      },
+      {
+        "uri": "http://www.ebi.ac.uk/swo/SWO_0000130",
+        "label": "Visual Basic",
+        "children:": []
+      },
+      {
+        "uri": "http://www.ebi.ac.uk/swo/SWO_0000134",
+        "label": "MLXTRAN",
+        "children:": []
+      },
+      {
+        "uri": "http://www.ebi.ac.uk/swo/SWO_0000136",
+        "label": "NMTRAN",
+        "children:": []
+      },
+      {
+        "uri": "http://www.ebi.ac.uk/swo/SWO_0000159",
+        "label": "GNU Octave",
+        "children:": []
+      },
+      {
+        "uri": "http://www.ebi.ac.uk/swo/SWO_0000160",
+        "label": "GWT",
+        "children:": []
+      },
+      {
+        "uri": "http://www.ebi.ac.uk/swo/SWO_0000161",
+        "label": "S language",
+        "children:": []
+      },
+      {
+        "uri": "http://www.ebi.ac.uk/swo/SWO_0000162",
+        "label": "Excel",
+        "children:": []
+      },
+      {
+        "uri": "http://www.ebi.ac.uk/swo/SWO_0000274",
+        "label": "MATLAB",
+        "children:": []
+      },
+      {
+        "uri": "http://planqk.de/ontologies/qco/GO",
+        "label": "GO",
+        "children:": []
+      },
+      {
+        "uri": "http://planqk.de/ontologies/qco/Julia",
+        "label": "Julia",
+        "children:": []
+      },
+      {
+        "uri": "http://planqk.de/ontologies/qco/OPL",
+        "label": "OPL",
+        "children:": []
+      },
+      {
+        "uri": "http://planqk.de/ontologies/qco/R",
+        "label": "R",
+        "children:": []
+      },
+      {
+        "uri": "http://planqk.de/ontologies/qco/TypeScript",
+        "label": "TypeScript",
+        "children:": []
+      }
+    ]
+  }
+}
