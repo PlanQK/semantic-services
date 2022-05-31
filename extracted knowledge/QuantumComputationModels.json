@@ -1,0 +1,24 @@
+{
+  "_comment":"The concept describes quantum computation.",
+  "result": {
+    "uri": "http://planqk.de/ontologies/qco/QuantumComputationalModel",
+    "label": "Quantum Computational Model",
+    "children:": [
+      {
+        "uri": "http://planqk.de/ontologies/qco/QuantumAnnealing",
+        "label": "Quantum Annealing",
+        "children": []
+      },
+      {
+        "uri": "http://planqk.de/ontologies/qco/GateBasedQuantumComputation",
+        "label": "Gate-based quantum computation",
+        "children": []
+      },
+      {
+        "uri": "http://planqk.de/ontologies/qco/MeasurementBasedComputation",
+        "label": "Measurement-based computation",
+        "children": []
+      }
+    ]
+  }
+}
