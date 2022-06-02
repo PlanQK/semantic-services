@@ -1,9 +1,54 @@
 {
-  "_comment": "The concept 'Classical Programming Language' contains information about the programming language used by the implementation/service. This concept and its subclasses are reused from the SWO ontology and extended.",
+  "_comment": "The concept 'Computer Language' contains information about the programming language used by the implementation/service. This concept and its subclasses for classical languages are reused from the SWO ontology and extended; for quantum - partly reused/extended Wikipedia https://en.wikipedia.org/wiki/Quantum_programming.",
   "result": {
-    "uri": "http://planqk.de/ontologies/qco/ClassicalProgrammingLanguage",
-    "label": "Classical Programming Language",
+    "uri": "http://planqk.de/ontologies/qco/ComputerLanguage",
+    "label": "Computer Language",
     "children:": [
+      {
+        "uri": "http://www.ebi.ac.uk/swo/SWO_0000128",
+        "label": "Verilog",
+        "children:": []
+      },
+      {
+        "uri": "http://www.ebi.ac.uk/swo/SWO_0000094",
+        "label": "Assembly",
+        "children:": []
+      },
+      {
+        "uri": "http://www.ebi.ac.uk/swo/SWO_0000129",
+        "label": "VHDL",
+        "children:": []
+      },
+      {
+        "uri": "http://planqk.de/ontologies/qco/QuantumPseudocode",
+        "label": "Quantum Pseudocode",
+        "children:": []
+      },
+      {
+        "uri": "http://planqk.de/ontologies/qco/QLanguage",
+        "label": "Q Language",
+        "children:": []
+      },
+      {
+        "uri": "http://planqk.de/ontologies/qco/QCL",
+        "label": "QCL",
+        "children:": []
+      },
+      {
+        "uri": "http://planqk.de/ontologies/qco/Silq",
+        "label": "Silq",
+        "children:": []
+      },
+      {
+        "uri": "http://planqk.de/ontologies/qco/qGCL",
+        "label": "qGCL",
+        "children:": []
+      },
+      {
+        "uri": "http://planqk.de/ontologies/qco/QSharp",
+        "label": "Q#",
+        "children:": []
+      },
       {
         "uri": "http://www.ebi.ac.uk/swo/SWO_0000091",
         "label": "ActionScript",
@@ -32,6 +77,11 @@
       {
         "uri": "http://www.ebi.ac.uk/swo/SWO_0000096",
         "label": "C Sharp",
+        "children:": []
+      },
+      {
+        "uri": "http://www.ebi.ac.uk/swo/SWO_0000096",
+        "label": "C#",
         "children:": []
       },
       {
@@ -215,6 +265,11 @@
         "children:": []
       },
       {
+        "uri": "http://www.ebi.ac.uk/swo/SWO_0000136",
+        "label": "NM-TRAN",
+        "children:": []
+      },
+      {
         "uri": "http://www.ebi.ac.uk/swo/SWO_0000159",
         "label": "GNU Octave",
         "children:": []
@@ -262,6 +317,66 @@
       {
         "uri": "http://planqk.de/ontologies/qco/TypeScript",
         "label": "TypeScript",
+        "children:": []
+      },
+      {
+        "uri": "http://planqk.de/ontologies/qco/QuantumPseudocode",
+        "label": "Quantum Pseudocode",
+        "children:": []
+      },
+      {
+        "uri": "http://planqk.de/ontologies/qco/QLanguage",
+        "label": "Q Language",
+        "children:": []
+      },
+      {
+        "uri": "http://planqk.de/ontologies/qco/QCL",
+        "label": "QCL",
+        "children:": []
+      },
+      {
+        "uri": "http://planqk.de/ontologies/qco/Silq",
+        "label": "Silq",
+        "children:": []
+      },
+      {
+        "uri": "http://planqk.de/ontologies/qco/qGCL",
+        "label": "qGCL",
+        "children:": []
+      },
+      {
+        "uri": "http://planqk.de/ontologies/qco/QSharp",
+        "label": "Q#",
+        "children:": []
+      },
+      {
+        "uri": "http://planqk.de/ontologies/qco/Blackbird",
+        "label": "Blackbird",
+        "children:": []
+      },
+      {
+        "uri": "http://planqk.de/ontologies/qco/QMASM",
+        "label": "QMASM",
+        "children:": []
+      },
+      {
+        "uri": "http://planqk.de/ontologies/qco/cQASM",
+        "label": "cQASM",
+        "children:": []
+      },
+      {
+        "uri": "http://planqk.de/ontologies/qco/Quil",
+        "label": "Quil",
+        "children:": []
+      },
+      {
+        "uri": "http://planqk.de/ontologies/qco/OpenQASM",
+        "label": "OpenQASM",
+        "children:": []
+      },
+      {
+        "uri": "http://planqk.de/ontologies/qco/Scaffold",
+        "label": "Scaffold",
         "children:": []
       }
     ]
