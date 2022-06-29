@@ -3,184 +3,184 @@
     "result": {
         "uri": "http://planqk.de/ontologies/qco/Format",
         "label": "Format",
-        "children:": [
+        "children": [
             {
                 "uri": "http://edamontology.org/format_2333",
                 "label": "Binary format",
-                "children:":  [
+                "children":  [
                     {
                         "uri": "http://edamontology.org/format_3602",
                         "label": "pgm",
-                        "children:":  []
+                        "children":  []
                     },
                     {
                         "uri": "http://edamontology.org/format_3594",
                         "label": "pcd",
-                        "children:":  []
+                        "children":  []
                     },
                     {
                         "uri": "http://edamontology.org/format_3988",
                         "label": "LSM",
-                        "children:":  []
+                        "children":  []
                     },
                     {
                         "uri": "http://edamontology.org/format_3579",
                         "label": "JPG",
-                        "children:":  []
+                        "children":  []
                     },
                     {
                         "uri": "http://edamontology.org/format_3620",
                         "label": "xlsx",
-                        "children:":  [
+                        "children":  [
                             {
                                 "uri": "http://edamontology.org/format_3977",
                                 "label": "Obj Tables",
-                                "children:":  []
+                                "children":  []
                             }
                         ]
                     },
                     {
                         "uri": "http://edamontology.org/format_3995",
                         "label": "Texture file format",
-                        "children:":  []
+                        "children":  []
                     },
                     {
                         "uri": "http://edamontology.org/format_3598",
                         "label": "xbm",
-                        "children:":  []
+                        "children":  []
                     },
                     {
                         "uri": "http://edamontology.org/format_3548",
                         "label": "DICOM",
-                        "children:":  []
+                        "children":  []
                     },
                     {
                         "uri": "http://edamontology.org/format_3600",
                         "label": "rgb",
-                        "children:":  []
+                        "children":  []
                     },
                     {
                         "uri": "http://edamontology.org/format_3727",
                         "label": "OME-TIFF",
-                        "children:":  []
+                        "children":  []
                     },
                     {
                         "uri": "http://edamontology.org/format_3592",
                         "label": "BMP",
-                        "children:":  []
+                        "children":  []
                     },
                     {
                         "uri": "http://edamontology.org/format_3993",
                         "label": "Stereolithography format",
-                        "children:":  []
+                        "children":  []
                     },
                     {
                         "uri": "http://edamontology.org/format_3596",
                         "label": "ppm",
-                        "children:":  []
+                        "children":  []
                     },
                     {
                         "uri": "http://edamontology.org/format_3605",
                         "label": "rast",
-                        "children:":  []
+                        "children":  []
                     },
                     {
                         "uri": "http://edamontology.org/format_3508",
                         "label": "pdf",
-                        "children:":  []
+                        "children":  []
                     },
                     {
                         "uri": "http://edamontology.org/format_3601",
                         "label": "pbm",
-                        "children:":  []
+                        "children":  []
                     },
                     {
                         "uri": "http://edamontology.org/format_3986",
                         "label": "WMV",
-                        "children:":  []
+                        "children":  []
                     },
                     {
                         "uri": "http://edamontology.org/format_3593",
                         "label": "im",
-                        "children:":  []
+                        "children":  []
                     },
                     {
                         "uri": "http://edamontology.org/format_3994",
                         "label": "U3D",
-                        "children:":  []
+                        "children":  []
                     },
                     {
                         "uri": "http://edamontology.org/format_3597",
                         "label": "psd",
-                        "children:":  []
+                        "children":  []
                     },
                     {
                         "uri": "http://edamontology.org/format_3549",
                         "label": "nii",
-                        "children:":  []
+                        "children":  []
                     },
                     {
                         "uri": "http://edamontology.org/format_3616",
                         "label": "tabix",
-                        "children:":  []
+                        "children":  []
                     },
                     {
                         "uri": "http://edamontology.org/format_3997",
                         "label": "MPEG-4",
-                        "children:":  []
+                        "children":  []
                     },
                     {
                         "uri": "http://edamontology.org/format_3603",
                         "label": "PNG",
-                        "children:":  []
+                        "children":  []
                     },
                     {
                         "uri": "http://edamontology.org/format_3595",
                         "label": "pcx",
-                        "children:":  []
+                        "children":  []
                     },
                     {
                         "uri": "http://edamontology.org/format_3990",
                         "label": "AVI",
-                        "children:":  []
+                        "children":  []
                     },
                     {
                         "uri": "http://edamontology.org/format_3591",
                         "label": "TIFF",
-                        "children:":  []
+                        "children":  []
                     },
                     {
                         "uri": "http://edamontology.org/format_3665",
                         "label": "K-mer countgraph",
-                        "children:":  []
+                        "children":  []
                     },
                     {
                         "uri": "http://edamontology.org/format_3599",
                         "label": "xpm",
-                        "children:":  []
+                        "children":  []
                     }
                 ]
             },
             {
                 "uri": "http://edamontology.org/format_3617",
                 "label": "Graph format",
-                "children:":  [
+                "children":  [
                     {
                         "uri": "http://edamontology.org/format_3618",
                         "label": "xgmml",
-                        "children:":  []
+                        "children":  []
                     },
                     {
                         "uri": "http://edamontology.org/format_3665",
                         "label": "K-mer countgraph",
-                        "children:":  []
+                        "children":  []
                     }
                 ]
             },
             {
                 "uri": "http://edamontology.org/format_2330",
                 "label": "Textual format",
-                "children:":  [
+                "children":  [
                     {
                         "uri": "http://edamontology.org/format_3788",
                         "label": "SQL",
@@ -239,7 +239,7 @@
                     {
                         "uri": "http://edamontology.org/format_3751",
                         "label": "DSV",
-                        "children:":  [
+                        "children":  [
                             {
                                 "uri": "http://edamontology.org/format_3475",
                                 "label": "TSV",

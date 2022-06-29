@@ -3,7 +3,7 @@
   "result": {
     "uri": "http://planqk.de/ontologies/qco/ApplicationArea",
     "label": "Application Area",
-    "children:": [
+    "children": [
       {
         "uri": "http://purl.obolibrary.org/obo/NCIT_C16548",
         "label": "Engineering Science",

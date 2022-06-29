@@ -3,7 +3,7 @@
     "result": {
         "uri": "http://planqk.de/ontologies/qco/LearningMethod",
         "label": "Learning Method",
-        "children:": [
+        "children": [
             {
                 "uri": "http://planqk.de/ontologies/qco/SupervisedLearning",
                 "label": "Supervised Learning",

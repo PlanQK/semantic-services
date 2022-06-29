@@ -3,7 +3,7 @@
   "result": {
     "uri": "http://planqk.de/ontologies/qco/SoftwareTool",
     "label": "Software Tool",
-    "children:": [
+    "children": [
       {
         "uri": "http://planqk.de/ontologies/qco/Qiskit",
         "label": "Qiskit",

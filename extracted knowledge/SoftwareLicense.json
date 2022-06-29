@@ -3,7 +3,7 @@
   "result": {
     "uri": "http://www.ebi.ac.uk/swo/SWO_0000002",
     "label": "software license",
-    "children:":
+    "children":
       [
         {
           "uri": "http://www.ebi.ac.uk/swo/license/SWO_1000147",

@@ -3,7 +3,7 @@
   "result": {
     "uri": "http://planqk.de/ontologies/qco/Problem",
     "label": "Problem",
-    "children:": [
+    "children": [
       {
         "uri": "http://planqk.de/ontologies/qco/ArtificialIntelligenceProblem",
         "label": "Artificial Intelligence Problem",

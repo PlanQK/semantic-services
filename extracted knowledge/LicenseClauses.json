@@ -3,7 +3,7 @@
   "result": {
     "uri": "http://www.ebi.ac.uk/swo/SWO_9000005",
     "label": "license clause",
-    "children:": [
+    "children": [
       {
         "uri": "http://www.ebi.ac.uk/swo/SWO_9000009",
         "label": "Platform clause",

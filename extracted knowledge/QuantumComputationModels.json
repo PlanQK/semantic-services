@@ -3,7 +3,7 @@
   "result": {
     "uri": "http://planqk.de/ontologies/qco/QuantumComputationalModel",
     "label": "Quantum Computational Model",
-    "children:": [
+    "children": [
       {
         "uri": "http://planqk.de/ontologies/qco/QuantumAnnealing",
         "label": "Quantum Annealing",
