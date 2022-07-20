@@ -35,16 +35,6 @@
         "children": []
       },
       {
-        "uri": "http://www.ebi.ac.uk/swo/license/SWO_1000008",
-        "label": "Open source software license",
-        "children": []
-      },
-      {
-        "uri": "http://www.ebi.ac.uk/swo/license/SWO_1000009",
-        "label": "License without restrictions on derivatives",
-        "children": []
-      },
-      {
         "uri": "http://www.ebi.ac.uk/swo/license/SWO_1000046",
         "label": "GNU GPL v3",
         "children": []
@@ -87,6 +77,11 @@
       {
         "uri": "http://www.ebi.ac.uk/swo/license/SWO_1000057",
         "label": "Artistic License 2.0",
+        "children": []
+      },
+      {
+        "uri": "http://www.ebi.ac.uk/swo/license/SWO_1000056",
+        "label": "Artistic License",
         "children": []
       },
       {
@@ -155,6 +150,11 @@
         "children": []
       },
       {
+        "uri": "http://www.ebi.ac.uk/swo/license/SWO_1000080",
+        "label": "CC BY-NC 4.0",
+        "children": []
+      },
+      {
         "uri": "http://www.ebi.ac.uk/swo/license/SWO_1000083",
         "label": "CC BY-NC-ND 2.5",
         "children": []
@@ -167,6 +167,16 @@
       {
         "uri": "http://www.ebi.ac.uk/swo/license/SWO_1000085",
         "label": "CC BY-NC-ND 4.0",
+        "children": []
+      },
+      {
+        "uri": "http://www.ebi.ac.uk/swo/license/SWO_1000077",
+        "label": "CC BY-ND 3.0",
+        "children": []
+      },
+      {
+        "uri": "http://www.ebi.ac.uk/swo/license/SWO_1000078",
+        "label": "CC BY-ND 4.0",
         "children": []
       },
       {
@@ -247,11 +257,6 @@
       {
         "uri": "http://www.ebi.ac.uk/swo/license/SWO_1000101",
         "label": "PDDL v1.0",
-        "children": []
-      },
-      {
-        "uri": "http://www.ebi.ac.uk/swo/license/SWO_1000103",
-        "label": "Vendor-specific License",
         "children": []
       },
       {
@@ -420,8 +425,8 @@
         "children": []
       },
       {
-        "uri": "http://www.ebi.ac.uk/swo/license/SWO_1000140",
-        "label": "Non-Commercial No-Fee License",
+        "uri": "http://www.ebi.ac.uk/swo/license/SWO_1000106",
+        "label": "CAS Information Use Policy",
         "children": []
       },
       {
@@ -502,6 +507,11 @@
       {
         "uri": "http://www.ebi.ac.uk/swo/license/SWO_9000088",
         "label": "MPL",
+        "children": []
+      },
+      {
+        "uri": "http://www.ebi.ac.uk/swo/license/SWO_1000008",
+        "label": "Open source software license",
         "children": []
       }
     ]
