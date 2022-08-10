@@ -1,0 +1,264 @@
+{
+  "_comment": "The concept 'Computer Language' contains information about the programming language used by the implementation/service. This concept and its subclasses for classical languages are reused from the SWO ontology and extended; for quantum - partly reused/extended Wikipedia https://en.wikipedia.org/wiki/Quantum_programming.",
+  "result": {
+    "uri": "http://planqk.de/ontologies/qco/ComputerLanguage",
+    "label": "Computer Language",
+    "children": [
+      {
+        "uuid": "http://www.ebi.ac.uk/swo/SWO_0000094",
+        "label": "Assembly"
+      },
+      {
+        "uuid": "http://www.ebi.ac.uk/swo/SWO_0000128",
+        "label": "Verilog"
+      },
+      {
+        "uuid": "http://www.ebi.ac.uk/swo/SWO_0000129",
+        "label": "VHDL"
+      },
+      {
+        "uuid": "http://planqk.de/ontologies/qco/data/Blackbird",
+        "label": "Blackbird"
+      },
+      {
+        "uuid": "http://planqk.de/ontologies/qco/data/OpenQASM",
+        "label": "OpenQASM"
+      },
+      {
+        "uuid": "http://planqk.de/ontologies/qco/data/QMASM",
+        "label": "QMASM"
+      },
+      {
+        "uuid": "http://planqk.de/ontologies/qco/data/Quil",
+        "label": "Quil"
+      },
+      {
+        "uuid": "http://planqk.de/ontologies/qco/data/Scaffold",
+        "label": "Scaffold"
+      },
+      {
+        "uuid": "http://planqk.de/ontologies/qco/data/cQASM",
+        "label": "cQASM"
+      },  {
+        "uuid": "http://www.ebi.ac.uk/swo/SWO_0000096",
+        "label": "C#"
+      },
+      {
+        "uuid": "http://www.ebi.ac.uk/swo/SWO_0000126",
+        "label": "SQL"
+      },
+      {
+        "uuid": "http://www.ebi.ac.uk/swo/SWO_0000127",
+        "label": "Tuuidng"
+      },
+      {
+        "uuid": "http://www.ebi.ac.uk/swo/SWO_0000130",
+        "label": "Visual Basic "
+      },
+      {
+        "uuid": "http://www.ebi.ac.uk/swo/SWO_0000134",
+        "label": "MLXTRAN"
+      },
+      {
+        "uuid": "http://www.ebi.ac.uk/swo/SWO_0000136",
+        "label": "NM-TRAN"
+      },
+      {
+        "uuid": "http://www.ebi.ac.uk/swo/SWO_0000159",
+        "label": "GNU Octave"
+      },
+      {
+        "uuid": "http://planqk.de/ontologies/qco/data/Julia",
+        "label": "Julia"
+      },
+      {
+        "uuid": "http://planqk.de/ontologies/qco/data/GO",
+        "label": "GO"
+      },
+      {
+        "uuid": "http://planqk.de/ontologies/qco/data/OPL",
+        "label": "OPL"
+      },
+      {
+        "uuid": "http://planqk.de/ontologies/qco/data/R",
+        "label": "R"
+      },
+      {
+        "uuid": "http://planqk.de/ontologies/qco/data/TypeScript",
+        "label": "TypeScript"
+      },
+      {
+        "uuid": "http://www.ebi.ac.uk/swo/SWO_0000091",
+        "label": "ActionScript"
+      },
+      {
+        "uuid": "http://www.ebi.ac.uk/swo/SWO_0000092",
+        "label": "Ada"
+      },
+      {
+        "uuid": "http://www.ebi.ac.uk/swo/SWO_0000093",
+        "label": "AppleScript"
+      },
+      {
+        "uuid": "http://www.ebi.ac.uk/swo/SWO_0000095",
+        "label": "C"
+      },
+      {
+        "uuid": "http://www.ebi.ac.uk/swo/SWO_0000097",
+        "label": "C++"
+      },
+      {
+        "uuid": "http://www.ebi.ac.uk/swo/SWO_0000098",
+        "label": "COBOL"
+      },
+      {
+        "uuid": "http://www.ebi.ac.uk/swo/SWO_0000099",
+        "label": "ColdFusion"
+      },
+      {
+        "uuid": "http://www.ebi.ac.uk/swo/SWO_0000100",
+        "label": "D"
+      },
+      {
+        "uuid": "http://www.ebi.ac.uk/swo/SWO_0000101",
+        "label": "Delphi"
+      },
+      {
+        "uuid": "http://www.ebi.ac.uk/swo/SWO_0000102",
+        "label": "Dylan"
+      },
+      {
+        "uuid": "http://www.ebi.ac.uk/swo/SWO_0000103",
+        "label": "Eiffel"
+      },
+      {
+        "uuid": "http://www.ebi.ac.uk/swo/SWO_0000104",
+        "label": "Forth"
+      },
+      {
+        "uuid": "http://www.ebi.ac.uk/swo/SWO_0000105",
+        "label": "Fortran"
+      },
+      {
+        "uuid": "http://www.ebi.ac.uk/swo/SWO_0000106",
+        "label": "Groovy"
+      },
+      {
+        "uuid": "http://www.ebi.ac.uk/swo/SWO_0000107",
+        "label": "Haskell"
+      },
+      {
+        "uuid": "http://www.ebi.ac.uk/swo/SWO_0000108",
+        "label": "JavaScript"
+      },
+      {
+        "uuid": "http://www.ebi.ac.uk/swo/SWO_0000109",
+        "label": "LabVIEW"
+      },
+      {
+        "uuid": "http://www.ebi.ac.uk/swo/SWO_0000110",
+        "label": "Lisp"
+      },
+      {
+        "uuid": "http://www.ebi.ac.uk/swo/SWO_0000111",
+        "label": "Lua"
+      },
+      {
+        "uuid": "http://www.ebi.ac.uk/swo/SWO_0000112",
+        "label": "Maple"
+      },
+      {
+        "uuid": "http://www.ebi.ac.uk/swo/SWO_0000113",
+        "label": "Mathematica"
+      },
+      {
+        "uuid": "http://www.ebi.ac.uk/swo/SWO_0000114",
+        "label": "Pascal"
+      },
+      {
+        "uuid": "http://www.ebi.ac.uk/swo/SWO_0000115",
+        "label": "Perl"
+      },
+      {
+        "uuid": "http://www.ebi.ac.uk/swo/SWO_0000116",
+        "label": "PHP"
+      },
+      {
+        "uuid": "http://www.ebi.ac.uk/swo/SWO_0000117",
+        "label": "Prolog"
+      },
+      {
+        "uuid": "http://www.ebi.ac.uk/swo/SWO_0000118",
+        "label": "Python"
+      },
+      {
+        "uuid": "http://www.ebi.ac.uk/swo/SWO_0000119",
+        "label": "REXX"
+      },
+      {
+        "uuid": "http://www.ebi.ac.uk/swo/SWO_0000120",
+        "label": "Ruby"
+      },
+      {
+        "uuid": "http://www.ebi.ac.uk/swo/SWO_0000121",
+        "label": "SAS"
+      },
+      {
+        "uuid": "http://www.ebi.ac.uk/swo/SWO_0000122",
+        "label": "Scala"
+      },
+      {
+        "uuid": "http://www.ebi.ac.uk/swo/SWO_0000123",
+        "label": "Scheme"
+      },
+      {
+        "uuid": "http://www.ebi.ac.uk/swo/SWO_0000124",
+        "label": "Shell"
+      },
+      {
+        "uuid": "http://www.ebi.ac.uk/swo/SWO_0000125",
+        "label": "Smalltalk"
+      },
+      {
+        "uuid": "http://www.ebi.ac.uk/swo/SWO_0000130",
+        "label": "Visual Basic"
+      },
+      {
+        "uuid": "http://www.ebi.ac.uk/swo/SWO_0000160",
+        "label": "GWT"
+      },
+      {
+        "uuid": "http://www.ebi.ac.uk/swo/SWO_0000161",
+        "label": "S language"
+      },
+      {
+        "uuid": "http://www.ebi.ac.uk/swo/SWO_0000274",
+        "label": "MATLAB"
+      },
+      {
+        "uuid": "http://planqk.de/ontologies/qco/data/QCL",
+        "label": "QCL"
+      },
+      {
+        "uuid": "http://planqk.de/ontologies/qco/data/QLanguage",
+        "label": "Q Language"
+      },
+      {
+        "uuid": "http://planqk.de/ontologies/qco/data/QuantumPseudocode",
+        "label": "Quantum Pseudocode"
+      },
+      {
+        "uuid": "http://planqk.de/ontologies/qco/data/Silq",
+        "label": "Silq"
+      },
+      {
+        "uuid": "http://planqk.de/ontologies/qco/data/qGCL",
+        "label": "qGCL"
+      },
+      {
+        "uuid": "http://planqk.de/ontologies/qco/data/QSharp",
+        "label": "Q#"
+      }
+    ]
+  }
+}

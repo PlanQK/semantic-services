@@ -5,19 +5,16 @@
     "label": "Quantum Computational Model",
     "children": [
       {
-        "uri": "http://planqk.de/ontologies/qco/QuantumAnnealing",
-        "label": "Quantum Annealing",
-        "children": []
+        "uuid": "http://planqk.de/ontologies/qco/data/qcm_953483",
+        "label": "Quantum Annealing"
       },
       {
-        "uri": "http://planqk.de/ontologies/qco/GateBasedQuantumComputation",
-        "label": "Gate-based quantum computation",
-        "children": []
+        "uuid": "http://planqk.de/ontologies/qco/data/qcm_953484",
+        "label": "Measurement-based computation"
       },
       {
-        "uri": "http://planqk.de/ontologies/qco/MeasurementBasedComputation",
-        "label": "Measurement-based computation",
-        "children": []
+        "uuid": "http://planqk.de/ontologies/qco/data/qcm_953485",
+        "label": "Gate-based quantum computation"
       }
     ]
   }

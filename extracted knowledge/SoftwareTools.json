@@ -1,0 +1,93 @@
+{
+  "_comment": "Collects various frameworks, libraries, SDKs, or APIs that developers can use for implementing an algorithm.",
+  "result": {
+    "uri": "http://planqk.de/ontologies/qco/SoftwareTool",
+    "label": "Software Tool",
+    "children": [
+      {
+        "uuid": "http://planqk.de/ontologies/qco/data/Keras",
+        "label": "Keras"
+      },
+      {
+        "uuid": "http://planqk.de/ontologies/qco/data/PyQuest",
+        "label": "PyQuest"
+      },
+      {
+        "uuid": "http://planqk.de/ontologies/qco/data/PyTorch",
+        "label": "PyTorch"
+      },
+      {
+        "uuid": "http://planqk.de/ontologies/qco/data/PyTorchLightning",
+        "label": "PyTorch Lightning"
+      },
+      {
+        "uuid": "http://planqk.de/ontologies/qco/data/TensorFlow",
+        "label": "TensorFlow"
+      },
+      {
+        "uuid": "http://planqk.de/ontologies/qco/data/Orquestra",
+        "label": "Orquestra"
+      },
+      {
+        "uuid": "http://planqk.de/ontologies/qco/data/ProjectQ",
+        "label": "ProjectQ"
+      },
+      {
+        "uuid": "http://planqk.de/ontologies/qco/data/XACC",
+        "label": "XACC"
+      },
+      {
+        "uuid": "http://planqk.de/ontologies/qco/data/JAX",
+        "label": "JAX"
+      },
+      {
+        "uuid": "http://planqk.de/ontologies/qco/data/scikitLearn",
+        "label": "scikit-learn"
+      },
+      {
+        "uuid": "http://planqk.de/ontologies/qco/data/Cirq",
+        "label": "Cirq"
+      },
+      {
+        "uuid": "http://planqk.de/ontologies/qco/data/PennyLane",
+        "label": "PennyLane"
+      },
+      {
+        "uuid": "http://planqk.de/ontologies/qco/data/PyQuil",
+        "label": "PyQuil"
+      },
+      {
+        "uuid": "http://planqk.de/ontologies/qco/data/Qulacs",
+        "label": "Qulacs"
+      },
+      {
+        "uuid": "http://planqk.de/ontologies/qco/data/StrawberryFields",
+        "label": "Strawberry Fields"
+      },
+      {
+        "uuid": "http://planqk.de/ontologies/qco/data/TensorFlowQuantum",
+        "label": "TensorFlow Quantum"
+      },
+      {
+        "uuid": "http://planqk.de/ontologies/qco/data/Forest",
+        "label": "Forest SDK"
+      },
+      {
+        "uuid": "http://planqk.de/ontologies/qco/data/Ocean",
+        "label": "Ocean"
+      },
+      {
+        "uuid": "http://planqk.de/ontologies/qco/data/QDK",
+        "label": "QDK"
+      },
+      {
+        "uuid": "http://planqk.de/ontologies/qco/data/Qiskit",
+        "label": "Qiskit"
+      },
+      {
+        "uuid": "http://planqk.de/ontologies/qco/data/tket",
+        "label": "t|ket>"
+      }
+    ]
+  }
+}
