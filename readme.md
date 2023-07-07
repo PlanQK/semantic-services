@@ -3,6 +3,10 @@ PlanQK ontology represents knowledge about quantum computing algorithms along wi
 
 ## Ontology Sources
 The ontology is provided in different formats in the folder `sources`. You can open it with a text editor or using an ontology editor, f.e. [Protégé ](https://protege.stanford.edu/)
+**After you load the QCO ontology into the editor, make sure you handle needed imports.**  
+##### Imports:  
+Import [SRAO](https://github.com/PlanQK/semantic-services/blob/master/sources/srao_edited.owl) and [SPDX](https://github.com/PlanQK/semantic-services/blob/master/sources/spdx.ttl) as local files by using tab "Ontology imports" in the Protégé-Editor:
+   ![image](https://github.com/PlanQK/semantic-services/assets/63393143/6d040389-c409-4c05-b376-a3075a4b7540)
 
 ##### For a better readability:  
 1) In Protégé-Editor open: "File" -> Preferences.
